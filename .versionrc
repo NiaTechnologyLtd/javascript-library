@@ -1,0 +1,16 @@
+{
+  "types": [
+    {"type":"feat","section":"NEW FEATURES"},
+    {"type":"fix","section":"BUGS & FIXED"},
+    {"type":"docs","section":"DOCUMENTS CHANGED"},
+    {"type":"refactor","section":"SOURCES REFACTOR"},
+    {"type":"test","section":"TESTING"},
+    {"type":"pref","section":"PERFORMANCE OPTIMIZATION"},
+    {"type":"revert","section":"REVERT"},
+    {"type":"ci", "section":"CI & CD"},
+    {"type":"chore", "section":"TOOLS & OTHERS"},
+    {"type":"style", "section":"STYLES"}
+  ],
+  "preMajor": true,
+  "header": "# CHANGES"
+}
