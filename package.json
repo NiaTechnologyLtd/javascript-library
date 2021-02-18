@@ -22,7 +22,7 @@
     "build": "babel ./src --out-dir ./dist",
     "build:docs": "documentation build src/** -f md --project-name '@niajs' --output ./docs/api-development-notes.md"
   },
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "devDependencies": {
     "@babel/cli": "^7.12.17",
     "@babel/core": "^7.12.17",
