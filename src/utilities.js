@@ -27,4 +27,19 @@ export class Utilities {
     }
     return $string_template(s, args);
   }
+
+  /**
+   * @description 用于安全的获取值。
+   * @param {any} value 需要验证的值。
+   * @param {any} $default 当 value 等于 null 或者 undefined 时的默认值。
+   * @returns {any}
+   * @method
+   * @static
+   * @public
+   * @author Wang Yucai
+   * @version 2021.2.20.2349
+   */
+  static safeGet(value, $default) {
+    return value ?? $default;
+  }
 }
