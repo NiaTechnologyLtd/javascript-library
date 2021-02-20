@@ -1,4 +1,5 @@
 import { Utilities as _utils } from "./utilities";
+import { NiaObject } from "./nia-object";
 
 /**
  * @description 默认的异常信息。
@@ -18,8 +19,9 @@ export const DefaultExceptionMessage = "客户端系统引发了未处理的异�
  * @author Wang Yucai
  * @version 2021.2.21.026
  * @copyright Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+ * @see {NiaObject}
  */
-export class Exception {
+export class Exception extends NiaObject {
   /**
    * @description 用于初始化一个 Exception 类型的对象实例。
    * @param {String} message 异常描述信息。
@@ -28,6 +30,7 @@ export class Exception {
    * @public
    */
   constructor(message = undefined, innerException = undefined) {
+    super();
     this._message = _utils.safeGet(message, DefaultExceptionMessage);
     this._innerException = innerException;
   }
