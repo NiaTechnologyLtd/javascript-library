@@ -2,9 +2,111 @@
 
 ### Table of Contents
 
--   [Utilities][1]
-    -   [formatStr][2]
-        -   [Parameters][3]
+-   [DefaultExceptionMessage][1]
+-   [Exception][2]
+    -   [Parameters][3]
+    -   [message][4]
+    -   [innerException][5]
+-   [NiaObject][6]
+    -   [toJson][7]
+    -   [toString][8]
+-   [Utilities][9]
+    -   [formatStr][10]
+        -   [Parameters][11]
+    -   [safeGet][12]
+        -   [Parameters][13]
+
+## DefaultExceptionMessage
+
+默认的异常信息。
+
+Type: [String][14]
+
+**Meta**
+
+-   **version**: 2021.2.21.027
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+## Exception
+
+**Extends NiaObject**
+
+-   **See: {NiaObject}
+    **
+
+提供了运行时异常相关的方法。
+
+### Parameters
+
+-   `message` **[String][14]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][15]** 引发此异常的内部异常。 (optional, default `undefined`)
+
+**Meta**
+
+-   **version**: 2021.2.21.026
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+### message
+
+获取一个字符串，用于表示异常描述信息。
+
+Type: [String][14]
+
+**Meta**
+
+-   **version**: 2021.2.21.038
+-   **author**: Wang Yucai
+
+### innerException
+
+获取 Exception 类型的对象实例，用于表示引发此异常的内部异常。
+
+Type: [Exception][15]
+
+**Meta**
+
+-   **version**: 2021.2.21.040
+-   **author**: Wang Yucai
+
+## NiaObject
+
+提供了脚本库对象相关的基本方法。
+
+**Meta**
+
+-   **version**: 2021.2.21.048
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+### toJson
+
+将此对象实例转换成 Json 字符串。
+
+Returns **[String][14]** 
+
+**Meta**
+
+-   **version**: 2021.2.21.049
+-   **author**: Wang Yucai
+
+### toString
+
+-   **See: {toJson}
+    **
+
+将此对象实例转换成等效的字符串。
+
+Returns **[String][14]** 
+
+**Meta**
+
+-   **version**: 2021.2.21.051
+-   **author**: Wang Yucai
 
 ## Utilities
 
@@ -23,22 +125,60 @@
 
 #### Parameters
 
--   `s` **[String][4]** 格式化字符串模板。
--   `args` **[Array][5]** 格式化参数数组。
+-   `s` **[String][14]** 格式化字符串模板。
+-   `args` **[Array][16]** 格式化参数数组。
 
-Returns **[String][4]** 
+Returns **[String][14]** 
 
 **Meta**
 
 -   **version**: 2021.2.19.142
 -   **author**: Wang Yucai
 
-[1]: #utilities
+### safeGet
 
-[2]: #formatstr
+用于安全的获取值。
+
+#### Parameters
+
+-   `value` **any** 需要验证的值。
+-   `$default` **any** 当 value 等于 null 或者 undefined 时的默认值。
+
+Returns **any** 
+
+**Meta**
+
+-   **version**: 2021.2.20.2349
+-   **author**: Wang Yucai
+
+[1]: #defaultexceptionmessage
+
+[2]: #exception
 
 [3]: #parameters
 
-[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[4]: #message
 
-[5]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[5]: #innerexception
+
+[6]: #niaobject
+
+[7]: #tojson
+
+[8]: #tostring
+
+[9]: #utilities
+
+[10]: #formatstr
+
+[11]: #parameters-1
+
+[12]: #safeget
+
+[13]: #parameters-2
+
+[14]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[15]: #exception
+
+[16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
