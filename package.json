@@ -20,7 +20,8 @@
     "release": "standard-version -i CHANGELOG.md",
     "npm:restore": "cnpm install",
     "build": "babel ./src --out-dir ./dist",
-    "build:docs": "documentation build src/** -f md --project-name '@niajs' --output ./docs/api-development-notes.md"
+    "build:md": "documentation build src/** -f md --project-name '@niajs' --output ./docs/api-development-notes.md",
+    "build:html": "documentation build src/** -f html --project-name '@niajs' --output ./docs/api"
   },
   "version": "1.0.0-alpha.2",
   "devDependencies": {
