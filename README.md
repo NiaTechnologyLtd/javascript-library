@@ -4,6 +4,8 @@
 
 # Nia Library
 
+_它提供了前端开发过程中常用的函数库。_
+
 [Development Library for JavaScript!][git-repo]
 
 
