@@ -1,4 +1,16 @@
 # CHANGES
+## [1.0.0-alpha.5](///compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2021-02-21)
+
+
+### NEW FEATURES
+
+* 新增环境上下文服务。 1eb8bc0
+
+
+### DOCUMENTS CHANGED
+
+* 更新了脚本库接口文档。 357d7bc
+
 ## [1.0.0-alpha.4](///compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2021-02-21)
 
 
