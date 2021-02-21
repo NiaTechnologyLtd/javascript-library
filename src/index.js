@@ -3,6 +3,7 @@ import { NiaObject } from "./nia-object";
 import { DefaultExceptionMessage, Exception } from "./exception";
 import { ArgumentNullException } from "./argument-null-exception";
 import { ConfigurationException, Configuration } from "./configuration/index";
+import { EnvironmentContext } from "./environment-context";
 
 export {
   Utilities,
@@ -12,4 +13,5 @@ export {
   ArgumentNullException,
   Configuration,
   ConfigurationException,
+  EnvironmentContext,
 };
