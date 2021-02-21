@@ -1,4 +1,19 @@
 # CHANGES
+## [1.0.0-alpha.3](///compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2021-02-21)
+
+
+### NEW FEATURES
+
+* 为 utilities.js 脚本服务增加了 isNullOrEmpty 和 isNullOrWhispaces 方法。 93280d4
+* 新增 argument-null-exception 脚本。 b485f5a
+* 新增配置脚本服务。 77d201c
+
+
+### DOCUMENTS CHANGED
+
+* 新增 HTML 格式的接口说明文档。 5fe76cc
+* 重新生成了接口说明文档。 411283c
+
 ## [1.0.0-alpha.2](///compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-02-20)
 
 
