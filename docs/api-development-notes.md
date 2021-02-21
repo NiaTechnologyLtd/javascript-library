@@ -14,23 +14,28 @@
         -   [Parameters][10]
     -   [\_invalidConfigKey][11]
         -   [Parameters][12]
--   [DefaultExceptionMessage][13]
--   [Exception][14]
-    -   [Parameters][15]
-    -   [message][16]
-    -   [innerException][17]
--   [NiaObject][18]
-    -   [toJson][19]
-    -   [toString][20]
--   [Utilities][21]
-    -   [formatStr][22]
-        -   [Parameters][23]
-    -   [safeGet][24]
-        -   [Parameters][25]
-    -   [isNullOrEmpty][26]
-        -   [Parameters][27]
-    -   [isNullOrWhitespaces][28]
-        -   [Parameters][29]
+-   [EnvironmentContext][13]
+    -   [environmentName][14]
+    -   [isDevelopment][15]
+    -   [isTesting][16]
+    -   [isProduction][17]
+-   [DefaultExceptionMessage][18]
+-   [Exception][19]
+    -   [Parameters][20]
+    -   [message][21]
+    -   [innerException][22]
+-   [NiaObject][23]
+    -   [toJson][24]
+    -   [toString][25]
+-   [Utilities][26]
+    -   [formatStr][27]
+        -   [Parameters][28]
+    -   [safeGet][29]
+        -   [Parameters][30]
+    -   [isNullOrEmpty][31]
+        -   [Parameters][32]
+    -   [isNullOrWhitespaces][33]
+        -   [Parameters][34]
 
 ## ArgumentNullException
 
@@ -43,9 +48,9 @@
 
 ### Parameters
 
--   `argName` **[String][30]** 参数名称。 (optional, default `undefined`)
--   `message` **[String][30]** 异常描述信息。 (optional, default `undefined`)
--   `innerException` **[Exception][31]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `argName` **[String][35]** 参数名称。 (optional, default `undefined`)
+-   `message` **[String][35]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][36]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -58,7 +63,7 @@
 
 获取一个字符串，用于表示错误的参数名称。
 
-Type: [String][30]
+Type: [String][35]
 
 **Meta**
 
@@ -76,8 +81,8 @@ Type: [String][30]
 
 ### Parameters
 
--   `key` **[String][30]** 配置标识名称。 (optional, default `undefined`)
--   `innerException` **[Exception][31]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `key` **[String][35]** 配置标识名称。 (optional, default `undefined`)
+-   `innerException` **[Exception][36]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -103,9 +108,9 @@ Type: [String][30]
 
 #### Parameters
 
--   `key` **[String][30]** 配置标识名称。
+-   `key` **[String][35]** 配置标识名称。
 
-Returns **[String][30]** 
+Returns **[String][35]** 
 
 **Meta**
 
@@ -118,9 +123,9 @@ Returns **[String][30]**
 
 #### Parameters
 
--   `key` **[String][30]** 配置标识名称。
+-   `key` **[String][35]** 配置标识名称。
 
-Returns **[Boolean][32]** 
+Returns **[Boolean][37]** 
 
 **Meta**
 
@@ -136,18 +141,73 @@ Returns **[Boolean][32]**
 
 #### Parameters
 
--   `key` **[String][30]** 需要校验的配置标识名称。
+-   `key` **[String][35]** 需要校验的配置标识名称。
 
 **Meta**
 
 -   **version**: 2021.2.22.011
 -   **author**: Wang Yucai
 
+## EnvironmentContext
+
+提供了访问上下文环境信息相关的方法。
+
+**Meta**
+
+-   **version**: 2021.2.22.138
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+### environmentName
+
+获取一个字符串，用于表示当前的环境名称。
+
+Type: [String][35]
+
+**Meta**
+
+-   **version**: 2021.2.22.141
+-   **author**: Wang Yucai
+
+### isDevelopment
+
+获取一个值，用于表示当前是否为开发环境。
+
+Type: [Boolean][37]
+
+**Meta**
+
+-   **version**: 2021.2.22.145
+-   **author**: Wang Yucai
+
+### isTesting
+
+获取一个值，用于表示当前是否为测试环境。
+
+Type: [Boolean][37]
+
+**Meta**
+
+-   **version**: 2021.2.22.147
+-   **author**: Wang Yucai
+
+### isProduction
+
+获取一个值，用于表示当前是否为生产环境。
+
+Type: [Boolean][37]
+
+**Meta**
+
+-   **version**: 2021.2.22.147
+-   **author**: Wang Yucai
+
 ## DefaultExceptionMessage
 
 默认的异常信息。
 
-Type: [String][30]
+Type: [String][35]
 
 **Meta**
 
@@ -167,8 +227,8 @@ Type: [String][30]
 
 ### Parameters
 
--   `message` **[String][30]** 异常描述信息。 (optional, default `undefined`)
--   `innerException` **[Exception][31]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `message` **[String][35]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][36]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -181,7 +241,7 @@ Type: [String][30]
 
 获取一个字符串，用于表示异常描述信息。
 
-Type: [String][30]
+Type: [String][35]
 
 **Meta**
 
@@ -192,7 +252,7 @@ Type: [String][30]
 
 获取 Exception 类型的对象实例，用于表示引发此异常的内部异常。
 
-Type: [Exception][31]
+Type: [Exception][36]
 
 **Meta**
 
@@ -214,7 +274,7 @@ Type: [Exception][31]
 
 将此对象实例转换成 Json 字符串。
 
-Returns **[String][30]** 
+Returns **[String][35]** 
 
 **Meta**
 
@@ -228,7 +288,7 @@ Returns **[String][30]**
 
 将此对象实例转换成等效的字符串。
 
-Returns **[String][30]** 
+Returns **[String][35]** 
 
 **Meta**
 
@@ -252,10 +312,10 @@ Returns **[String][30]**
 
 #### Parameters
 
--   `s` **[String][30]** 格式化字符串模板。
--   `args` **[Array][33]** 格式化参数数组。
+-   `s` **[String][35]** 格式化字符串模板。
+-   `args` **[Array][38]** 格式化参数数组。
 
-Returns **[String][30]** 
+Returns **[String][35]** 
 
 **Meta**
 
@@ -284,9 +344,9 @@ Returns **any**
 
 #### Parameters
 
--   `str` **[String][30]** 用于校验的字符串。
+-   `str` **[String][35]** 用于校验的字符串。
 
-Returns **[Boolean][32]** 
+Returns **[Boolean][37]** 
 
 **Meta**
 
@@ -299,9 +359,9 @@ Returns **[Boolean][32]**
 
 #### Parameters
 
--   `str` **[String][30]** 需要校验的字符串。
+-   `str` **[String][35]** 需要校验的字符串。
 
-Returns **[Boolean][32]** 
+Returns **[Boolean][37]** 
 
 **Meta**
 
@@ -332,44 +392,54 @@ Returns **[Boolean][32]**
 
 [12]: #parameters-4
 
-[13]: #defaultexceptionmessage
+[13]: #environmentcontext
 
-[14]: #exception
+[14]: #environmentname
 
-[15]: #parameters-5
+[15]: #isdevelopment
 
-[16]: #message
+[16]: #istesting
 
-[17]: #innerexception
+[17]: #isproduction
 
-[18]: #niaobject
+[18]: #defaultexceptionmessage
 
-[19]: #tojson
+[19]: #exception
 
-[20]: #tostring
+[20]: #parameters-5
 
-[21]: #utilities
+[21]: #message
 
-[22]: #formatstr
+[22]: #innerexception
 
-[23]: #parameters-6
+[23]: #niaobject
 
-[24]: #safeget
+[24]: #tojson
 
-[25]: #parameters-7
+[25]: #tostring
 
-[26]: #isnullorempty
+[26]: #utilities
 
-[27]: #parameters-8
+[27]: #formatstr
 
-[28]: #isnullorwhitespaces
+[28]: #parameters-6
 
-[29]: #parameters-9
+[29]: #safeget
 
-[30]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[30]: #parameters-7
 
-[31]: #exception
+[31]: #isnullorempty
 
-[32]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[32]: #parameters-8
 
-[33]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[33]: #isnullorwhitespaces
+
+[34]: #parameters-9
+
+[35]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[36]: #exception
+
+[37]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[38]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
