@@ -1,5 +1,10 @@
 import $string_template from "string-template";
 
+const NIA_REGULAR_EXPRESSIONS = {
+  isNullOrWhitespaces: /^\s*$/,
+  isNullOrEmpty: /^$/,
+};
+
 /**
  * @description 提供了开发库相关的工具方法集。
  * @class
@@ -41,5 +46,45 @@ export class Utilities {
    */
   static safeGet(value, $default) {
     return value ?? $default;
+  }
+
+  /**
+   * @description 用于校验字符串是否等于 null、undefined 或者空字符串。
+   * @param {String} str 用于校验的字符串。
+   * @returns {Boolean}
+   * @method
+   * @static
+   * @public
+   * @author Wang Yucai
+   * @version 2021.2.22.025
+   */
+  static isNullOrEmpty(str) {
+    if (!str) return true;
+    if (typeof str != "string") {
+      str = str.toString();
+    }
+
+    NIA_REGULAR_EXPRESSIONS.isNullOrEmpty.lastIndex = -1;
+    return NIA_REGULAR_EXPRESSIONS.isNullOrEmpty.test(str);
+  }
+
+  /**
+   * @description 用于校验字符串是否等于 null、undefined 或者空白符。
+   * @param {String} str 需要校验的字符串。
+   * @returns {Boolean}
+   * @method
+   * @static
+   * @public
+   * @author Wang Yucai
+   * @version 2021.2.22.042
+   */
+  static isNullOrWhitespaces(str) {
+    NIA_REGULAR_EXPRESSIONS.isNullOrWhitespaces.lastIndex = -1;
+    return (
+      Utilities.isNullOrEmpty(str) ||
+      NIA_REGULAR_EXPRESSIONS.isNullOrWhitespaces.test(
+        typeof str != "string" ? str.toString() : str
+      )
+    );
   }
 }
