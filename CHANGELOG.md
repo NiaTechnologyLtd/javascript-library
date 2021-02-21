@@ -1,4 +1,11 @@
 # CHANGES
+## [1.0.0-alpha.4](///compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2021-02-21)
+
+
+### TOOLS & OTHERS
+
+* 新增 npm 发布排除配置。 d54ac74
+
 ## [1.0.0-alpha.3](///compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2021-02-21)
 
 
