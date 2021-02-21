@@ -2,25 +2,152 @@
 
 ### Table of Contents
 
--   [DefaultExceptionMessage][1]
--   [Exception][2]
-    -   [Parameters][3]
-    -   [message][4]
-    -   [innerException][5]
--   [NiaObject][6]
-    -   [toJson][7]
-    -   [toString][8]
--   [Utilities][9]
-    -   [formatStr][10]
-        -   [Parameters][11]
-    -   [safeGet][12]
-        -   [Parameters][13]
+-   [ArgumentNullException][1]
+    -   [Parameters][2]
+    -   [invalidArgumentName][3]
+-   [ConfigurationException][4]
+    -   [Parameters][5]
+-   [Configuration][6]
+    -   [get][7]
+        -   [Parameters][8]
+    -   [exists][9]
+        -   [Parameters][10]
+    -   [\_invalidConfigKey][11]
+        -   [Parameters][12]
+-   [DefaultExceptionMessage][13]
+-   [Exception][14]
+    -   [Parameters][15]
+    -   [message][16]
+    -   [innerException][17]
+-   [NiaObject][18]
+    -   [toJson][19]
+    -   [toString][20]
+-   [Utilities][21]
+    -   [formatStr][22]
+        -   [Parameters][23]
+    -   [safeGet][24]
+        -   [Parameters][25]
+    -   [isNullOrEmpty][26]
+        -   [Parameters][27]
+    -   [isNullOrWhitespaces][28]
+        -   [Parameters][29]
+
+## ArgumentNullException
+
+**Extends Exception**
+
+-   **See: {Exception}
+    **
+
+当方法参数等于 null 或者 undefined 时，将引发此类型的异常。
+
+### Parameters
+
+-   `argName` **[String][30]** 参数名称。 (optional, default `undefined`)
+-   `message` **[String][30]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][31]** 引发此异常的内部异常。 (optional, default `undefined`)
+
+**Meta**
+
+-   **version**: 2021.2.21.144
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+### invalidArgumentName
+
+获取一个字符串，用于表示错误的参数名称。
+
+Type: [String][30]
+
+**Meta**
+
+-   **version**: 2021.2.21.155
+-   **author**: Wang Yucai
+
+## ConfigurationException
+
+**Extends Exception**
+
+-   **See: {Exception}
+    **
+
+当配置系统异常时，将引发此类型的异常。
+
+### Parameters
+
+-   `key` **[String][30]** 配置标识名称。 (optional, default `undefined`)
+-   `innerException` **[Exception][31]** 引发此异常的内部异常。 (optional, default `undefined`)
+
+**Meta**
+
+-   **version**: 2021.2.22.056
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+## Configuration
+
+提供了访问配置信息相关的方法。
+
+**Meta**
+
+-   **version**: 2021.2.22.004
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+### get
+
+获取指定标识名称的配置。
+
+#### Parameters
+
+-   `key` **[String][30]** 配置标识名称。
+
+Returns **[String][30]** 
+
+**Meta**
+
+-   **version**: 2021.2.22.007
+-   **author**: Wang Yucai
+
+### exists
+
+用于校验指定标识名称的配置是否存在。
+
+#### Parameters
+
+-   `key` **[String][30]** 配置标识名称。
+
+Returns **[Boolean][32]** 
+
+**Meta**
+
+-   **version**: 2021.2.22.052
+-   **author**: Wang Yucai
+
+### \_invalidConfigKey
+
+-   **See: {ArgumentNullException}
+    **
+
+验证配置标识名称。如果 key 等于 null 或者 undefined，则抛出异常。
+
+#### Parameters
+
+-   `key` **[String][30]** 需要校验的配置标识名称。
+
+**Meta**
+
+-   **version**: 2021.2.22.011
+-   **author**: Wang Yucai
 
 ## DefaultExceptionMessage
 
 默认的异常信息。
 
-Type: [String][14]
+Type: [String][30]
 
 **Meta**
 
@@ -40,8 +167,8 @@ Type: [String][14]
 
 ### Parameters
 
--   `message` **[String][14]** 异常描述信息。 (optional, default `undefined`)
--   `innerException` **[Exception][15]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `message` **[String][30]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][31]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -54,7 +181,7 @@ Type: [String][14]
 
 获取一个字符串，用于表示异常描述信息。
 
-Type: [String][14]
+Type: [String][30]
 
 **Meta**
 
@@ -65,7 +192,7 @@ Type: [String][14]
 
 获取 Exception 类型的对象实例，用于表示引发此异常的内部异常。
 
-Type: [Exception][15]
+Type: [Exception][31]
 
 **Meta**
 
@@ -87,7 +214,7 @@ Type: [Exception][15]
 
 将此对象实例转换成 Json 字符串。
 
-Returns **[String][14]** 
+Returns **[String][30]** 
 
 **Meta**
 
@@ -101,7 +228,7 @@ Returns **[String][14]**
 
 将此对象实例转换成等效的字符串。
 
-Returns **[String][14]** 
+Returns **[String][30]** 
 
 **Meta**
 
@@ -125,10 +252,10 @@ Returns **[String][14]**
 
 #### Parameters
 
--   `s` **[String][14]** 格式化字符串模板。
--   `args` **[Array][16]** 格式化参数数组。
+-   `s` **[String][30]** 格式化字符串模板。
+-   `args` **[Array][33]** 格式化参数数组。
 
-Returns **[String][14]** 
+Returns **[String][30]** 
 
 **Meta**
 
@@ -151,34 +278,98 @@ Returns **any**
 -   **version**: 2021.2.20.2349
 -   **author**: Wang Yucai
 
-[1]: #defaultexceptionmessage
+### isNullOrEmpty
 
-[2]: #exception
+用于校验字符串是否等于 null、undefined 或者空字符串。
 
-[3]: #parameters
+#### Parameters
 
-[4]: #message
+-   `str` **[String][30]** 用于校验的字符串。
 
-[5]: #innerexception
+Returns **[Boolean][32]** 
 
-[6]: #niaobject
+**Meta**
 
-[7]: #tojson
+-   **version**: 2021.2.22.025
+-   **author**: Wang Yucai
 
-[8]: #tostring
+### isNullOrWhitespaces
 
-[9]: #utilities
+用于校验字符串是否等于 null、undefined 或者空白符。
 
-[10]: #formatstr
+#### Parameters
 
-[11]: #parameters-1
+-   `str` **[String][30]** 需要校验的字符串。
 
-[12]: #safeget
+Returns **[Boolean][32]** 
 
-[13]: #parameters-2
+**Meta**
 
-[14]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+-   **version**: 2021.2.22.042
+-   **author**: Wang Yucai
 
-[15]: #exception
+[1]: #argumentnullexception
 
-[16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[2]: #parameters
+
+[3]: #invalidargumentname
+
+[4]: #configurationexception
+
+[5]: #parameters-1
+
+[6]: #configuration
+
+[7]: #get
+
+[8]: #parameters-2
+
+[9]: #exists
+
+[10]: #parameters-3
+
+[11]: #_invalidconfigkey
+
+[12]: #parameters-4
+
+[13]: #defaultexceptionmessage
+
+[14]: #exception
+
+[15]: #parameters-5
+
+[16]: #message
+
+[17]: #innerexception
+
+[18]: #niaobject
+
+[19]: #tojson
+
+[20]: #tostring
+
+[21]: #utilities
+
+[22]: #formatstr
+
+[23]: #parameters-6
+
+[24]: #safeget
+
+[25]: #parameters-7
+
+[26]: #isnullorempty
+
+[27]: #parameters-8
+
+[28]: #isnullorwhitespaces
+
+[29]: #parameters-9
+
+[30]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[31]: #exception
+
+[32]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[33]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
