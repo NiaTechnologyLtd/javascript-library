@@ -1,4 +1,13 @@
 # CHANGES
+## [1.0.0-alpha.6](///compare/v1.0.0-alpha.5...v1.0.0-alpha.6) (2021-02-23)
+
+
+### NEW FEATURES
+
+* 为 environment-context.js 服务添加了 equals 方法。 4bd1479
+* 修改了 Configuration 配置服务，添加了 createOrGet 方法。 a92c673
+* 增加了新的环境常量。 fede05d
+
 ## [1.0.0-alpha.5](///compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2021-02-21)
 
 
