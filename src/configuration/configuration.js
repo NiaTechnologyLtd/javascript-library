@@ -2,6 +2,8 @@ import { Utilities as _utils } from "../utilities";
 import { ArgumentNullException } from "../argument-null-exception";
 import { ConfigurationException } from "./configuration-exception";
 
+let CURRENT_CONFIGURATION = undefined;
+
 /**
  * @description 提供了访问配置信息相关的方法。
  * @class
@@ -60,5 +62,23 @@ export class Configuration {
   _invalidConfigKey(key) {
     key = _utils.safeGet(key, "");
     if (_utils.isNullOrWhitespaces(key)) throw new ArgumentNullException("key");
+  }
+
+  /**
+   * @description 创建或获取一个配置服务对象实例。
+   * @returns {Configuration}
+   * @method
+   * @static
+   * @public
+   * @author Wang Yucai
+   * @version 2021.2.23.2340
+   */
+  static createOrGet() {
+    if (!CURRENT_CONFIGURATION) {
+      console.debug("调试：尝试初始化配置服务。");
+      CURRENT_CONFIGURATION = new Configuration();
+    }
+
+    return CURRENT_CONFIGURATION;
   }
 }
