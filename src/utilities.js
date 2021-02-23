@@ -1,9 +1,5 @@
 import $string_template from "string-template";
-
-const NIA_REGULAR_EXPRESSIONS = {
-  isNullOrWhitespaces: /^\s*$/,
-  isNullOrEmpty: /^$/,
-};
+import { __niaInternalVariables as nia } from "./internal";
 
 /**
  * @description 提供了开发库相关的工具方法集。
@@ -64,8 +60,8 @@ export class Utilities {
       str = str.toString();
     }
 
-    NIA_REGULAR_EXPRESSIONS.isNullOrEmpty.lastIndex = -1;
-    return NIA_REGULAR_EXPRESSIONS.isNullOrEmpty.test(str);
+    nia.utilities.is_null_or_empty.lastIndex = -1;
+    return nia.utilities.is_null_or_empty.test(str);
   }
 
   /**
@@ -79,10 +75,10 @@ export class Utilities {
    * @version 2021.2.22.042
    */
   static isNullOrWhitespaces(str) {
-    NIA_REGULAR_EXPRESSIONS.isNullOrWhitespaces.lastIndex = -1;
+    nia.utilities.is_null_or_whitespaces.lastIndex = -1;
     return (
       Utilities.isNullOrEmpty(str) ||
-      NIA_REGULAR_EXPRESSIONS.isNullOrWhitespaces.test(
+      nia.utilities.is_null_or_whitespaces.test(
         typeof str != "string" ? str.toString() : str
       )
     );

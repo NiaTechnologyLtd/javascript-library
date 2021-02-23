@@ -1,9 +1,6 @@
 import { Utilities } from "../utilities";
 import { Configuration } from "./configuration";
-
-const NIA_REGULAR_EXPRESSIONS = {
-  hasVuePrefix: /^VUE\_APP\_/i,
-};
+import { __niaInternalVariables as nia } from "../internal";
 
 /**
  * @description 提供了适用于 Vue.js 的配置信息访问相关的方法。
@@ -33,8 +30,8 @@ export class VueConfiguration extends Configuration {
    * @version 2021.2.24.034
    */
   _hasPrefix(key) {
-    NIA_REGULAR_EXPRESSIONS.hasVuePrefix.lastIndex = -1;
-    return NIA_REGULAR_EXPRESSIONS.hasVuePrefix.test(key);
+    nia.vue_configuration.has_prefix.lastIndex = -1;
+    return nia.vue_configuration.has_prefix.test(key);
   }
 
   /**
@@ -89,11 +86,11 @@ export class VueConfiguration extends Configuration {
    * @version 2021.2.24.045
    */
   static createOrGet() {
-    if (!_currentConfig) {
+    if (!nia.singleton.vue_configuration.current_configuration) {
       console.debug("调试：尝试初始化 Vue.js 配置服务。");
-      _currentConfig = new VueConfiguration();
+      nia.singleton.vue_configuration.current_configuration = new VueConfiguration();
     }
 
-    return _currentConfig;
+    return nia.singleton.vue_configuration.current_configuration;
   }
 }
