@@ -1,4 +1,18 @@
 # CHANGES
+## [1.0.0-alpha.7](///compare/v1.0.0-alpha.6...v1.0.0-alpha.7) (2021-02-23)
+
+
+### NEW FEATURES
+
+* 新增内部存储类型 internal.js。 2240f4c
+* 新增适用于 Vue.js 的配置服务。 9590b97
+
+
+### DOCUMENTS CHANGED
+
+* 修改了项目自述文件的连接地址。 7ffb6a6
+* 重新构建了接口说明文档。 afa45b0
+
 ## [1.0.0-alpha.6](///compare/v1.0.0-alpha.5...v1.0.0-alpha.6) (2021-02-23)
 
 
