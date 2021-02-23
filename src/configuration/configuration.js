@@ -2,7 +2,7 @@ import { Utilities as _utils } from "../utilities";
 import { ArgumentNullException } from "../argument-null-exception";
 import { ConfigurationException } from "./configuration-exception";
 
-let CURRENT_CONFIGURATION = undefined;
+let _currentConfig = undefined;
 
 /**
  * @description 提供了访问配置信息相关的方法。
@@ -74,11 +74,11 @@ export class Configuration {
    * @version 2021.2.23.2340
    */
   static createOrGet() {
-    if (!CURRENT_CONFIGURATION) {
+    if (!_currentConfig) {
       console.debug("调试：尝试初始化配置服务。");
-      CURRENT_CONFIGURATION = new Configuration();
+      _currentConfig = new Configuration();
     }
 
-    return CURRENT_CONFIGURATION;
+    return _currentConfig;
   }
 }
