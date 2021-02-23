@@ -14,28 +14,40 @@
         -   [Parameters][10]
     -   [\_invalidConfigKey][11]
         -   [Parameters][12]
--   [EnvironmentContext][13]
-    -   [environmentName][14]
-    -   [isDevelopment][15]
-    -   [isTesting][16]
-    -   [isProduction][17]
--   [DefaultExceptionMessage][18]
--   [Exception][19]
-    -   [Parameters][20]
-    -   [message][21]
-    -   [innerException][22]
--   [NiaObject][23]
-    -   [toJson][24]
-    -   [toString][25]
--   [Utilities][26]
-    -   [formatStr][27]
+    -   [createOrGet][13]
+-   [VueConfiguration][14]
+    -   [get][15]
+        -   [Parameters][16]
+    -   [exists][17]
+        -   [Parameters][18]
+    -   [createOrGet][19]
+-   [EnvironmentNameSet][20]
+-   [DefaultEnvironmentName][21]
+-   [EnvironmentContext][22]
+    -   [environmentName][23]
+    -   [isDevelopment][24]
+    -   [isTesting][25]
+    -   [isProduction][26]
+    -   [equals][27]
         -   [Parameters][28]
-    -   [safeGet][29]
-        -   [Parameters][30]
-    -   [isNullOrEmpty][31]
-        -   [Parameters][32]
-    -   [isNullOrWhitespaces][33]
-        -   [Parameters][34]
+-   [DefaultExceptionMessage][29]
+-   [Exception][30]
+    -   [Parameters][31]
+    -   [message][32]
+    -   [innerException][33]
+-   [\_\_niaInternalVariables][34]
+-   [NiaObject][35]
+    -   [toJson][36]
+    -   [toString][37]
+-   [Utilities][38]
+    -   [formatStr][39]
+        -   [Parameters][40]
+    -   [safeGet][41]
+        -   [Parameters][42]
+    -   [isNullOrEmpty][43]
+        -   [Parameters][44]
+    -   [isNullOrWhitespaces][45]
+        -   [Parameters][46]
 
 ## ArgumentNullException
 
@@ -48,9 +60,9 @@
 
 ### Parameters
 
--   `argName` **[String][35]** 参数名称。 (optional, default `undefined`)
--   `message` **[String][35]** 异常描述信息。 (optional, default `undefined`)
--   `innerException` **[Exception][36]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `argName` **[String][47]** 参数名称。 (optional, default `undefined`)
+-   `message` **[String][47]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][48]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -63,7 +75,7 @@
 
 获取一个字符串，用于表示错误的参数名称。
 
-Type: [String][35]
+Type: [String][47]
 
 **Meta**
 
@@ -81,8 +93,8 @@ Type: [String][35]
 
 ### Parameters
 
--   `key` **[String][35]** 配置标识名称。 (optional, default `undefined`)
--   `innerException` **[Exception][36]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `key` **[String][47]** 配置标识名称。 (optional, default `undefined`)
+-   `innerException` **[Exception][48]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -108,9 +120,9 @@ Type: [String][35]
 
 #### Parameters
 
--   `key` **[String][35]** 配置标识名称。
+-   `key` **[String][47]** 配置标识名称。
 
-Returns **[String][35]** 
+Returns **[String][47]** 
 
 **Meta**
 
@@ -123,9 +135,9 @@ Returns **[String][35]**
 
 #### Parameters
 
--   `key` **[String][35]** 配置标识名称。
+-   `key` **[String][47]** 配置标识名称。
 
-Returns **[Boolean][37]** 
+Returns **[Boolean][49]** 
 
 **Meta**
 
@@ -141,11 +153,103 @@ Returns **[Boolean][37]**
 
 #### Parameters
 
--   `key` **[String][35]** 需要校验的配置标识名称。
+-   `key` **[String][47]** 需要校验的配置标识名称。
 
 **Meta**
 
 -   **version**: 2021.2.22.011
+-   **author**: Wang Yucai
+
+### createOrGet
+
+创建或获取一个配置服务对象实例。
+
+Returns **[Configuration][50]** 
+
+**Meta**
+
+-   **version**: 2021.2.23.2340
+-   **author**: Wang Yucai
+
+## VueConfiguration
+
+**Extends Configuration**
+
+-   **See: {Configuration}
+    **
+
+提供了适用于 Vue.js 的配置信息访问相关的方法。
+
+**Meta**
+
+-   **version**: 2021.2.24.026
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+### get
+
+获取指定标识名称的 Vue.js 配置。
+
+#### Parameters
+
+-   `key` **[String][47]** 配置标识名称。
+
+Returns **[String][47]** 
+
+**Meta**
+
+-   **version**: 2021.2.24.044
+-   **author**: Wang Yucai
+
+### exists
+
+用于校验指定标识名称的 Vue.js 配置是否存在。
+
+#### Parameters
+
+-   `key` **[String][47]** 配置标识名称。
+
+Returns **[Boolean][49]** 
+
+**Meta**
+
+-   **version**: 2021.2.24.044
+-   **author**: Wang Yucai
+
+### createOrGet
+
+创建或获取一个配置服务对象实例。
+
+Returns **[VueConfiguration][51]** 
+
+**Meta**
+
+-   **version**: 2021.2.24.045
+-   **author**: Wang Yucai
+
+## EnvironmentNameSet
+
+提供了内置的环境名称相关的方法。
+
+**Meta**
+
+-   **version**: 2021.2.23.2352
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+## DefaultEnvironmentName
+
+默认的环境名称。
+
+Type: [String][47]
+
+**Meta**
+
+-   **version**: 2021.2.23.2355
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
 -   **author**: Wang Yucai
 
 ## EnvironmentContext
@@ -163,7 +267,7 @@ Returns **[Boolean][37]**
 
 获取一个字符串，用于表示当前的环境名称。
 
-Type: [String][35]
+Type: [String][47]
 
 **Meta**
 
@@ -174,7 +278,7 @@ Type: [String][35]
 
 获取一个值，用于表示当前是否为开发环境。
 
-Type: [Boolean][37]
+Type: [Boolean][49]
 
 **Meta**
 
@@ -185,7 +289,7 @@ Type: [Boolean][37]
 
 获取一个值，用于表示当前是否为测试环境。
 
-Type: [Boolean][37]
+Type: [Boolean][49]
 
 **Meta**
 
@@ -196,18 +300,33 @@ Type: [Boolean][37]
 
 获取一个值，用于表示当前是否为生产环境。
 
-Type: [Boolean][37]
+Type: [Boolean][49]
 
 **Meta**
 
 -   **version**: 2021.2.22.147
 -   **author**: Wang Yucai
 
+### equals
+
+用于校验当前的环境是否与指定的环境名称相等。
+
+#### Parameters
+
+-   `envName` **[String][47]** 指定的环境名称。 (optional, default `DefaultEnvironmentName`)
+
+Returns **[Boolean][49]** 
+
+**Meta**
+
+-   **version**: 2021.2.23.2357
+-   **author**: Wang Yucai
+
 ## DefaultExceptionMessage
 
 默认的异常信息。
 
-Type: [String][35]
+Type: [String][47]
 
 **Meta**
 
@@ -227,8 +346,8 @@ Type: [String][35]
 
 ### Parameters
 
--   `message` **[String][35]** 异常描述信息。 (optional, default `undefined`)
--   `innerException` **[Exception][36]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `message` **[String][47]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][48]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -241,7 +360,7 @@ Type: [String][35]
 
 获取一个字符串，用于表示异常描述信息。
 
-Type: [String][35]
+Type: [String][47]
 
 **Meta**
 
@@ -252,11 +371,22 @@ Type: [String][35]
 
 获取 Exception 类型的对象实例，用于表示引发此异常的内部异常。
 
-Type: [Exception][36]
+Type: [Exception][48]
 
 **Meta**
 
 -   **version**: 2021.2.21.040
+-   **author**: Wang Yucai
+
+## \_\_niaInternalVariables
+
+提供了 Nia JavaScript 开发库内部使用的常量、变量等。
+
+**Meta**
+
+-   **version**: 2021.2.24.055
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
 -   **author**: Wang Yucai
 
 ## NiaObject
@@ -274,7 +404,7 @@ Type: [Exception][36]
 
 将此对象实例转换成 Json 字符串。
 
-Returns **[String][35]** 
+Returns **[String][47]** 
 
 **Meta**
 
@@ -288,7 +418,7 @@ Returns **[String][35]**
 
 将此对象实例转换成等效的字符串。
 
-Returns **[String][35]** 
+Returns **[String][47]** 
 
 **Meta**
 
@@ -312,10 +442,10 @@ Returns **[String][35]**
 
 #### Parameters
 
--   `s` **[String][35]** 格式化字符串模板。
--   `args` **[Array][38]** 格式化参数数组。
+-   `s` **[String][47]** 格式化字符串模板。
+-   `args` **[Array][52]** 格式化参数数组。
 
-Returns **[String][35]** 
+Returns **[String][47]** 
 
 **Meta**
 
@@ -344,9 +474,9 @@ Returns **any**
 
 #### Parameters
 
--   `str` **[String][35]** 用于校验的字符串。
+-   `str` **[String][47]** 用于校验的字符串。
 
-Returns **[Boolean][37]** 
+Returns **[Boolean][49]** 
 
 **Meta**
 
@@ -359,9 +489,9 @@ Returns **[Boolean][37]**
 
 #### Parameters
 
--   `str` **[String][35]** 需要校验的字符串。
+-   `str` **[String][47]** 需要校验的字符串。
 
-Returns **[Boolean][37]** 
+Returns **[Boolean][49]** 
 
 **Meta**
 
@@ -392,54 +522,82 @@ Returns **[Boolean][37]**
 
 [12]: #parameters-4
 
-[13]: #environmentcontext
+[13]: #createorget
 
-[14]: #environmentname
+[14]: #vueconfiguration
 
-[15]: #isdevelopment
+[15]: #get-1
 
-[16]: #istesting
+[16]: #parameters-5
 
-[17]: #isproduction
+[17]: #exists-1
 
-[18]: #defaultexceptionmessage
+[18]: #parameters-6
 
-[19]: #exception
+[19]: #createorget-1
 
-[20]: #parameters-5
+[20]: #environmentnameset
 
-[21]: #message
+[21]: #defaultenvironmentname
 
-[22]: #innerexception
+[22]: #environmentcontext
 
-[23]: #niaobject
+[23]: #environmentname
 
-[24]: #tojson
+[24]: #isdevelopment
 
-[25]: #tostring
+[25]: #istesting
 
-[26]: #utilities
+[26]: #isproduction
 
-[27]: #formatstr
+[27]: #equals
 
-[28]: #parameters-6
+[28]: #parameters-7
 
-[29]: #safeget
+[29]: #defaultexceptionmessage
 
-[30]: #parameters-7
+[30]: #exception
 
-[31]: #isnullorempty
+[31]: #parameters-8
 
-[32]: #parameters-8
+[32]: #message
 
-[33]: #isnullorwhitespaces
+[33]: #innerexception
 
-[34]: #parameters-9
+[34]: #__niainternalvariables
 
-[35]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[35]: #niaobject
 
-[36]: #exception
+[36]: #tojson
 
-[37]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[37]: #tostring
 
-[38]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[38]: #utilities
+
+[39]: #formatstr
+
+[40]: #parameters-9
+
+[41]: #safeget
+
+[42]: #parameters-10
+
+[43]: #isnullorempty
+
+[44]: #parameters-11
+
+[45]: #isnullorwhitespaces
+
+[46]: #parameters-12
+
+[47]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[48]: #exception
+
+[49]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[50]: #configuration
+
+[51]: #vueconfiguration
+
+[52]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
