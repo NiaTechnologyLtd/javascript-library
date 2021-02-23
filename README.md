@@ -17,8 +17,8 @@
 
 - **文档目录**
 
-  - [API 开发说明文档](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/blob/dev/feature-1/docs/api-development-notes.md)
-  - [代码变更说明](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/blob/dev/feature-1/CHANGELOG.md)
+  - [API 开发说明文档](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/blob/dev-1.x/docs/api-development-notes.md)
+  - [代码变更说明](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/blob/dev-1.x/CHANGELOG.md)
 
 - **开源协议**
 
