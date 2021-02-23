@@ -1,8 +1,7 @@
 import { Utilities as _utils } from "../utilities";
 import { ArgumentNullException } from "../argument-null-exception";
 import { ConfigurationException } from "./configuration-exception";
-
-let _currentConfig = undefined;
+import { __niaInternalVariables as nia } from "../internal";
 
 /**
  * @description 提供了访问配置信息相关的方法。
@@ -74,11 +73,11 @@ export class Configuration {
    * @version 2021.2.23.2340
    */
   static createOrGet() {
-    if (!_currentConfig) {
+    if (nia.singleton.configuration.current_configuration) {
       console.debug("调试：尝试初始化配置服务。");
-      _currentConfig = new Configuration();
+      nia.singleton.configuration.current_configuration = new Configuration();
     }
 
-    return _currentConfig;
+    return nia.singleton.configuration.current_configuration;
   }
 }

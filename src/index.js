@@ -2,7 +2,11 @@ import { Utilities } from "./utilities";
 import { NiaObject } from "./nia-object";
 import { DefaultExceptionMessage, Exception } from "./exception";
 import { ArgumentNullException } from "./argument-null-exception";
-import { ConfigurationException, Configuration } from "./configuration/index";
+import {
+  ConfigurationException,
+  Configuration,
+  VueConfiguration,
+} from "./configuration/index";
 import {
   EnvironmentContext,
   EnvironmentNameSet,
@@ -17,6 +21,7 @@ export {
   ArgumentNullException,
   Configuration,
   ConfigurationException,
+  VueConfiguration,
   EnvironmentContext,
   EnvironmentNameSet,
   DefaultEnvironmentName,
