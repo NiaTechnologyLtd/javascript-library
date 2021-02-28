@@ -22,5 +22,6 @@ export const __niaInternalVariables = {
   },
   security: {
     aes_key: "cByozPdOf7qNnAux2aJe3stGrbhUkTYl",
+    authenticated_tag: "__authen__",
   },
 };
