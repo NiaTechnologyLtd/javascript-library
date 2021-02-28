@@ -1,4 +1,19 @@
 # CHANGES
+## [1.0.0-alpha.8](///compare/v1.0.0-alpha.7...v1.0.0-alpha.8) (2021-02-28)
+
+
+### NEW FEATURES
+
+* 新增 ClaimType 枚举常量。 2a57a3b
+* 新增基于 crypto-js 包的加密工具类。 431b705
+* 新增身份认证信息类型 claim。 3bc27d1
+* 新增身份信息类型 ( issue [#1](undefined/undefined/undefined/issues/1) )。 6971ecc
+
+
+### DOCUMENTS CHANGED
+
+* 重新生成了 API 接口文档。 1a6a53c
+
 ## [1.0.0-alpha.7](///compare/v1.0.0-alpha.6...v1.0.0-alpha.7) (2021-02-23)
 
 
