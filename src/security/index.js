@@ -1,3 +1,4 @@
 import { ClaimType } from "./principal/index";
+import { CryptographyUtils } from "./cryptography-utils";
 
-export { ClaimType };
+export { CryptographyUtils, ClaimType };

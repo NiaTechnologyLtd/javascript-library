@@ -12,7 +12,7 @@ import {
   EnvironmentNameSet,
   DefaultEnvironmentName,
 } from "./environment-context";
-import { ClaimType } from "./security/index";
+import { CryptographyUtils, ClaimType } from "./security/index";
 
 export {
   Utilities,
@@ -26,5 +26,6 @@ export {
   EnvironmentContext,
   EnvironmentNameSet,
   DefaultEnvironmentName,
+  CryptographyUtils,
   ClaimType,
 };
