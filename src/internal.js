@@ -20,4 +20,8 @@ export const __niaInternalVariables = {
   vue_configuration: {
     has_prefix: /^VUE\_APP\_/i,
   },
+  security: {
+    aes_key: "cByozPdOf7qNnAux2aJe3stGrbhUkTYl",
+    authenticated_tag: "__authen__",
+  },
 };
