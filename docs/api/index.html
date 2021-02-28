@@ -357,6 +357,52 @@
               
                 
                 <li><a
+                  href='#claimidentity'
+                  class=" toggle-sibling">
+                  ClaimIdentity
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#claimidentityaddclaim'
+                        class='regular pre-open'>
+                        #addClaim
+                      </a></li>
+                      
+                      <li><a
+                        href='#claimidentitygetclaim'
+                        class='regular pre-open'>
+                        #getClaim
+                      </a></li>
+                      
+                      <li><a
+                        href='#claimidentityname'
+                        class='regular pre-open'>
+                        #name
+                      </a></li>
+                      
+                      <li><a
+                        href='#claimidentityisauthenticated'
+                        class='regular pre-open'>
+                        #isAuthenticated
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
                   href='#claimtype'
                   class="">
                   ClaimType
@@ -2497,6 +2543,322 @@
 </div>
 
   
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='claimidentity'>
+      ClaimIdentity
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>提供了客户端身份信息相关的方法。</p>
+
+    <div class='pre p1 fill-light mt0'>new ClaimIdentity()</div>
+  
+  
+
+  
+  <div>Version: 2021.3.1.055</div>
+  
+  <div>Author: Wang Yucai</div>
+  <div>Copyright: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+</div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='claimidentityaddclaim'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>addClaim(claim)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>添加一个身份信息点。</p>
+
+    <div class='pre p1 fill-light mt0'>addClaim(claim: <a href="#claim">Claim</a>): <a href="#claimidentity">ClaimIdentity</a></div>
+  
+  
+
+  
+  <div>Version: 2021.3.1.057</div>
+  
+  <div>Author: Wang Yucai</div>
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>claim</span> <code class='quiet'>(<a href="#claim">Claim</a>)</code>
+	    身份信息点。
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#claimidentity">ClaimIdentity</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='claimidentitygetclaim'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getClaim(name)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>获取指定描述名称的信息点。</p>
+
+    <div class='pre p1 fill-light mt0'>getClaim(name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="#claim">Claim</a></div>
+  
+  
+
+  
+  <div>Version: 2021.3.1.109</div>
+  
+  <div>Author: Wang Yucai</div>
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+            = <code>ClaimType.userName</code>)</code>
+	    描述名称。
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#claim">Claim</a></code>:
+        
+
+      
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        {Claim}
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='claimidentityname'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>name</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>获取一个字符串，用于表示当前的用户姓名。</p>
+
+    <div class='pre p1 fill-light mt0'>name</div>
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+    </p>
+  
+  
+
+  
+  <div>Version: 2021.3.1.113</div>
+  
+  <div>Author: Wang Yucai</div>
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='claimidentityisauthenticated'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>isAuthenticated</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>获取一个值，用于表示是否已经经过身份认证。</p>
+
+    <div class='pre p1 fill-light mt0'>isAuthenticated</div>
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+    </p>
+  
+  
+
+  
+  <div>Version: 2021.3.1.118</div>
+  
+  <div>Author: Wang Yucai</div>
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
 
   
 

@@ -44,27 +44,34 @@
         -   [Parameters][40]
     -   [decryptWithAES][41]
         -   [Parameters][42]
--   [ClaimType][43]
--   [Claim][44]
-    -   [Parameters][45]
-    -   [name][46]
+-   [ClaimIdentity][43]
+    -   [addClaim][44]
+        -   [Parameters][45]
+    -   [getClaim][46]
         -   [Parameters][47]
     -   [name][48]
-    -   [value][49]
-        -   [Parameters][50]
-    -   [value][51]
-    -   [encryptValue][52]
-    -   [decryptValue][53]
+    -   [isAuthenticated][49]
+-   [ClaimType][50]
+-   [Claim][51]
+    -   [Parameters][52]
+    -   [name][53]
         -   [Parameters][54]
--   [Utilities][55]
-    -   [formatStr][56]
+    -   [name][55]
+    -   [value][56]
         -   [Parameters][57]
-    -   [safeGet][58]
-        -   [Parameters][59]
-    -   [isNullOrEmpty][60]
+    -   [value][58]
+    -   [encryptValue][59]
+    -   [decryptValue][60]
         -   [Parameters][61]
-    -   [isNullOrWhitespaces][62]
-        -   [Parameters][63]
+-   [Utilities][62]
+    -   [formatStr][63]
+        -   [Parameters][64]
+    -   [safeGet][65]
+        -   [Parameters][66]
+    -   [isNullOrEmpty][67]
+        -   [Parameters][68]
+    -   [isNullOrWhitespaces][69]
+        -   [Parameters][70]
 
 ## ArgumentNullException
 
@@ -77,9 +84,9 @@
 
 ### Parameters
 
--   `argName` **[String][64]** 参数名称。 (optional, default `undefined`)
--   `message` **[String][64]** 异常描述信息。 (optional, default `undefined`)
--   `innerException` **[Exception][65]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `argName` **[String][71]** 参数名称。 (optional, default `undefined`)
+-   `message` **[String][71]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][72]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -92,7 +99,7 @@
 
 获取一个字符串，用于表示错误的参数名称。
 
-Type: [String][64]
+Type: [String][71]
 
 **Meta**
 
@@ -110,8 +117,8 @@ Type: [String][64]
 
 ### Parameters
 
--   `key` **[String][64]** 配置标识名称。 (optional, default `undefined`)
--   `innerException` **[Exception][65]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `key` **[String][71]** 配置标识名称。 (optional, default `undefined`)
+-   `innerException` **[Exception][72]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -137,9 +144,9 @@ Type: [String][64]
 
 #### Parameters
 
--   `key` **[String][64]** 配置标识名称。
+-   `key` **[String][71]** 配置标识名称。
 
-Returns **[String][64]** 
+Returns **[String][71]** 
 
 **Meta**
 
@@ -152,9 +159,9 @@ Returns **[String][64]**
 
 #### Parameters
 
--   `key` **[String][64]** 配置标识名称。
+-   `key` **[String][71]** 配置标识名称。
 
-Returns **[Boolean][66]** 
+Returns **[Boolean][73]** 
 
 **Meta**
 
@@ -170,7 +177,7 @@ Returns **[Boolean][66]**
 
 #### Parameters
 
--   `key` **[String][64]** 需要校验的配置标识名称。
+-   `key` **[String][71]** 需要校验的配置标识名称。
 
 **Meta**
 
@@ -181,7 +188,7 @@ Returns **[Boolean][66]**
 
 创建或获取一个配置服务对象实例。
 
-Returns **[Configuration][67]** 
+Returns **[Configuration][74]** 
 
 **Meta**
 
@@ -210,9 +217,9 @@ Returns **[Configuration][67]**
 
 #### Parameters
 
--   `key` **[String][64]** 配置标识名称。
+-   `key` **[String][71]** 配置标识名称。
 
-Returns **[String][64]** 
+Returns **[String][71]** 
 
 **Meta**
 
@@ -225,9 +232,9 @@ Returns **[String][64]**
 
 #### Parameters
 
--   `key` **[String][64]** 配置标识名称。
+-   `key` **[String][71]** 配置标识名称。
 
-Returns **[Boolean][66]** 
+Returns **[Boolean][73]** 
 
 **Meta**
 
@@ -238,7 +245,7 @@ Returns **[Boolean][66]**
 
 创建或获取一个配置服务对象实例。
 
-Returns **[VueConfiguration][68]** 
+Returns **[VueConfiguration][75]** 
 
 **Meta**
 
@@ -260,7 +267,7 @@ Returns **[VueConfiguration][68]**
 
 默认的环境名称。
 
-Type: [String][64]
+Type: [String][71]
 
 **Meta**
 
@@ -284,7 +291,7 @@ Type: [String][64]
 
 获取一个字符串，用于表示当前的环境名称。
 
-Type: [String][64]
+Type: [String][71]
 
 **Meta**
 
@@ -295,7 +302,7 @@ Type: [String][64]
 
 获取一个值，用于表示当前是否为开发环境。
 
-Type: [Boolean][66]
+Type: [Boolean][73]
 
 **Meta**
 
@@ -306,7 +313,7 @@ Type: [Boolean][66]
 
 获取一个值，用于表示当前是否为测试环境。
 
-Type: [Boolean][66]
+Type: [Boolean][73]
 
 **Meta**
 
@@ -317,7 +324,7 @@ Type: [Boolean][66]
 
 获取一个值，用于表示当前是否为生产环境。
 
-Type: [Boolean][66]
+Type: [Boolean][73]
 
 **Meta**
 
@@ -330,9 +337,9 @@ Type: [Boolean][66]
 
 #### Parameters
 
--   `envName` **[String][64]** 指定的环境名称。 (optional, default `DefaultEnvironmentName`)
+-   `envName` **[String][71]** 指定的环境名称。 (optional, default `DefaultEnvironmentName`)
 
-Returns **[Boolean][66]** 
+Returns **[Boolean][73]** 
 
 **Meta**
 
@@ -343,7 +350,7 @@ Returns **[Boolean][66]**
 
 默认的异常信息。
 
-Type: [String][64]
+Type: [String][71]
 
 **Meta**
 
@@ -363,8 +370,8 @@ Type: [String][64]
 
 ### Parameters
 
--   `message` **[String][64]** 异常描述信息。 (optional, default `undefined`)
--   `innerException` **[Exception][65]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `message` **[String][71]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][72]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -377,7 +384,7 @@ Type: [String][64]
 
 获取一个字符串，用于表示异常描述信息。
 
-Type: [String][64]
+Type: [String][71]
 
 **Meta**
 
@@ -388,7 +395,7 @@ Type: [String][64]
 
 获取 Exception 类型的对象实例，用于表示引发此异常的内部异常。
 
-Type: [Exception][65]
+Type: [Exception][72]
 
 **Meta**
 
@@ -421,7 +428,7 @@ Type: [Exception][65]
 
 将此对象实例转换成 Json 字符串。
 
-Returns **[String][64]** 
+Returns **[String][71]** 
 
 **Meta**
 
@@ -435,7 +442,7 @@ Returns **[String][64]**
 
 将此对象实例转换成等效的字符串。
 
-Returns **[String][64]** 
+Returns **[String][71]** 
 
 **Meta**
 
@@ -459,10 +466,10 @@ Returns **[String][64]**
 
 #### Parameters
 
--   `s` **[String][64]** 需要加密的字符串。
--   `key` **[String][64]** 用于加密的密钥。 (optional, default `DEFAULT_KEY_OF_AES`)
+-   `s` **[String][71]** 需要加密的字符串。
+-   `key` **[String][71]** 用于加密的密钥。 (optional, default `DEFAULT_KEY_OF_AES`)
 
-Returns **[String][64]** 
+Returns **[String][71]** 
 
 **Meta**
 
@@ -475,14 +482,80 @@ Returns **[String][64]**
 
 #### Parameters
 
--   `s` **[String][64]** 需要解密的字符串。
--   `key` **[String][64]** 用于解密的密钥。 (optional, default `DEFAULT_KEY_OF_AES`)
+-   `s` **[String][71]** 需要解密的字符串。
+-   `key` **[String][71]** 用于解密的密钥。 (optional, default `DEFAULT_KEY_OF_AES`)
 
-Returns **[String][64]** 
+Returns **[String][71]** 
 
 **Meta**
 
 -   **version**: 2021.3.1.018
+-   **author**: Wang Yucai
+
+## ClaimIdentity
+
+提供了客户端身份信息相关的方法。
+
+**Meta**
+
+-   **version**: 2021.3.1.055
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+### addClaim
+
+添加一个身份信息点。
+
+#### Parameters
+
+-   `claim` **[Claim][76]** 身份信息点。
+
+Returns **[ClaimIdentity][77]** 
+
+**Meta**
+
+-   **version**: 2021.3.1.057
+-   **author**: Wang Yucai
+
+### getClaim
+
+-   **See: {Claim}
+    **
+
+获取指定描述名称的信息点。
+
+#### Parameters
+
+-   `name` **[String][71]** 描述名称。 (optional, default `ClaimType.userName`)
+
+Returns **[Claim][76]** 
+
+**Meta**
+
+-   **version**: 2021.3.1.109
+-   **author**: Wang Yucai
+
+### name
+
+获取一个字符串，用于表示当前的用户姓名。
+
+Type: [String][71]
+
+**Meta**
+
+-   **version**: 2021.3.1.113
+-   **author**: Wang Yucai
+
+### isAuthenticated
+
+获取一个值，用于表示是否已经经过身份认证。
+
+Type: [Boolean][73]
+
+**Meta**
+
+-   **version**: 2021.3.1.118
 -   **author**: Wang Yucai
 
 ## ClaimType
@@ -502,8 +575,8 @@ Returns **[String][64]**
 
 ### Parameters
 
--   `name` **[String][64]** 信息点描述名称。 (optional, default `ClaimType.userName`)
--   `value` **[String][64]** 信息点值。 (optional, default `"your user name."`)
+-   `name` **[String][71]** 信息点描述名称。 (optional, default `ClaimType.userName`)
+-   `value` **[String][71]** 信息点值。 (optional, default `"your user name."`)
 
 **Meta**
 
@@ -516,11 +589,11 @@ Returns **[String][64]**
 
 设置或获取一个字符串，用于表示身份信息点描述名称。
 
-Type: [String][64]
+Type: [String][71]
 
 #### Parameters
 
--   `v` **[String][64]** 
+-   `v` **[String][71]** 
 
 **Meta**
 
@@ -531,7 +604,7 @@ Type: [String][64]
 
 设置或获取一个字符串，用于表示身份信息点描述名称。
 
-Type: [String][64]
+Type: [String][71]
 
 **Meta**
 
@@ -542,11 +615,11 @@ Type: [String][64]
 
 设置或获取一个字符串，用于表示身份信息点值。
 
-Type: [String][64]
+Type: [String][71]
 
 #### Parameters
 
--   `v` **[String][64]** 
+-   `v` **[String][71]** 
 
 **Meta**
 
@@ -557,7 +630,7 @@ Type: [String][64]
 
 设置或获取一个字符串，用于表示身份信息点值。
 
-Type: [String][64]
+Type: [String][71]
 
 **Meta**
 
@@ -568,7 +641,7 @@ Type: [String][64]
 
 获取已经 AES 加密的身份信息值。
 
-Returns **[String][64]** 
+Returns **[String][71]** 
 
 **Meta**
 
@@ -581,9 +654,9 @@ Returns **[String][64]**
 
 #### Parameters
 
--   `v` **[String][64]** 加密的身份信息值。
+-   `v` **[String][71]** 加密的身份信息值。
 
-Returns **[String][64]** 
+Returns **[String][71]** 
 
 **Meta**
 
@@ -607,10 +680,10 @@ Returns **[String][64]**
 
 #### Parameters
 
--   `s` **[String][64]** 格式化字符串模板。
--   `args` **[Array][69]** 格式化参数数组。
+-   `s` **[String][71]** 格式化字符串模板。
+-   `args` **[Array][78]** 格式化参数数组。
 
-Returns **[String][64]** 
+Returns **[String][71]** 
 
 **Meta**
 
@@ -639,9 +712,9 @@ Returns **any**
 
 #### Parameters
 
--   `str` **[String][64]** 用于校验的字符串。
+-   `str` **[String][71]** 用于校验的字符串。
 
-Returns **[Boolean][66]** 
+Returns **[Boolean][73]** 
 
 **Meta**
 
@@ -654,9 +727,9 @@ Returns **[Boolean][66]**
 
 #### Parameters
 
--   `str` **[String][64]** 需要校验的字符串。
+-   `str` **[String][71]** 需要校验的字符串。
 
-Returns **[Boolean][66]** 
+Returns **[Boolean][73]** 
 
 **Meta**
 
@@ -747,56 +820,74 @@ Returns **[Boolean][66]**
 
 [42]: #parameters-10
 
-[43]: #claimtype
+[43]: #claimidentity
 
-[44]: #claim
+[44]: #addclaim
 
 [45]: #parameters-11
 
-[46]: #name
+[46]: #getclaim
 
 [47]: #parameters-12
 
-[48]: #name-1
+[48]: #name
 
-[49]: #value
+[49]: #isauthenticated
 
-[50]: #parameters-13
+[50]: #claimtype
 
-[51]: #value-1
+[51]: #claim
 
-[52]: #encryptvalue
+[52]: #parameters-13
 
-[53]: #decryptvalue
+[53]: #name-1
 
 [54]: #parameters-14
 
-[55]: #utilities
+[55]: #name-2
 
-[56]: #formatstr
+[56]: #value
 
 [57]: #parameters-15
 
-[58]: #safeget
+[58]: #value-1
 
-[59]: #parameters-16
+[59]: #encryptvalue
 
-[60]: #isnullorempty
+[60]: #decryptvalue
 
-[61]: #parameters-17
+[61]: #parameters-16
 
-[62]: #isnullorwhitespaces
+[62]: #utilities
 
-[63]: #parameters-18
+[63]: #formatstr
 
-[64]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[64]: #parameters-17
 
-[65]: #exception
+[65]: #safeget
 
-[66]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[66]: #parameters-18
 
-[67]: #configuration
+[67]: #isnullorempty
 
-[68]: #vueconfiguration
+[68]: #parameters-19
 
-[69]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[69]: #isnullorwhitespaces
+
+[70]: #parameters-20
+
+[71]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[72]: #exception
+
+[73]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[74]: #configuration
+
+[75]: #vueconfiguration
+
+[76]: #claim
+
+[77]: #claimidentity
+
+[78]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
