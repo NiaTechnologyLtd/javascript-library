@@ -12,6 +12,7 @@ import {
   EnvironmentNameSet,
   DefaultEnvironmentName,
 } from "./environment-context";
+import { ClaimType } from "./security/index";
 
 export {
   Utilities,
@@ -25,4 +26,5 @@ export {
   EnvironmentContext,
   EnvironmentNameSet,
   DefaultEnvironmentName,
+  ClaimType,
 };
