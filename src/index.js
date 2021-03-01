@@ -14,6 +14,7 @@ import {
 } from "./environment-context";
 import {
   CryptographyUtils,
+  HashAlgorithmName,
   ClaimType,
   Claim,
   ClaimIdentity,
@@ -33,6 +34,7 @@ export {
   EnvironmentNameSet,
   DefaultEnvironmentName,
   CryptographyUtils,
+  HashAlgorithmName,
   ClaimType,
   Claim,
   ClaimIdentity,
