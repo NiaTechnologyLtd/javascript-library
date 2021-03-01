@@ -6,6 +6,7 @@ import {
 } from "./principal/index";
 import { CryptographyUtils } from "./cryptography-utils";
 import { HashAlgorithmName } from "./hash-algorithm-name";
+import { BasicCredentials } from "./authentication/index";
 
 export {
   CryptographyUtils,
@@ -14,4 +15,5 @@ export {
   Claim,
   ClaimIdentity,
   ClaimPrincipal,
+  BasicCredentials,
 };
