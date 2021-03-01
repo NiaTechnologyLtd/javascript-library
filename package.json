@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "crypto-js": "^4.0.0",
+    "dayjs": "^1.10.4",
     "store2": "^2.12.0",
     "string-template": "^1.0.0"
   }
