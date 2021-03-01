@@ -1,4 +1,30 @@
 # CHANGES
+## [1.0.0-alpha.9](///compare/v1.0.0-alpha.8...v1.0.0-alpha.9) (2021-03-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* 删除了 nia-object.js 脚本。
+
+### SOURCES REFACTOR
+
+* 删除了不合理的基类 NiaObject。 dd77631
+
+
+### NEW FEATURES
+
+* 添加 claim-principal.js 导出 ( issue [#1](undefined/undefined/undefined/issues/1) )。 2ee6c31
+* 新增 computeHash 方法。 6db0c51
+* 新增哈希算法名称默认值常量枚举 HashAlgorithmName。 7137265
+* 新增基础身份认证凭据信息类型 basic-credentials.js。 0d7c02b, closes #1
+* 新增身份摘要信息类 claim-principal.js ( issue [#2](undefined/undefined/undefined/issues/2) ). dd775e5
+* 引入了日期时间操作的 dayjs 包。 703dc03
+
+
+### DOCUMENTS CHANGED
+
+* 重新生成了接口文档。 748cbda, closes #1
+
 ## [1.0.0-alpha.8](///compare/v1.0.0-alpha.7...v1.0.0-alpha.8) (2021-02-28)
 
 

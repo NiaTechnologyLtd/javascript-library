@@ -23,7 +23,7 @@
     "build:md": "documentation build src/** -f md --project-name '@niajs' --output ./docs/api-development-notes.md",
     "build:html": "documentation build src/** -f html --project-name '@niajs' --output ./docs/api"
   },
-  "version": "1.0.0-alpha.8",
+  "version": "1.0.0-alpha.9",
   "devDependencies": {
     "@babel/cli": "^7.12.17",
     "@babel/core": "^7.12.17",
@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "crypto-js": "^4.0.0",
+    "dayjs": "^1.10.4",
     "store2": "^2.12.0",
     "string-template": "^1.0.0"
   }

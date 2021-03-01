@@ -36,42 +36,52 @@
     -   [message][32]
     -   [innerException][33]
 -   [\_\_niaInternalVariables][34]
--   [NiaObject][35]
-    -   [toJson][36]
-    -   [toString][37]
--   [CryptographyUtils][38]
-    -   [encryptWithAES][39]
-        -   [Parameters][40]
-    -   [decryptWithAES][41]
-        -   [Parameters][42]
--   [ClaimIdentity][43]
-    -   [addClaim][44]
+-   [BasicCredentials][35]
+    -   [Parameters][36]
+    -   [userName][37]
+    -   [password][38]
+    -   [ignoreCasingPassword][39]
+    -   [toJson][40]
+-   [CryptographyUtils][41]
+    -   [encryptWithAES][42]
+        -   [Parameters][43]
+    -   [decryptWithAES][44]
         -   [Parameters][45]
-    -   [getClaim][46]
+    -   [computeHash][46]
         -   [Parameters][47]
-    -   [name][48]
-    -   [isAuthenticated][49]
--   [ClaimType][50]
--   [Claim][51]
-    -   [Parameters][52]
-    -   [name][53]
-        -   [Parameters][54]
-    -   [name][55]
-    -   [value][56]
-        -   [Parameters][57]
-    -   [value][58]
-    -   [encryptValue][59]
-    -   [decryptValue][60]
-        -   [Parameters][61]
--   [Utilities][62]
-    -   [formatStr][63]
+-   [HashAlgorithmName][48]
+-   [ClaimIdentity][49]
+    -   [addClaim][50]
+        -   [Parameters][51]
+    -   [getClaim][52]
+        -   [Parameters][53]
+    -   [name][54]
+    -   [isAuthenticated][55]
+-   [ClaimPrincipal][56]
+    -   [Parameters][57]
+    -   [user][58]
+    -   [isAuthenticated][59]
+-   [ClaimType][60]
+-   [Claim][61]
+    -   [Parameters][62]
+    -   [name][63]
         -   [Parameters][64]
-    -   [safeGet][65]
-        -   [Parameters][66]
-    -   [isNullOrEmpty][67]
-        -   [Parameters][68]
-    -   [isNullOrWhitespaces][69]
-        -   [Parameters][70]
+    -   [name][65]
+    -   [value][66]
+        -   [Parameters][67]
+    -   [value][68]
+    -   [encryptValue][69]
+    -   [decryptValue][70]
+        -   [Parameters][71]
+-   [Utilities][72]
+    -   [formatStr][73]
+        -   [Parameters][74]
+    -   [safeGet][75]
+        -   [Parameters][76]
+    -   [isNullOrEmpty][77]
+        -   [Parameters][78]
+    -   [isNullOrWhitespaces][79]
+        -   [Parameters][80]
 
 ## ArgumentNullException
 
@@ -84,9 +94,9 @@
 
 ### Parameters
 
--   `argName` **[String][71]** 参数名称。 (optional, default `undefined`)
--   `message` **[String][71]** 异常描述信息。 (optional, default `undefined`)
--   `innerException` **[Exception][72]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `argName` **[String][81]** 参数名称。 (optional, default `undefined`)
+-   `message` **[String][81]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][82]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -99,7 +109,7 @@
 
 获取一个字符串，用于表示错误的参数名称。
 
-Type: [String][71]
+Type: [String][81]
 
 **Meta**
 
@@ -117,8 +127,8 @@ Type: [String][71]
 
 ### Parameters
 
--   `key` **[String][71]** 配置标识名称。 (optional, default `undefined`)
--   `innerException` **[Exception][72]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `key` **[String][81]** 配置标识名称。 (optional, default `undefined`)
+-   `innerException` **[Exception][82]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -144,9 +154,9 @@ Type: [String][71]
 
 #### Parameters
 
--   `key` **[String][71]** 配置标识名称。
+-   `key` **[String][81]** 配置标识名称。
 
-Returns **[String][71]** 
+Returns **[String][81]** 
 
 **Meta**
 
@@ -159,9 +169,9 @@ Returns **[String][71]**
 
 #### Parameters
 
--   `key` **[String][71]** 配置标识名称。
+-   `key` **[String][81]** 配置标识名称。
 
-Returns **[Boolean][73]** 
+Returns **[Boolean][83]** 
 
 **Meta**
 
@@ -177,7 +187,7 @@ Returns **[Boolean][73]**
 
 #### Parameters
 
--   `key` **[String][71]** 需要校验的配置标识名称。
+-   `key` **[String][81]** 需要校验的配置标识名称。
 
 **Meta**
 
@@ -188,7 +198,7 @@ Returns **[Boolean][73]**
 
 创建或获取一个配置服务对象实例。
 
-Returns **[Configuration][74]** 
+Returns **[Configuration][84]** 
 
 **Meta**
 
@@ -217,9 +227,9 @@ Returns **[Configuration][74]**
 
 #### Parameters
 
--   `key` **[String][71]** 配置标识名称。
+-   `key` **[String][81]** 配置标识名称。
 
-Returns **[String][71]** 
+Returns **[String][81]** 
 
 **Meta**
 
@@ -232,9 +242,9 @@ Returns **[String][71]**
 
 #### Parameters
 
--   `key` **[String][71]** 配置标识名称。
+-   `key` **[String][81]** 配置标识名称。
 
-Returns **[Boolean][73]** 
+Returns **[Boolean][83]** 
 
 **Meta**
 
@@ -245,7 +255,7 @@ Returns **[Boolean][73]**
 
 创建或获取一个配置服务对象实例。
 
-Returns **[VueConfiguration][75]** 
+Returns **[VueConfiguration][85]** 
 
 **Meta**
 
@@ -267,7 +277,7 @@ Returns **[VueConfiguration][75]**
 
 默认的环境名称。
 
-Type: [String][71]
+Type: [String][81]
 
 **Meta**
 
@@ -291,7 +301,7 @@ Type: [String][71]
 
 获取一个字符串，用于表示当前的环境名称。
 
-Type: [String][71]
+Type: [String][81]
 
 **Meta**
 
@@ -302,7 +312,7 @@ Type: [String][71]
 
 获取一个值，用于表示当前是否为开发环境。
 
-Type: [Boolean][73]
+Type: [Boolean][83]
 
 **Meta**
 
@@ -313,7 +323,7 @@ Type: [Boolean][73]
 
 获取一个值，用于表示当前是否为测试环境。
 
-Type: [Boolean][73]
+Type: [Boolean][83]
 
 **Meta**
 
@@ -324,7 +334,7 @@ Type: [Boolean][73]
 
 获取一个值，用于表示当前是否为生产环境。
 
-Type: [Boolean][73]
+Type: [Boolean][83]
 
 **Meta**
 
@@ -337,9 +347,9 @@ Type: [Boolean][73]
 
 #### Parameters
 
--   `envName` **[String][71]** 指定的环境名称。 (optional, default `DefaultEnvironmentName`)
+-   `envName` **[String][81]** 指定的环境名称。 (optional, default `DefaultEnvironmentName`)
 
-Returns **[Boolean][73]** 
+Returns **[Boolean][83]** 
 
 **Meta**
 
@@ -350,7 +360,7 @@ Returns **[Boolean][73]**
 
 默认的异常信息。
 
-Type: [String][71]
+Type: [String][81]
 
 **Meta**
 
@@ -361,17 +371,12 @@ Type: [String][71]
 
 ## Exception
 
-**Extends NiaObject**
-
--   **See: {NiaObject}
-    **
-
 提供了运行时异常相关的方法。
 
 ### Parameters
 
--   `message` **[String][71]** 异常描述信息。 (optional, default `undefined`)
--   `innerException` **[Exception][72]** 引发此异常的内部异常。 (optional, default `undefined`)
+-   `message` **[String][81]** 异常描述信息。 (optional, default `undefined`)
+-   `innerException` **[Exception][82]** 引发此异常的内部异常。 (optional, default `undefined`)
 
 **Meta**
 
@@ -384,7 +389,7 @@ Type: [String][71]
 
 获取一个字符串，用于表示异常描述信息。
 
-Type: [String][71]
+Type: [String][81]
 
 **Meta**
 
@@ -395,7 +400,7 @@ Type: [String][71]
 
 获取 Exception 类型的对象实例，用于表示引发此异常的内部异常。
 
-Type: [Exception][72]
+Type: [Exception][82]
 
 **Meta**
 
@@ -413,40 +418,64 @@ Type: [Exception][72]
 
 -   **author**: Wang Yucai
 
-## NiaObject
+## BasicCredentials
 
-提供了脚本库对象相关的基本方法。
+提供了基于用户名、密码的身份认证凭据信息。
+
+### Parameters
+
+-   `userName` **[String][81]** 用户名。
+-   `password` **[String][81]** 登录密码。
 
 **Meta**
 
--   **version**: 2021.2.21.048
+-   **version**: 2021.3.1.1220
 -   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
 
 -   **author**: Wang Yucai
 
-### toJson
+### userName
 
-将此对象实例转换成 Json 字符串。
+获取一个字符串，用于表示用户名。
 
-Returns **[String][71]** 
+Type: [String][81]
 
 **Meta**
 
--   **version**: 2021.2.21.049
+-   **version**: 2021.3.1.1232
 -   **author**: Wang Yucai
 
-### toString
+### password
 
--   **See: {toJson}
-    **
+获取一个字符串，用于表示登录口令。
 
-将此对象实例转换成等效的字符串。
-
-Returns **[String][71]** 
+Type: [String][81]
 
 **Meta**
 
--   **version**: 2021.2.21.051
+-   **version**: 2021.3.1.1234
+-   **author**: Wang Yucai
+
+### ignoreCasingPassword
+
+获取一个字符串，用于表示忽略了大小写的登录口令。
+
+Type: [String][81]
+
+**Meta**
+
+-   **version**: 2021.3.1.1235
+-   **author**: Wang Yucai
+
+### toJson
+
+将此对象实例转换成 JSON。
+
+Returns **[Object][86]** 
+
+**Meta**
+
+-   **version**: 2021.3.1.1305
 -   **author**: Wang Yucai
 
 ## CryptographyUtils
@@ -466,10 +495,10 @@ Returns **[String][71]**
 
 #### Parameters
 
--   `s` **[String][71]** 需要加密的字符串。
--   `key` **[String][71]** 用于加密的密钥。 (optional, default `DEFAULT_KEY_OF_AES`)
+-   `s` **[String][81]** 需要加密的字符串。
+-   `key` **[String][81]** 用于加密的密钥。 (optional, default `DEFAULT_KEY_OF_AES`)
 
-Returns **[String][71]** 
+Returns **[String][81]** 
 
 **Meta**
 
@@ -482,14 +511,41 @@ Returns **[String][71]**
 
 #### Parameters
 
--   `s` **[String][71]** 需要解密的字符串。
--   `key` **[String][71]** 用于解密的密钥。 (optional, default `DEFAULT_KEY_OF_AES`)
+-   `s` **[String][81]** 需要解密的字符串。
+-   `key` **[String][81]** 用于解密的密钥。 (optional, default `DEFAULT_KEY_OF_AES`)
 
-Returns **[String][71]** 
+Returns **[String][81]** 
 
 **Meta**
 
 -   **version**: 2021.3.1.018
+-   **author**: Wang Yucai
+
+### computeHash
+
+使用哈希算法对字符串进行加密。
+
+#### Parameters
+
+-   `s` **[String][81]** 需要加密的字符串。
+-   `algName` **[String][81]** 哈希算法名称。 (optional, default `HashAlgorithmName.md5`)
+
+Returns **[String][81]** 
+
+**Meta**
+
+-   **version**: 2021.3.1.1212
+-   **author**: Wang Yucai
+
+## HashAlgorithmName
+
+定义了哈希算法名称常量枚举。
+
+**Meta**
+
+-   **version**: 2021.3.1.1202
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
 -   **author**: Wang Yucai
 
 ## ClaimIdentity
@@ -509,9 +565,9 @@ Returns **[String][71]**
 
 #### Parameters
 
--   `claim` **[Claim][76]** 身份信息点。
+-   `claim` **[Claim][87]** 身份信息点。
 
-Returns **[ClaimIdentity][77]** 
+Returns **[ClaimIdentity][88]** 
 
 **Meta**
 
@@ -527,9 +583,9 @@ Returns **[ClaimIdentity][77]**
 
 #### Parameters
 
--   `name` **[String][71]** 描述名称。 (optional, default `ClaimType.userName`)
+-   `name` **[String][81]** 描述名称。 (optional, default `ClaimType.userName`)
 
-Returns **[Claim][76]** 
+Returns **[Claim][87]** 
 
 **Meta**
 
@@ -540,7 +596,7 @@ Returns **[Claim][76]**
 
 获取一个字符串，用于表示当前的用户姓名。
 
-Type: [String][71]
+Type: [String][81]
 
 **Meta**
 
@@ -551,11 +607,48 @@ Type: [String][71]
 
 获取一个值，用于表示是否已经经过身份认证。
 
-Type: [Boolean][73]
+Type: [Boolean][83]
 
 **Meta**
 
 -   **version**: 2021.3.1.118
+-   **author**: Wang Yucai
+
+## ClaimPrincipal
+
+提供了用户身份摘要信息。
+
+### Parameters
+
+-   `identity` **[ClaimIdentity][88]** 用户身份信息。 (optional, default `undefined`)
+
+**Meta**
+
+-   **version**: 2021.3.1.1109
+-   **copyright**: Copyright © 2006 - 2021 Wang Yucai. All rights reserved.
+
+-   **author**: Wang Yucai
+
+### user
+
+获取 ClaimIdentity 类型的对象实例，用于表示当前的用户。
+
+Type: [ClaimIdentity][88]
+
+**Meta**
+
+-   **version**: 2021.3.1.1113
+-   **author**: Wang Yucai
+
+### isAuthenticated
+
+获取一个值，用于表示是否已经身份认证。
+
+Type: [Boolean][83]
+
+**Meta**
+
+-   **version**: 2021.3.1.1115
 -   **author**: Wang Yucai
 
 ## ClaimType
@@ -575,8 +668,8 @@ Type: [Boolean][73]
 
 ### Parameters
 
--   `name` **[String][71]** 信息点描述名称。 (optional, default `ClaimType.userName`)
--   `value` **[String][71]** 信息点值。 (optional, default `"your user name."`)
+-   `name` **[String][81]** 信息点描述名称。 (optional, default `ClaimType.userName`)
+-   `value` **[String][81]** 信息点值。 (optional, default `"your user name."`)
 
 **Meta**
 
@@ -589,11 +682,11 @@ Type: [Boolean][73]
 
 设置或获取一个字符串，用于表示身份信息点描述名称。
 
-Type: [String][71]
+Type: [String][81]
 
 #### Parameters
 
--   `v` **[String][71]** 
+-   `v` **[String][81]** 
 
 **Meta**
 
@@ -604,7 +697,7 @@ Type: [String][71]
 
 设置或获取一个字符串，用于表示身份信息点描述名称。
 
-Type: [String][71]
+Type: [String][81]
 
 **Meta**
 
@@ -615,11 +708,11 @@ Type: [String][71]
 
 设置或获取一个字符串，用于表示身份信息点值。
 
-Type: [String][71]
+Type: [String][81]
 
 #### Parameters
 
--   `v` **[String][71]** 
+-   `v` **[String][81]** 
 
 **Meta**
 
@@ -630,7 +723,7 @@ Type: [String][71]
 
 设置或获取一个字符串，用于表示身份信息点值。
 
-Type: [String][71]
+Type: [String][81]
 
 **Meta**
 
@@ -641,7 +734,7 @@ Type: [String][71]
 
 获取已经 AES 加密的身份信息值。
 
-Returns **[String][71]** 
+Returns **[String][81]** 
 
 **Meta**
 
@@ -654,9 +747,9 @@ Returns **[String][71]**
 
 #### Parameters
 
--   `v` **[String][71]** 加密的身份信息值。
+-   `v` **[String][81]** 加密的身份信息值。
 
-Returns **[String][71]** 
+Returns **[String][81]** 
 
 **Meta**
 
@@ -680,10 +773,10 @@ Returns **[String][71]**
 
 #### Parameters
 
--   `s` **[String][71]** 格式化字符串模板。
--   `args` **[Array][78]** 格式化参数数组。
+-   `s` **[String][81]** 格式化字符串模板。
+-   `args` **[Array][89]** 格式化参数数组。
 
-Returns **[String][71]** 
+Returns **[String][81]** 
 
 **Meta**
 
@@ -712,9 +805,9 @@ Returns **any**
 
 #### Parameters
 
--   `str` **[String][71]** 用于校验的字符串。
+-   `str` **[String][81]** 用于校验的字符串。
 
-Returns **[Boolean][73]** 
+Returns **[Boolean][83]** 
 
 **Meta**
 
@@ -727,9 +820,9 @@ Returns **[Boolean][73]**
 
 #### Parameters
 
--   `str` **[String][71]** 需要校验的字符串。
+-   `str` **[String][81]** 需要校验的字符串。
 
-Returns **[Boolean][73]** 
+Returns **[Boolean][83]** 
 
 **Meta**
 
@@ -804,90 +897,112 @@ Returns **[Boolean][73]**
 
 [34]: #__niainternalvariables
 
-[35]: #niaobject
+[35]: #basiccredentials
 
-[36]: #tojson
+[36]: #parameters-9
 
-[37]: #tostring
+[37]: #username
 
-[38]: #cryptographyutils
+[38]: #password
 
-[39]: #encryptwithaes
+[39]: #ignorecasingpassword
 
-[40]: #parameters-9
+[40]: #tojson
 
-[41]: #decryptwithaes
+[41]: #cryptographyutils
 
-[42]: #parameters-10
+[42]: #encryptwithaes
 
-[43]: #claimidentity
+[43]: #parameters-10
 
-[44]: #addclaim
+[44]: #decryptwithaes
 
 [45]: #parameters-11
 
-[46]: #getclaim
+[46]: #computehash
 
 [47]: #parameters-12
 
-[48]: #name
+[48]: #hashalgorithmname
 
-[49]: #isauthenticated
+[49]: #claimidentity
 
-[50]: #claimtype
+[50]: #addclaim
 
-[51]: #claim
+[51]: #parameters-13
 
-[52]: #parameters-13
+[52]: #getclaim
 
-[53]: #name-1
+[53]: #parameters-14
 
-[54]: #parameters-14
+[54]: #name
 
-[55]: #name-2
+[55]: #isauthenticated
 
-[56]: #value
+[56]: #claimprincipal
 
 [57]: #parameters-15
 
-[58]: #value-1
+[58]: #user
 
-[59]: #encryptvalue
+[59]: #isauthenticated-1
 
-[60]: #decryptvalue
+[60]: #claimtype
 
-[61]: #parameters-16
+[61]: #claim
 
-[62]: #utilities
+[62]: #parameters-16
 
-[63]: #formatstr
+[63]: #name-1
 
 [64]: #parameters-17
 
-[65]: #safeget
+[65]: #name-2
 
-[66]: #parameters-18
+[66]: #value
 
-[67]: #isnullorempty
+[67]: #parameters-18
 
-[68]: #parameters-19
+[68]: #value-1
 
-[69]: #isnullorwhitespaces
+[69]: #encryptvalue
 
-[70]: #parameters-20
+[70]: #decryptvalue
 
-[71]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[71]: #parameters-19
 
-[72]: #exception
+[72]: #utilities
 
-[73]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[73]: #formatstr
 
-[74]: #configuration
+[74]: #parameters-20
 
-[75]: #vueconfiguration
+[75]: #safeget
 
-[76]: #claim
+[76]: #parameters-21
 
-[77]: #claimidentity
+[77]: #isnullorempty
 
-[78]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[78]: #parameters-22
+
+[79]: #isnullorwhitespaces
+
+[80]: #parameters-23
+
+[81]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[82]: #exception
+
+[83]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[84]: #configuration
+
+[85]: #vueconfiguration
+
+[86]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[87]: #claim
+
+[88]: #claimidentity
+
+[89]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array

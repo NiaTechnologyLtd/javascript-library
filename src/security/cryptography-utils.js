@@ -1,6 +1,7 @@
 import $cryptojs from "crypto-js";
 import { __niaInternalVariables } from "../internal";
 import { Utilities as _utils } from "../utilities";
+import { HashAlgorithmName } from "./hash-algorithm-name";
 
 const DEFAULT_KEY_OF_AES = __niaInternalVariables.security.aes_key;
 
@@ -49,5 +50,26 @@ export class CryptographyUtils {
       return s;
     }
     return $cryptojs.AES.decrypt(s, key).toString($cryptojs.enc.Utf8);
+  }
+
+  /**
+   * @description 使用哈希算法对字符串进行加密。
+   * @param {String} s 需要加密的字符串。
+   * @param {String} algName 哈希算法名称。
+   * @returns {String}
+   * @static
+   * @method
+   * @public
+   * @author Wang Yucai
+   * @version 2021.3.1.1212
+   */
+  static computeHash(s, algName = HashAlgorithmName.md5) {
+    if (_utils.isNullOrEmpty(s)) {
+      console.warn("警告：未提供有效的加密字符串变量 “s”。");
+      return s;
+    }
+    let alg = $cryptojs[(algName ?? HashAlgorithmName.md5).toLowerCase()](
+      s
+    ).toString();
   }
 }
