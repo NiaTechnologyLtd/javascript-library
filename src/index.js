@@ -17,6 +17,7 @@ import {
   ClaimType,
   Claim,
   ClaimIdentity,
+  ClaimPrincipal,
 } from "./security/index";
 
 export {
@@ -35,4 +36,5 @@ export {
   ClaimType,
   Claim,
   ClaimIdentity,
+  ClaimPrincipal,
 };
