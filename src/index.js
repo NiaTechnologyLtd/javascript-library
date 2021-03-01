@@ -1,5 +1,4 @@
 import { Utilities } from "./utilities";
-import { NiaObject } from "./nia-object";
 import { DefaultExceptionMessage, Exception } from "./exception";
 import { ArgumentNullException } from "./argument-null-exception";
 import {
@@ -19,11 +18,11 @@ import {
   Claim,
   ClaimIdentity,
   ClaimPrincipal,
+  BasicCredentials,
 } from "./security/index";
 
 export {
   Utilities,
-  NiaObject,
   DefaultExceptionMessage,
   Exception,
   ArgumentNullException,
@@ -39,4 +38,5 @@ export {
   Claim,
   ClaimIdentity,
   ClaimPrincipal,
+  BasicCredentials,
 };
