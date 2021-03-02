@@ -1,4 +1,4 @@
-# [Nia Library][git-repo]
+# Nia JavaScript Library
 
 *Hi，各位。首先自我介绍一下。我是一个 .NET 程序员。工作中，由于人手原因，也经常要做一些前端开发的工作。因此形成了 **Nia Library** 开发库。这是我按照自己的习惯开发而成的，常用前端功能的包装库。希望你们也喜欢。*
 
@@ -17,8 +17,8 @@
 
 - **文档目录**
 
-  - [API 开发说明文档](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/blob/dev-1.x/docs/api-development-notes.md)
-  - [代码变更说明](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/blob/dev-1.x/CHANGELOG.md)
+  - [API 开发说明文档](https://nia-technologyltd.github.io/javascript-library/docs/api-development-notes.md) 或者查看 **[HTML](https://nia-technologyltd.github.io/javascript-library/docs/api/index.html) 说明文档**。
+  - [代码变更说明](https://nia-technologyltd.github.io/javascript-library/CHANGELOG.md)
 
 - **开源协议**
 
