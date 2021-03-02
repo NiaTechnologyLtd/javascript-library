@@ -21,6 +21,8 @@ import {
   BasicCredentials,
 } from "./security/index";
 
+import { WebUtilities } from "./web/index";
+
 export {
   Utilities,
   DefaultExceptionMessage,
@@ -39,4 +41,5 @@ export {
   ClaimIdentity,
   ClaimPrincipal,
   BasicCredentials,
+  WebUtilities,
 };
