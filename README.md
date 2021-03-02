@@ -1,4 +1,4 @@
-# [Nia Library][git-repo]
+# Nia JavaScript Library
 
 *Hi，各位。首先自我介绍一下。我是一个 .NET 程序员。工作中，由于人手原因，也经常要做一些前端开发的工作。因此形成了 **Nia Library** 开发库。这是我按照自己的习惯开发而成的，常用前端功能的包装库。希望你们也喜欢。*
 
