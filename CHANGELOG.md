@@ -1,4 +1,22 @@
 # CHANGES
+## [1.0.0-preview.1](///compare/v1.0.0-alpha.9...v1.0.0-preview.1) (2021-03-02)
+
+
+### DOCUMENTS CHANGED
+
+* 修改了项目自述文件的主题。 8e99dc4
+
+
+### TOOLS & OTHERS
+
+* 开始启用 Github Pages 作为文档载体。 213dea9
+* 修改了 standard-version 配置。 086fa4c
+
+
+### NEW FEATURES
+
+* 新增 web-utilities 工具库。 2847bae
+
 ## [1.0.0-alpha.9](///compare/v1.0.0-alpha.8...v1.0.0-alpha.9) (2021-03-01)
 
 
