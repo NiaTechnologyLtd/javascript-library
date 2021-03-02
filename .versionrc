@@ -12,5 +12,6 @@
     {"type":"style", "section":"STYLES"}
   ],
   "preMajor": true,
-  "header": "# CHANGES"
+  "header": "# CHANGES",
+  "issueUrlFormat": "https://gitlab.com/NiaTechnologyLtd/javascript-library/-/issues/{{id}}"
 }
