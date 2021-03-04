@@ -21,7 +21,7 @@ export class ExceptionHelper {
      * @static
      * @public
      */
-    public static argumentNotSupport(argValue: any, argName?: String) {
+    public static argumentNotSupport(argValue: any, argName?: string) {
         if (!argValue) {
             argName = argName ?? "argName"
 
