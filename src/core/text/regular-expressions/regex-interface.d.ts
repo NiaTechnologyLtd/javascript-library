@@ -1,3 +1,3 @@
 export interface IRegex {
-    isMatch(input: String, pattern: RegExp | String): Boolean;
+    isMatch(input: string, pattern: RegExp | string): Boolean;
 }
