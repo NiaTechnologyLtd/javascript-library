@@ -7,7 +7,7 @@
   "description": "Development Library for JavaScript & TypeScript",
   "homepage": "https://gitlab.com/NiaTechnologyLtd/javascript-library",
   "license": "MIT",
-  "main": "src/index.ts",
+  "main": "src/index.js",
   "readme": "./README.md",
   "scripts": {
     "release:alpha-dryrun": "standard-version -p alpha -i CHANGELOG.md --dry-run",
@@ -19,9 +19,9 @@
     "release:dryrun": "standard-version -i CHANGELOG.md --dry-run",
     "release": "standard-version -i CHANGELOG.md",
     "npm:restore": "cnpm install",
-    "build:babel": "babel src/ --out-dir dist/",
+    "build:babel": "babel ./src/ --out-dir ./dist/",
     "build:tsc": "tsc -b ./src/tsconfig.json",
-    "docs": "typedoc ./src/index.ts --out ./docs/api/ --tsconfig ./src/tsconfig.json"
+    "docs": "typedoc --plugin none ./src/index.ts --out ./docs/api/ --tsconfig ./src/tsconfig.json"
   },
   "version": "2.0.0-alpha.0",
   "devDependencies": {
@@ -31,6 +31,7 @@
     "@babel/preset-typescript": "^7.13.0",
     "standard-version": "^9.1.1",
     "typedoc": "^0.20.28",
+    "typedoc-plugin-markdown": "^3.6.0",
     "typescript": "^4.2.2"
   }
 }

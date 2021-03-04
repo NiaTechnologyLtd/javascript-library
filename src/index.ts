@@ -1,5 +1,3 @@
-import { Guard } from "./utilities/guard";
+import { Guard } from "./core/guard";
 
-export {
-    Guard
-}
+export { Guard }
