@@ -1,3 +1,5 @@
 import { Guard } from "./core/guard";
 
-export { Guard }
+import { IRegex } from "./core/text/regular-expressions/regex-interface";
+
+export { Guard, IRegex }
