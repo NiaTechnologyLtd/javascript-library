@@ -34,13 +34,13 @@ export class Guard {
     /**
      * 用于校验字符串是否等于 null、undefined、空或者空白符。
      * @param {String} s 需要校验的字符串。
-     * @param {String} includeWhiteSpaces 是否需要验证空白符。
+     * @param {Boolean} includeWhiteSpaces 是否需要验证空白符。
      * @returns {Boolean}
      * @method
      * @static
      * @public
      */
-    static isNullOrEmpty(s: string, includeWhiteSpaces = true): boolean {
+    static isNullOrEmpty(s?: string, includeWhiteSpaces: boolean = true): boolean {
         if (!s) return true;
         return Regex.createInstance().isMatch(s, includeWhiteSpaces ? Guard._includeWhiteSpacesPattern : Guard._excludeWhiteSpacesPattern);
     }
