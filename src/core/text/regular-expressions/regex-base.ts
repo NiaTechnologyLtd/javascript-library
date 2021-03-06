@@ -18,7 +18,7 @@ import { IRegex } from "./regex-interface";
  * @author Wang Yucai
  */
 export abstract class RegexBase implements IRegex {
-    isMatch(input: string, pattern: string | RegExp): Boolean {
+    isMatch(input: string, pattern: string | RegExp): boolean {
         throw new Error("Method not implemented.");
 
         let expr = this.getPattern(pattern);

@@ -21,5 +21,5 @@ export interface IRegex {
      * @returns {Boolean}
      * @method
      */
-    isMatch(input: string, pattern: RegExp | string): Boolean;
+    isMatch(input: string, pattern: RegExp | string): boolean;
 }

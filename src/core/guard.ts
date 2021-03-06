@@ -5,6 +5,8 @@
  * ************************************************************************************************
  */
 
+import { Regex } from "./text/regular-expressions/regex";
+
 /**
  * 提供了值验证相关的辅助方法。
  * 
@@ -13,6 +15,9 @@
  * @author Wang Yucai
  */
 export class Guard {
+    private static readonly _includeWhiteSpacesPattern: RegExp = /^\s*$/img;
+    private static readonly _excludeWhiteSpacesPattern: RegExp = /^$/img;
+
     /**
      * 当 value 等于 null 或者 undefined 时，将返回 safeValue；否则返回 value。
      * 
@@ -24,5 +29,19 @@ export class Guard {
      */
     static safeGet(value: any, safeValue?: any): any {
         return value ?? safeValue;
+    }
+
+    /**
+     * 用于校验字符串是否等于 null、undefined、空或者空白符。
+     * @param {String} s 需要校验的字符串。
+     * @param {String} includeWhiteSpaces 是否需要验证空白符。
+     * @returns {Boolean}
+     * @method
+     * @static
+     * @public
+     */
+    static isNullOrEmpty(s: string, includeWhiteSpaces = true): boolean {
+        if (!s) return true;
+        return Regex.createInstance().isMatch(s, includeWhiteSpaces ? Guard._includeWhiteSpacesPattern : Guard._excludeWhiteSpacesPattern);
     }
 }
