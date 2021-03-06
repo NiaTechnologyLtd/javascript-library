@@ -14,6 +14,13 @@ var Configuration = (function () {
             return true;
         return false;
     };
+    Configuration.createInstance = function () {
+        if (!Configuration._instance) {
+            Configuration._instance = new Configuration();
+        }
+        return Configuration._instance;
+    };
+    Configuration._instance = undefined;
     return Configuration;
 }());
 export { Configuration };

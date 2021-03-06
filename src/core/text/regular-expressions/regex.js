@@ -25,6 +25,7 @@ var Regex = (function (_super) {
         }
         return Regex._instance;
     };
+    Regex._instance = undefined;
     return Regex;
 }(RegexBase));
 export { Regex };
