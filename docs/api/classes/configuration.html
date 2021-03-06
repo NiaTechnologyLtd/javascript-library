@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IRegex | @nia-community/lib</title>
+	<title>Configuration | @nia-community/lib</title>
 	<meta name="description" content="Documentation for @nia-community/lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@nia-community/lib</a>
 				</li>
 				<li>
-					<a href="iregex.html">IRegex</a>
+					<a href="configuration.html">Configuration</a>
 				</li>
 			</ul>
-			<h1>Interface IRegex</h1>
+			<h1>Class Configuration</h1>
 		</div>
 	</div>
 </header>
@@ -68,11 +68,12 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>定义了正则表达式匹配相关的接口。</p>
+						<p>提供了访问配置信息相关的方法。</p>
 					</div>
 					<dl class="tsd-comment-tags">
-						<dt>interface</dt>
-						<dd></dd>
+						<dt>see</dt>
+						<dd><p>{IConfiguration}</p>
+						</dd>
 						<dt>author</dt>
 						<dd><p>Wang Yucai</p>
 						</dd>
@@ -83,15 +84,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IRegex</span>
+						<span class="target">Configuration</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
-				<h3>Implemented by</h3>
+				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/regex.html" class="tsd-signature-type" data-tsd-kind="Class">Regex</a></li>
-					<li><a href="../classes/regexbase.html" class="tsd-signature-type" data-tsd-kind="Class">RegexBase</a></li>
+					<li><a href="../interfaces/iconfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">IConfiguration</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -99,54 +99,95 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="configuration.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iregex.html#ismatch" class="tsd-kind-icon">is<wbr>Match</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="configuration.html#exist" class="tsd-kind-icon">exist</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="configuration.html#get" class="tsd-kind-icon">get</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="ismatch" class="tsd-anchor"></a>
-					<h3>is<wbr>Match</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Match<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, pattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Configuration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="configuration.html" class="tsd-signature-type" data-tsd-kind="Class">Configuration</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="configuration.html" class="tsd-signature-type" data-tsd-kind="Class">Configuration</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="exist" class="tsd-anchor"></a>
+					<h3>exist</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">exist<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/iconfiguration.html">IConfiguration</a>.<a href="../interfaces/iconfiguration.html#exist">exist</a></p>
 								<ul>
-									<li>Defined in core/text/regular-expressions/regex-interface.ts:24</li>
+									<li>Defined in core/configuration/configuration.ts:25</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>用于校验字符串 input 是否与模式 pattern 匹配。如果匹配则返回 true；否则返回 false。</p>
+									<p>用于校验指定名称的配置是否存在。</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>method</dt>
-									<dd></dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>input: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>需要验证的字符串。</p>
-									</div>
-								</li>
-								<li>
-									<h5>pattern: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>正则表达式或者正则表达式字符串。</p>
-									</div>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/iconfiguration.html">IConfiguration</a>.<a href="../interfaces/iconfiguration.html#get">get</a></p>
+								<ul>
+									<li>Defined in core/configuration/configuration.ts:19</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取指定名称的配置。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -165,39 +206,45 @@
 					<li class=" tsd-kind-enum">
 						<a href="../enums/environmentnames.html" class="tsd-kind-icon">Environment<wbr>Names</a>
 					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/configuration.html" class="tsd-kind-icon">Configuration</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/exceptionhelper.html" class="tsd-kind-icon">Exception<wbr>Helper</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/guard.html" class="tsd-kind-icon">Guard</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/regex.html" class="tsd-kind-icon">Regex</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/regexbase.html" class="tsd-kind-icon">Regex<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/stringbuilder.html" class="tsd-kind-icon">String<wbr>Builder</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="iconfiguration.html" class="tsd-kind-icon">IConfiguration</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="iregex.html" class="tsd-kind-icon">IRegex</a>
+					<li class="current tsd-kind-class">
+						<a href="configuration.html" class="tsd-kind-icon">Configuration</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="iregex.html#ismatch" class="tsd-kind-icon">is<wbr>Match</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="configuration.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="configuration.html#exist" class="tsd-kind-icon">exist</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="configuration.html#get" class="tsd-kind-icon">get</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="exceptionhelper.html" class="tsd-kind-icon">Exception<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="guard.html" class="tsd-kind-icon">Guard</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="regex.html" class="tsd-kind-icon">Regex</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="regexbase.html" class="tsd-kind-icon">Regex<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="stringbuilder.html" class="tsd-kind-icon">String<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iconfiguration.html" class="tsd-kind-icon">IConfiguration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iregex.html" class="tsd-kind-icon">IRegex</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

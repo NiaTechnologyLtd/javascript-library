@@ -3,6 +3,7 @@ import { ExceptionHelper } from "./core/exception-helper";
 import { EnvironmentNames } from "./core/environment-names";
 
 import { IConfiguration } from "./core/configuration/configuration-interface";
+import { Configuration } from "./core/configuration/configuration";
 
 import { StringBuilder } from "./core/text/string-builder";
 
@@ -15,6 +16,7 @@ export {
   ExceptionHelper,
   EnvironmentNames,
   IConfiguration,
+  Configuration,
   StringBuilder,
   IRegex,
   RegexBase,
