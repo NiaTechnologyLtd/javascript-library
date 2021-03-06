@@ -2,7 +2,7 @@
 
 # Development Library for JavaScript & TypeScript ！
 
-*这是一个 **.NET** 程序员在日常前端开发工作中基类的一点 JavaScript 代码！*
+*这是一个 **.NET** 程序员在日常前端开发工作中积累的一点 JavaScript 代码！*
 
 
 
