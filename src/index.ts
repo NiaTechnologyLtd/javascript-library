@@ -1,6 +1,8 @@
 import { Guard } from "./core/guard";
 import { ExceptionHelper } from "./core/exception-helper";
 import { EnvironmentNames } from "./core/environment-names";
+import { Environment } from "./core/environment";
+import { AppContext } from "./core/app-context";
 
 import { IConfiguration } from "./core/configuration/configuration-interface";
 import { Configuration } from "./core/configuration/configuration";
@@ -15,6 +17,8 @@ export {
   Guard,
   ExceptionHelper,
   EnvironmentNames,
+  Environment,
+  AppContext,
   IConfiguration,
   Configuration,
   StringBuilder,
