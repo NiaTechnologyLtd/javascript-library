@@ -16,6 +16,8 @@ import { IConfiguration } from "./configuration-interface";
  * @author Wang Yucai
  */
 export class Configuration implements IConfiguration {
+  private static _instance: IConfiguration | undefined = undefined;
+
   get(name: string): string | undefined {
     if (this.exist(name)) {
       return process.env[name];
@@ -26,5 +28,19 @@ export class Configuration implements IConfiguration {
     ExceptionHelper.argumentNotSupport(name, "name");
     if (process.env[name]) return true;
     return false;
+  }
+
+  /**
+   * 创建或者获取配置实例。
+   * @static
+   * @method
+   * @returns {IConfiguration}
+   * @public
+   */
+  public static createInstance(): IConfiguration {
+    if (!Configuration._instance) {
+      Configuration._instance = new Configuration();
+    }
+    return Configuration._instance;
   }
 }
