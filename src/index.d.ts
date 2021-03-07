@@ -9,4 +9,5 @@ import { StringBuilder } from "./core/text/string-builder";
 import { IRegex } from "./core/text/regular-expressions/regex-interface";
 import { RegexBase } from "./core/text/regular-expressions/regex-base";
 import { Regex } from "./core/text/regular-expressions/regex";
-export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, };
+import { WebUtilities } from "./core/web/web-utilities";
+export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, WebUtilities, };
