@@ -1,4 +1,26 @@
 # 代码变更说明
+## [2.0.0-alpha.2](///compare/v2.0.0-alpha.1...v2.0.0-alpha.2) (2021-03-07)
+
+
+### 工具
+
+* 修改了 tsc 构建目标为 ES2015。 c72cb7e
+
+
+### 代码重构
+
+* 删除了不合理的 query-info.ts 类型。 f9b00ec
+
+
+### 新功能
+
+* 新增 npm 包 query-string 依赖。 85a45da
+* 新增 URI 查询字符串参数信息类 uri-queryinfo.ts( issue [#3](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/issues/3) )。 6505295
+* 新增 URL 查询字符串类 query-info.ts ( issue [#3](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/issues/3) )。 7972675
+* 新增 Web 工具类 web-utilities.ts ( issue [#3](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/issues/3) )。 e5dac00
+* 新增键值对接口 IKeyValuePair。 a1f2ec9
+* 新增键值对类型 kvp.ts ( issue [#3](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/issues/3) )。 4cfe8e4
+
 ## 2.0.0-alpha.1 (2021-03-06)
 
 
