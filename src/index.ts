@@ -4,6 +4,7 @@ import { EnvironmentNames } from "./core/environment-names";
 import { Environment } from "./core/environment";
 import { AppContext } from "./core/app-context";
 import { IKeyValuePair } from "./core/kvp-interface";
+import { KeyValuePair } from "./core/kvp";
 
 import { IConfiguration } from "./core/configuration/configuration-interface";
 import { Configuration } from "./core/configuration/configuration";
@@ -23,6 +24,7 @@ export {
   Environment,
   AppContext,
   IKeyValuePair,
+  KeyValuePair,
   IConfiguration,
   Configuration,
   StringBuilder,
