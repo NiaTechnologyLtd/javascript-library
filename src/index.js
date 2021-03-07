@@ -8,4 +8,5 @@ import { StringBuilder } from "./core/text/string-builder";
 import { RegexBase } from "./core/text/regular-expressions/regex-base";
 import { Regex } from "./core/text/regular-expressions/regex";
 import { WebUtilities } from "./core/web/web-utilities";
-export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, Configuration, StringBuilder, RegexBase, Regex, WebUtilities, };
+import { QueryInfo } from "./core/web/query-info";
+export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, Configuration, StringBuilder, RegexBase, Regex, WebUtilities, QueryInfo, };

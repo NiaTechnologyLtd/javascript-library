@@ -14,6 +14,7 @@ import { RegexBase } from "./core/text/regular-expressions/regex-base";
 import { Regex } from "./core/text/regular-expressions/regex";
 
 import { WebUtilities } from "./core/web/web-utilities";
+import { QueryInfo } from "./core/web/query-info";
 
 export {
   Guard,
@@ -28,4 +29,5 @@ export {
   RegexBase,
   Regex,
   WebUtilities,
+  QueryInfo,
 };
