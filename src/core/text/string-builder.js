@@ -1,19 +1,17 @@
-var StringBuilder = (function () {
-    function StringBuilder(s) {
+export class StringBuilder {
+    constructor(s) {
         this._buffer = [];
         if (s) {
             this._buffer.push(s);
         }
     }
-    StringBuilder.prototype.append = function (s) {
+    append(s) {
         if (s) {
             this._buffer.push(s);
         }
         return this;
-    };
-    StringBuilder.prototype.appendLine = function (s) {
+    }
+    appendLine(s) {
         return this.append(s).append("\r\n");
-    };
-    return StringBuilder;
-}());
-export { StringBuilder };
+    }
+}

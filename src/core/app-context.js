@@ -1,6 +1,6 @@
 import { Environment } from "./environment";
-var _applicationEnv = new Environment();
-export var AppContext = {
+const _applicationEnv = new Environment();
+export const AppContext = {
     current: {
         env: _applicationEnv,
     },

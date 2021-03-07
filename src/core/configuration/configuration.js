@@ -1,26 +1,22 @@
 import { ExceptionHelper } from "../exception-helper";
-var Configuration = (function () {
-    function Configuration() {
-    }
-    Configuration.prototype.get = function (name) {
+export class Configuration {
+    get(name) {
         if (this.exist(name)) {
             return process.env[name];
         }
         return undefined;
-    };
-    Configuration.prototype.exist = function (name) {
+    }
+    exist(name) {
         ExceptionHelper.argumentNotSupport(name, "name");
         if (process.env[name])
             return true;
         return false;
-    };
-    Configuration.createInstance = function () {
+    }
+    static createInstance() {
         if (!Configuration._instance) {
             Configuration._instance = new Configuration();
         }
         return Configuration._instance;
-    };
-    Configuration._instance = undefined;
-    return Configuration;
-}());
-export { Configuration };
+    }
+}
+Configuration._instance = undefined;
