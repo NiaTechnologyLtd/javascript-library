@@ -3,6 +3,7 @@ import { ExceptionHelper } from "./core/exception-helper";
 import { EnvironmentNames } from "./core/environment-names";
 import { Environment } from "./core/environment";
 import { AppContext } from "./core/app-context";
+import { IKeyValuePair } from "./core/kvp-interface";
 
 import { IConfiguration } from "./core/configuration/configuration-interface";
 import { Configuration } from "./core/configuration/configuration";
@@ -14,7 +15,6 @@ import { RegexBase } from "./core/text/regular-expressions/regex-base";
 import { Regex } from "./core/text/regular-expressions/regex";
 
 import { WebUtilities } from "./core/web/web-utilities";
-import { QueryInfo } from "./core/web/query-info";
 
 export {
   Guard,
@@ -22,6 +22,7 @@ export {
   EnvironmentNames,
   Environment,
   AppContext,
+  IKeyValuePair,
   IConfiguration,
   Configuration,
   StringBuilder,
@@ -29,5 +30,4 @@ export {
   RegexBase,
   Regex,
   WebUtilities,
-  QueryInfo,
 };

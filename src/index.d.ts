@@ -10,5 +10,4 @@ import { IRegex } from "./core/text/regular-expressions/regex-interface";
 import { RegexBase } from "./core/text/regular-expressions/regex-base";
 import { Regex } from "./core/text/regular-expressions/regex";
 import { WebUtilities } from "./core/web/web-utilities";
-import { QueryInfo } from "./core/web/query-info";
-export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, WebUtilities, QueryInfo, };
+export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, WebUtilities, };
