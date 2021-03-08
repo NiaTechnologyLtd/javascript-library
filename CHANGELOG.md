@@ -1,4 +1,13 @@
 # 代码变更说明
+## [2.0.0-alpha.4](///compare/v2.0.0-alpha.3...v2.0.0-alpha.4) (2021-03-08)
+
+
+### 新功能
+
+* 新增哈希算法接口 hashalgorithm-interface.ts。 033121d
+* 新增哈希算法名称枚举类型 hashalgorithm-name.ts。 7eee781
+* 新增基于 crypto-js 模块的哈希算法基类和 MD5 算法实现。 7d9d3e4
+
 ## [2.0.0-alpha.3](///compare/v2.0.0-alpha.2...v2.0.0-alpha.3) (2021-03-08)
 
 
