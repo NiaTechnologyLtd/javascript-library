@@ -20,6 +20,8 @@ import { UriQueryInfo } from "./core/web/uri-queryinfo";
 
 import { HashAlgorithmNames } from "./security/hashalgorithm-names";
 import { IHashAlgorithm } from "./security/hashalgorithm-interface";
+import { HashAlgorithm } from "./security/hashalgorithm-base";
+import { MD5CryptoServiceProvider, MD5 } from "./security/md5";
 
 export {
   Guard,
@@ -39,4 +41,7 @@ export {
   UriQueryInfo,
   HashAlgorithmNames,
   IHashAlgorithm,
+  HashAlgorithm,
+  MD5,
+  MD5CryptoServiceProvider,
 };

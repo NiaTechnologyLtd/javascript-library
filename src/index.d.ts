@@ -15,4 +15,6 @@ import { WebUtilities } from "./core/web/web-utilities";
 import { UriQueryInfo } from "./core/web/uri-queryinfo";
 import { HashAlgorithmNames } from "./security/hashalgorithm-names";
 import { IHashAlgorithm } from "./security/hashalgorithm-interface";
-export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, IKeyValuePair, KeyValuePair, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, IHashAlgorithm, };
+import { HashAlgorithm } from "./security/hashalgorithm-base";
+import { MD5CryptoServiceProvider, MD5 } from "./security/md5";
+export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, IKeyValuePair, KeyValuePair, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, IHashAlgorithm, HashAlgorithm, MD5, MD5CryptoServiceProvider, };
