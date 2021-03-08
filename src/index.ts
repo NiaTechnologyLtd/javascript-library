@@ -19,6 +19,7 @@ import { WebUtilities } from "./core/web/web-utilities";
 import { UriQueryInfo } from "./core/web/uri-queryinfo";
 
 import { HashAlgorithmNames } from "./security/hashalgorithm-names";
+import { IHashAlgorithm } from "./security/hashalgorithm-interface";
 
 export {
   Guard,
@@ -37,4 +38,5 @@ export {
   WebUtilities,
   UriQueryInfo,
   HashAlgorithmNames,
+  IHashAlgorithm,
 };
