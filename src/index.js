@@ -10,4 +10,7 @@ import { RegexBase } from "./core/text/regular-expressions/regex-base";
 import { Regex } from "./core/text/regular-expressions/regex";
 import { WebUtilities } from "./core/web/web-utilities";
 import { UriQueryInfo } from "./core/web/uri-queryinfo";
-export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, KeyValuePair, Configuration, StringBuilder, RegexBase, Regex, WebUtilities, UriQueryInfo, };
+import { HashAlgorithmNames } from "./security/hashalgorithm-names";
+import { HashAlgorithm } from "./security/hashalgorithm-base";
+import { MD5CryptoServiceProvider, MD5 } from "./security/md5";
+export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, KeyValuePair, Configuration, StringBuilder, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, HashAlgorithm, MD5, MD5CryptoServiceProvider, };

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IKeyValuePair | @nia-technology/lib</title>
+	<title>HashAlgorithmNames | @nia-technology/lib</title>
 	<meta name="description" content="Documentation for @nia-technology/lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@nia-technology/lib</a>
 				</li>
 				<li>
-					<a href="ikeyvaluepair.html">IKeyValuePair</a>
+					<a href="hashalgorithmnames.html">HashAlgorithmNames</a>
 				</li>
 			</ul>
-			<h1>Interface IKeyValuePair&lt;TKey, TValue&gt;</h1>
+			<h1>Enumeration HashAlgorithmNames</h1>
 		</div>
 	</div>
 </header>
@@ -68,94 +68,91 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>定义了键值对类型的接口。</p>
+						<p>定义了哈希算法名称枚举类型。</p>
 					</div>
 					<dl class="tsd-comment-tags">
-						<dt>interface</dt>
-						<dd></dd>
 						<dt>author</dt>
 						<dd><p>Wang Yucai</p>
 						</dd>
 					</dl>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>TKey</h4>
-					</li>
-					<li>
-						<h4>TValue</h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">IKeyValuePair</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/keyvaluepair.html" class="tsd-signature-type" data-tsd-kind="Class">KeyValuePair</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ikeyvaluepair.html#key" class="tsd-kind-icon">key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ikeyvaluepair.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#md5" class="tsd-kind-icon">MD5</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#sha1" class="tsd-kind-icon">SHA1</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#sha256" class="tsd-kind-icon">SHA256</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#sha512" class="tsd-kind-icon">SHA512</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="key" class="tsd-anchor"></a>
-					<h3>key</h3>
-					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TKey</span></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="md5" class="tsd-anchor"></a>
+					<h3>MD5</h3>
+					<div class="tsd-signature tsd-kind-icon">MD5<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;md5&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in core/kvp-interface.ts:20</li>
+							<li>Defined in security/hashalgorithm-names.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置或获取一个值，用于表示 KVP 的键。</p>
+							<p>代表 MD5 哈希算法。</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>property</dt>
-							<dd></dd>
-						</dl>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="value" class="tsd-anchor"></a>
-					<h3>value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TValue</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="sha1" class="tsd-anchor"></a>
+					<h3>SHA1</h3>
+					<div class="tsd-signature tsd-kind-icon">SHA1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sha1&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in core/kvp-interface.ts:27</li>
+							<li>Defined in security/hashalgorithm-names.ts:22</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置或获取一个值，用于表示 KVP 的值。</p>
+							<p>代表 SHA1 哈希算法。</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>property</dt>
-							<dd></dd>
-						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="sha256" class="tsd-anchor"></a>
+					<h3>SHA256</h3>
+					<div class="tsd-signature tsd-kind-icon">SHA256<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sha256&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in security/hashalgorithm-names.ts:26</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>代表 SHA256 哈希算法。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="sha512" class="tsd-anchor"></a>
+					<h3>SHA512</h3>
+					<div class="tsd-signature tsd-kind-icon">SHA512<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sha512&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in security/hashalgorithm-names.ts:30</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>代表 SHA512 哈希算法。</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -171,11 +168,29 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
-						<a href="../enums/environmentnames.html" class="tsd-kind-icon">Environment<wbr>Names</a>
+						<a href="environmentnames.html" class="tsd-kind-icon">Environment<wbr>Names</a>
 					</li>
-					<li class=" tsd-kind-enum">
-						<a href="../enums/hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-enum">
+						<a href="hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
+						<ul>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="hashalgorithmnames.html#md5" class="tsd-kind-icon">MD5</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="hashalgorithmnames.html#sha1" class="tsd-kind-icon">SHA1</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="hashalgorithmnames.html#sha256" class="tsd-kind-icon">SHA256</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="hashalgorithmnames.html#sha512" class="tsd-kind-icon">SHA512</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="../classes/configuration.html" class="tsd-kind-icon">Configuration</a>
 					</li>
@@ -213,28 +228,16 @@
 						<a href="../classes/webutilities.html" class="tsd-kind-icon">Web<wbr>Utilities</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iconfiguration.html" class="tsd-kind-icon">IConfiguration</a>
+						<a href="../interfaces/iconfiguration.html" class="tsd-kind-icon">IConfiguration</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ihashalgorithm.html" class="tsd-kind-icon">IHash<wbr>Algorithm</a>
+						<a href="../interfaces/ihashalgorithm.html" class="tsd-kind-icon">IHash<wbr>Algorithm</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-has-type-parameter">
-						<a href="ikeyvaluepair.html" class="tsd-kind-icon">IKey<wbr>Value<wbr>Pair</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ikeyvaluepair.html#key" class="tsd-kind-icon">key</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ikeyvaluepair.html#value" class="tsd-kind-icon">value</a>
-							</li>
-						</ul>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/ikeyvaluepair.html" class="tsd-kind-icon">IKey<wbr>Value<wbr>Pair</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
-						<a href="iregex.html" class="tsd-kind-icon">IRegex</a>
+						<a href="../interfaces/iregex.html" class="tsd-kind-icon">IRegex</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../modules.html#appcontext" class="tsd-kind-icon">App<wbr>Context</a>

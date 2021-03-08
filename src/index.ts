@@ -18,6 +18,11 @@ import { Regex } from "./core/text/regular-expressions/regex";
 import { WebUtilities } from "./core/web/web-utilities";
 import { UriQueryInfo } from "./core/web/uri-queryinfo";
 
+import { HashAlgorithmNames } from "./security/hashalgorithm-names";
+import { IHashAlgorithm } from "./security/hashalgorithm-interface";
+import { HashAlgorithm } from "./security/hashalgorithm-base";
+import { MD5CryptoServiceProvider, MD5 } from "./security/md5";
+
 export {
   Guard,
   ExceptionHelper,
@@ -34,4 +39,9 @@ export {
   Regex,
   WebUtilities,
   UriQueryInfo,
+  HashAlgorithmNames,
+  IHashAlgorithm,
+  HashAlgorithm,
+  MD5,
+  MD5CryptoServiceProvider,
 };
