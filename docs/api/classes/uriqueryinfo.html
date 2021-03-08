@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StringBuilder | @nia-technology/lib</title>
+	<title>UriQueryInfo | @nia-technology/lib</title>
 	<meta name="description" content="Documentation for @nia-technology/lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@nia-technology/lib</a>
 				</li>
 				<li>
-					<a href="stringbuilder.html">StringBuilder</a>
+					<a href="uriqueryinfo.html">UriQueryInfo</a>
 				</li>
 			</ul>
-			<h1>Class StringBuilder</h1>
+			<h1>Class UriQueryInfo</h1>
 		</div>
 	</div>
 </header>
@@ -68,9 +68,12 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>提供了构建字符串相关的方法。</p>
+						<p>提供了 URI 查询字符串信息相关的方法。</p>
 					</div>
 					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p>{KeyValuePair}</p>
+						</dd>
 						<dt>author</dt>
 						<dd><p>Wang Yucai</p>
 						</dd>
@@ -81,7 +84,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StringBuilder</span>
+						<a href="keyvaluepair.html" class="tsd-signature-type" data-tsd-kind="Class">KeyValuePair</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">UriQueryInfo</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -92,20 +100,21 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="stringbuilder.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="uriqueryinfo.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="stringbuilder.html#_buffer" class="tsd-kind-icon">_buffer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="uriqueryinfo.html#key" class="tsd-kind-icon">key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="uriqueryinfo.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stringbuilder.html#append" class="tsd-kind-icon">append</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stringbuilder.html#appendline" class="tsd-kind-icon">append<wbr>Line</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="uriqueryinfo.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="uriqueryinfo.html#fromurisearchstring" class="tsd-kind-icon">from<wbr>Uri<wbr>Search<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,120 +122,144 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>String<wbr>Builder<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stringbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">StringBuilder</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Uri<wbr>Query<wbr>Info<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="uriqueryinfo.html" class="tsd-signature-type" data-tsd-kind="Class">UriQueryInfo</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="keyvaluepair.html">KeyValuePair</a>.<a href="keyvaluepair.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in core/text/string-builder.ts:17</li>
+									<li>Defined in core/web/uri-queryinfo.ts:22</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>用于初始化一个 StringBuilder 类型的对象实例。</p>
+									<p>用于初始化一个 UrlQueryInfo 类型的对象实例。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> s: <span class="tsd-signature-type">string</span></h5>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>用于初始化的字符串。</p>
+										<p>查询字符串标识名称。</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>查询字符串值。</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="stringbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">StringBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="uriqueryinfo.html" class="tsd-signature-type" data-tsd-kind="Class">UriQueryInfo</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_buffer" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _buffer</h3>
-					<div class="tsd-signature tsd-kind-icon">_buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="key" class="tsd-anchor"></a>
+					<h3>key</h3>
+					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="keyvaluepair.html">KeyValuePair</a>.<a href="keyvaluepair.html#key">key</a></p>
 						<ul>
-							<li>Defined in core/text/string-builder.ts:17</li>
+							<li>Defined in core/kvp.ts:18</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>设置或获取一个值，用于表示 KVP 的键。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="keyvaluepair.html">KeyValuePair</a>.<a href="keyvaluepair.html#value">value</a></p>
+						<ul>
+							<li>Defined in core/kvp.ts:19</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>设置或获取一个值，用于表示 KVP 的值。</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="append" class="tsd-anchor"></a>
-					<h3>append</h3>
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">append<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stringbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">StringBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in core/text/string-builder.ts:37</li>
+									<li>Defined in core/web/uri-queryinfo.ts:40</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>在 StringBuilder 结尾处追加字符串。</p>
+									<p>获取完成 URI 查询=字符串。</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>override</dt>
+									<dd></dd>
 									<dt>method</dt>
 									<dd></dd>
 								</dl>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>s: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>需要追加的字符串。</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="stringbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">StringBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="appendline" class="tsd-anchor"></a>
-					<h3>append<wbr>Line</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">append<wbr>Line<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stringbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">StringBuilder</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="fromurisearchstring" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Uri<wbr>Search<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Uri<wbr>Search<wbr>String<span class="tsd-signature-symbol">(</span>searchStr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="uriqueryinfo.html" class="tsd-signature-type" data-tsd-kind="Class">UriQueryInfo</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in core/text/string-builder.ts:51</li>
+									<li>Defined in core/web/uri-queryinfo.ts:54</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>在 StringBuilder 结尾处追加字符串，并以换行符结束。</p>
+									<p>从 location.search 字段值中获取 UriQueryInfo 对象集合。</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>method</dt>
+									<dd></dd>
+									<dt>static</dt>
 									<dd></dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>s: <span class="tsd-signature-type">string</span></h5>
+									<h5>searchStr: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>需要追加的字符串。</p>
+										<p>URI 查询字符串。</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="stringbuilder.html" class="tsd-signature-type" data-tsd-kind="Class">StringBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="uriqueryinfo.html" class="tsd-signature-type" data-tsd-kind="Class">UriQueryInfo</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -266,30 +299,33 @@
 					<li class=" tsd-kind-class">
 						<a href="regexbase.html" class="tsd-kind-icon">Regex<wbr>Base</a>
 					</li>
+					<li class=" tsd-kind-class">
+						<a href="stringbuilder.html" class="tsd-kind-icon">String<wbr>Builder</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="stringbuilder.html" class="tsd-kind-icon">String<wbr>Builder</a>
+						<a href="uriqueryinfo.html" class="tsd-kind-icon">Uri<wbr>Query<wbr>Info</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="stringbuilder.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+								<a href="uriqueryinfo.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="stringbuilder.html#_buffer" class="tsd-kind-icon">_buffer</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="uriqueryinfo.html#key" class="tsd-kind-icon">key</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="uriqueryinfo.html#value" class="tsd-kind-icon">value</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="stringbuilder.html#append" class="tsd-kind-icon">append</a>
+								<a href="uriqueryinfo.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="stringbuilder.html#appendline" class="tsd-kind-icon">append<wbr>Line</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="uriqueryinfo.html#fromurisearchstring" class="tsd-kind-icon">from<wbr>Uri<wbr>Search<wbr>String</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class">
-						<a href="uriqueryinfo.html" class="tsd-kind-icon">Uri<wbr>Query<wbr>Info</a>
-					</li>
 					<li class=" tsd-kind-class">
 						<a href="webutilities.html" class="tsd-kind-icon">Web<wbr>Utilities</a>
 					</li>

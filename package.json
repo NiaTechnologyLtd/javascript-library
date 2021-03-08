@@ -1,11 +1,11 @@
 {
-  "name": "@nia-community/lib",
+  "name": "@nia-technology/lib",
   "author": {
     "name": "王玉才",
     "email": "netowls-studio@outlook.com"
   },
   "description": "Development Library for JavaScript & TypeScript",
-  "homepage": "https://gitlab.com/NiaTechnologyLtd/javascript-library",
+  "homepage": "https://niatechnologyltd.github.io/javascript-library/",
   "license": "MIT",
   "main": "src/index.js",
   "readme": "./README.md",
@@ -23,7 +23,7 @@
     "build:tsc": "tsc -b ./src/tsconfig.json",
     "docs": "typedoc --plugin none ./src/index.ts --out ./docs/api/ --tsconfig ./src/tsconfig.json"
   },
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0-alpha.3",
   "devDependencies": {
     "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
@@ -33,5 +33,8 @@
     "typedoc": "^0.20.28",
     "typedoc-plugin-markdown": "^3.6.0",
     "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "query-string": "^6.14.1"
   }
 }
