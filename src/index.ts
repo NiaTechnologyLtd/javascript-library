@@ -18,6 +18,8 @@ import { Regex } from "./core/text/regular-expressions/regex";
 import { WebUtilities } from "./core/web/web-utilities";
 import { UriQueryInfo } from "./core/web/uri-queryinfo";
 
+import { HashAlgorithmNames } from "./security/hashalgorithm-names";
+
 export {
   Guard,
   ExceptionHelper,
@@ -34,4 +36,5 @@ export {
   Regex,
   WebUtilities,
   UriQueryInfo,
+  HashAlgorithmNames,
 };

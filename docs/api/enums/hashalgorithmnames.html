@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EnvironmentNames | @nia-technology/lib</title>
+	<title>HashAlgorithmNames | @nia-technology/lib</title>
 	<meta name="description" content="Documentation for @nia-technology/lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@nia-technology/lib</a>
 				</li>
 				<li>
-					<a href="environmentnames.html">EnvironmentNames</a>
+					<a href="hashalgorithmnames.html">HashAlgorithmNames</a>
 				</li>
 			</ul>
-			<h1>Enumeration EnvironmentNames</h1>
+			<h1>Enumeration HashAlgorithmNames</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>定义了内置环境名称枚举类型。</p>
+						<p>定义了哈希算法名称枚举类型。</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>author</dt>
@@ -84,9 +84,10 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="environmentnames.html#development" class="tsd-kind-icon">development</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="environmentnames.html#production" class="tsd-kind-icon">production</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="environmentnames.html#testing" class="tsd-kind-icon">testing</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#md5" class="tsd-kind-icon">MD5</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#sha1" class="tsd-kind-icon">SHA1</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#sha256" class="tsd-kind-icon">SHA256</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#sha512" class="tsd-kind-icon">SHA512</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,47 +96,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="development" class="tsd-anchor"></a>
-					<h3>development</h3>
-					<div class="tsd-signature tsd-kind-icon">development<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;development&quot;</span></div>
+					<a name="md5" class="tsd-anchor"></a>
+					<h3>MD5</h3>
+					<div class="tsd-signature tsd-kind-icon">MD5<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;md5&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in core/environment-names.ts:29</li>
+							<li>Defined in security/hashalgorithm-names.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>代表开发环境。</p>
+							<p>代表 MD5 哈希算法。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="production" class="tsd-anchor"></a>
-					<h3>production</h3>
-					<div class="tsd-signature tsd-kind-icon">production<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;production&quot;</span></div>
+					<a name="sha1" class="tsd-anchor"></a>
+					<h3>SHA1</h3>
+					<div class="tsd-signature tsd-kind-icon">SHA1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sha1&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in core/environment-names.ts:19</li>
+							<li>Defined in security/hashalgorithm-names.ts:22</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>代表生产环境。</p>
+							<p>代表 SHA1 哈希算法。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="testing" class="tsd-anchor"></a>
-					<h3>testing</h3>
-					<div class="tsd-signature tsd-kind-icon">testing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;test&quot;</span></div>
+					<a name="sha256" class="tsd-anchor"></a>
+					<h3>SHA256</h3>
+					<div class="tsd-signature tsd-kind-icon">SHA256<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sha256&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in core/environment-names.ts:24</li>
+							<li>Defined in security/hashalgorithm-names.ts:26</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>代表测试环境。</p>
+							<p>代表 SHA256 哈希算法。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="sha512" class="tsd-anchor"></a>
+					<h3>SHA512</h3>
+					<div class="tsd-signature tsd-kind-icon">SHA512<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sha512&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in security/hashalgorithm-names.ts:30</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>代表 SHA512 哈希算法。</p>
 						</div>
 					</div>
 				</section>
@@ -151,27 +167,30 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="environmentnames.html" class="tsd-kind-icon">Environment<wbr>Names</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="environmentnames.html" class="tsd-kind-icon">Environment<wbr>Names</a>
+						<a href="hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="environmentnames.html#development" class="tsd-kind-icon">development</a>
+								<a href="hashalgorithmnames.html#md5" class="tsd-kind-icon">MD5</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="environmentnames.html#production" class="tsd-kind-icon">production</a>
+								<a href="hashalgorithmnames.html#sha1" class="tsd-kind-icon">SHA1</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="environmentnames.html#testing" class="tsd-kind-icon">testing</a>
+								<a href="hashalgorithmnames.html#sha256" class="tsd-kind-icon">SHA256</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="hashalgorithmnames.html#sha512" class="tsd-kind-icon">SHA512</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-enum">
-						<a href="hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
-					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/configuration.html" class="tsd-kind-icon">Configuration</a>
 					</li>
