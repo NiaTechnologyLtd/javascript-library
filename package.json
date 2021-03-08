@@ -5,7 +5,7 @@
     "email": "netowls-studio@outlook.com"
   },
   "description": "Development Library for JavaScript & TypeScript",
-  "homepage": "https://gitlab.com/NiaTechnologyLtd/javascript-library",
+  "homepage": "https://niatechnologyltd.github.io/javascript-library/",
   "license": "MIT",
   "main": "src/index.js",
   "readme": "./README.md",

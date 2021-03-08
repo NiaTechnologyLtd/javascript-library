@@ -32,9 +32,13 @@
     - **@nia-technology/lib**
 
       > **特别说明：**我们的 NPM 包从 2.x 版本开始使用 **TypeScript** 进行重构，不排除有不兼容的情况。1.x 版本暂停进行开发。
-    >
-      > **原因：**由于 Vue 等框架正在逐步支持 TypeScript，为了今后的开发工作方便，因此作者本人决定将此类库迁移到 TypeScript 框架支持中。虽然很难，但是作者本人还是决定做了。
+    >**原因：**由于 Vue 等框架正在逐步支持 TypeScript，为了今后的开发工作方便，因此作者本人决定将此类库迁移到 TypeScript 框架支持中。虽然很难，但是作者本人还是决定做了。
   
+- **文档**
+
+  - [代码变更日志](https://niatechnologyltd.github.io/javascript-library/CHANGELOG.md)
+  - [接口说明文档 Typedoc](https://niatechnologyltd.github.io/javascript-library/docs/api/index.html)
+
 - **开源协议**
 
   ```
