@@ -13,4 +13,7 @@ import { UriQueryInfo } from "./core/web/uri-queryinfo";
 import { HashAlgorithmNames } from "./security/hashalgorithm-names";
 import { HashAlgorithm } from "./security/hashalgorithm-base";
 import { MD5CryptoServiceProvider, MD5 } from "./security/md5";
-export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, KeyValuePair, Configuration, StringBuilder, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, HashAlgorithm, MD5, MD5CryptoServiceProvider, };
+import { SHA1CryptoServiceProvider, SHA1 } from "./security/sha1";
+import { SHA256CryptoServiceProvider, SHA256 } from "./security/sha256";
+import { SHA512CryptoServiceProvider, SHA512 } from "./security/sha512";
+export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, KeyValuePair, Configuration, StringBuilder, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, HashAlgorithm, MD5, MD5CryptoServiceProvider, SHA1, SHA1CryptoServiceProvider, SHA256, SHA256CryptoServiceProvider, SHA512, SHA512CryptoServiceProvider, };
