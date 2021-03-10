@@ -22,6 +22,7 @@ import { HashAlgorithmNames } from "./security/hashalgorithm-names";
 import { IHashAlgorithm } from "./security/hashalgorithm-interface";
 import { HashAlgorithm } from "./security/hashalgorithm-base";
 import { MD5CryptoServiceProvider, MD5 } from "./security/md5";
+import { SHA1CryptoServiceProvider, SHA1 } from "./security/sha1";
 
 export {
   Guard,
@@ -44,4 +45,6 @@ export {
   HashAlgorithm,
   MD5,
   MD5CryptoServiceProvider,
+  SHA1,
+  SHA1CryptoServiceProvider,
 };

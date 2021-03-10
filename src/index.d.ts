@@ -17,4 +17,5 @@ import { HashAlgorithmNames } from "./security/hashalgorithm-names";
 import { IHashAlgorithm } from "./security/hashalgorithm-interface";
 import { HashAlgorithm } from "./security/hashalgorithm-base";
 import { MD5CryptoServiceProvider, MD5 } from "./security/md5";
-export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, IKeyValuePair, KeyValuePair, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, IHashAlgorithm, HashAlgorithm, MD5, MD5CryptoServiceProvider, };
+import { SHA1CryptoServiceProvider, SHA1 } from "./security/sha1";
+export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, IKeyValuePair, KeyValuePair, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, IHashAlgorithm, HashAlgorithm, MD5, MD5CryptoServiceProvider, SHA1, SHA1CryptoServiceProvider, };
