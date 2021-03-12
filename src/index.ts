@@ -4,6 +4,7 @@ import { EnvironmentNames } from "./core/environment-names";
 import { Environment } from "./core/environment";
 import { LocaleStoreModes } from "./core/localestore-modes";
 import { AppContext } from "./core/app-context";
+import { ILocaleStorage } from "./core/localestore-interface";
 import { IKeyValuePair } from "./core/kvp-interface";
 import { KeyValuePair } from "./core/kvp";
 
@@ -36,6 +37,7 @@ export {
   Environment,
   LocaleStoreModes,
   AppContext,
+  ILocaleStorage,
   IKeyValuePair,
   KeyValuePair,
   IConfiguration,
