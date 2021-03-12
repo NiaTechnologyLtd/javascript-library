@@ -4,7 +4,6 @@
  * Licensed under the MIT License See LICENSE in the project root for license information.
  * ************************************************************************************************
  */
-import { IKeyValuePair } from "./kvp-interface";
 /**
  * 定义了客户端本地存储的接口。
  * @interface
@@ -24,12 +23,6 @@ export interface ILocaleStorage {
      * @param {any} value 本地存储项的值。
      */
     addOrUpdate(name: string, value?: any): void;
-    /**
-     * 增加或更新指定的键值对。
-     * @param {IKeyValuePair} entry 实现了 IKeyValuePair 类型接口的对象实例。
-     * @see {IKeyValuePair}
-     */
-    addOrUpdate(entry: IKeyValuePair<string, any | undefined>): void;
     /**
      * 删除指定名称的本地存储项。
      * @param {String} name 本地存储项标识名称。
