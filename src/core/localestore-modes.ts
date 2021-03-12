@@ -20,4 +20,8 @@ export enum LocaleStoreModes {
    * 本地会话存储。
    */
   SessionStorage = 2,
+  /**
+   * 基于 Cookie 的本地存储。
+   */
+  CookieStorage = 3,
 }
