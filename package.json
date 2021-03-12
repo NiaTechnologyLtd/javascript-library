@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "crypto-js": "^4.0.0",
-    "query-string": "^6.14.1"
+    "query-string": "^6.14.1",
+    "store2": "^2.12.0"
   }
 }
