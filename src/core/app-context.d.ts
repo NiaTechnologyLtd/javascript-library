@@ -6,6 +6,8 @@
  */
 import { Environment } from "./environment";
 import { LocaleStoreModes } from "./localestore-modes";
+import { IConfiguration } from "./configuration/configuration-interface";
+import { IRegex } from "./text/regular-expressions/regex-interface";
 /**
  * 提供了应用程序上下文相关的信息。
  * @constant
@@ -18,5 +20,13 @@ export declare const AppContext: {
     };
     client: {
         defaultStorageMode: LocaleStoreModes;
+    };
+    defaultProviders: {
+        MD5: import("../security/md5").MD5CryptoServiceProvider;
+        SHA1: import("../security/sha1").SHA1CryptoServiceProvider;
+        SHA256: import("../security/sha256").SHA256CryptoServiceProvider;
+        SHA512: import("../security/sha512").SHA512CryptoServiceProvider;
+        Configuration: IConfiguration;
+        Regex: IRegex;
     };
 };

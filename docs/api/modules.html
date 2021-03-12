@@ -119,10 +119,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="appcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> App<wbr>Context</h3>
-					<div class="tsd-signature tsd-kind-icon">App<wbr>Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>client<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>defaultStorageMode<span class="tsd-signature-symbol">: </span><a href="enums/localestoremodes.html" class="tsd-signature-type" data-tsd-kind="Enumeration">LocaleStoreModes</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>current<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>env<span class="tsd-signature-symbol">: </span><a href="classes/environment.html" class="tsd-signature-type" data-tsd-kind="Class">Environment</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<div class="tsd-signature tsd-kind-icon">App<wbr>Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>client<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>defaultStorageMode<span class="tsd-signature-symbol">: </span><a href="enums/localestoremodes.html" class="tsd-signature-type" data-tsd-kind="Enumeration">LocaleStoreModes</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>current<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>env<span class="tsd-signature-symbol">: </span><a href="classes/environment.html" class="tsd-signature-type" data-tsd-kind="Class">Environment</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>defaultProviders<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Configuration<span class="tsd-signature-symbol">: </span><a href="interfaces/iconfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">IConfiguration</a><span class="tsd-signature-symbol">; </span>MD5<span class="tsd-signature-symbol">: </span><a href="classes/md5cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">MD5CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>Regex<span class="tsd-signature-symbol">: </span><a href="interfaces/iregex.html" class="tsd-signature-type" data-tsd-kind="Interface">IRegex</a><span class="tsd-signature-symbol">; </span>SHA1<span class="tsd-signature-symbol">: </span><a href="classes/sha1cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA1CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>SHA256<span class="tsd-signature-symbol">: </span><a href="classes/sha256cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA256CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>SHA512<span class="tsd-signature-symbol">: </span><a href="classes/sha512cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA512CryptoServiceProvider</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in core/app-context.ts:19</li>
+							<li>Defined in core/app-context.ts:29</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -153,6 +153,29 @@
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
 										<h5>env<span class="tsd-signature-symbol">: </span><a href="classes/environment.html" class="tsd-signature-type" data-tsd-kind="Class">Environment</a></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>default<wbr>Providers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Configuration<span class="tsd-signature-symbol">: </span><a href="interfaces/iconfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">IConfiguration</a><span class="tsd-signature-symbol">; </span>MD5<span class="tsd-signature-symbol">: </span><a href="classes/md5cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">MD5CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>Regex<span class="tsd-signature-symbol">: </span><a href="interfaces/iregex.html" class="tsd-signature-type" data-tsd-kind="Interface">IRegex</a><span class="tsd-signature-symbol">; </span>SHA1<span class="tsd-signature-symbol">: </span><a href="classes/sha1cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA1CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>SHA256<span class="tsd-signature-symbol">: </span><a href="classes/sha256cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA256CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>SHA512<span class="tsd-signature-symbol">: </span><a href="classes/sha512cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA512CryptoServiceProvider</a><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Configuration<span class="tsd-signature-symbol">: </span><a href="interfaces/iconfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">IConfiguration</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>MD5<span class="tsd-signature-symbol">: </span><a href="classes/md5cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">MD5CryptoServiceProvider</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Regex<span class="tsd-signature-symbol">: </span><a href="interfaces/iregex.html" class="tsd-signature-type" data-tsd-kind="Interface">IRegex</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>SHA1<span class="tsd-signature-symbol">: </span><a href="classes/sha1cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA1CryptoServiceProvider</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>SHA256<span class="tsd-signature-symbol">: </span><a href="classes/sha256cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA256CryptoServiceProvider</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>SHA512<span class="tsd-signature-symbol">: </span><a href="classes/sha512cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA512CryptoServiceProvider</a></h5>
 									</li>
 								</ul>
 							</li>
