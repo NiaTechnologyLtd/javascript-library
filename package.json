@@ -8,6 +8,7 @@
   "homepage": "https://niatechnologyltd.github.io/javascript-library/",
   "license": "MIT",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "readme": "./README.md",
   "scripts": {
     "release:alpha-dryrun": "standard-version -p alpha -i CHANGELOG.md --dry-run",

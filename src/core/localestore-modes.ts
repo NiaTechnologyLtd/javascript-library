@@ -5,22 +5,19 @@
  * ************************************************************************************************
  */
 
-import { Environment } from "./environment";
-import { LocaleStoreModes } from "./localestore-modes";
-
-const _applicationEnv: Environment = new Environment();
-
 /**
- * 提供了应用程序上下文相关的信息。
- * @constant
+ * 定义了本地存储方式枚举类型。
+ * @enum
  * @public
  * @author Wang Yucai
  */
-export const AppContext = {
-  current: {
-    env: _applicationEnv,
-  },
-  client: {
-    defaultStorageMode: LocaleStoreModes.SessionStorage,
-  },
-};
+export enum LocaleStoreModes {
+  /**
+   * 本地存储。
+   */
+  LocaleStorage = 1,
+  /**
+   * 本地会话存储。
+   */
+  SessionStorage = 2,
+}

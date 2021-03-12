@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HashAlgorithmNames | @nia-technology/lib</title>
+	<title>LocaleStoreModes | @nia-technology/lib</title>
 	<meta name="description" content="Documentation for @nia-technology/lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@nia-technology/lib</a>
 				</li>
 				<li>
-					<a href="hashalgorithmnames.html">HashAlgorithmNames</a>
+					<a href="localestoremodes.html">LocaleStoreModes</a>
 				</li>
 			</ul>
-			<h1>Enumeration HashAlgorithmNames</h1>
+			<h1>Enumeration LocaleStoreModes</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>定义了哈希算法名称枚举类型。</p>
+						<p>定义了本地存储方式枚举类型。</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>author</dt>
@@ -84,10 +84,8 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#md5" class="tsd-kind-icon">MD5</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#sha1" class="tsd-kind-icon">SHA1</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#sha256" class="tsd-kind-icon">SHA256</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="hashalgorithmnames.html#sha512" class="tsd-kind-icon">SHA512</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="localestoremodes.html#localestorage" class="tsd-kind-icon">Locale<wbr>Storage</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="localestoremodes.html#sessionstorage" class="tsd-kind-icon">Session<wbr>Storage</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,62 +94,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="md5" class="tsd-anchor"></a>
-					<h3>MD5</h3>
-					<div class="tsd-signature tsd-kind-icon">MD5<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;md5&quot;</span></div>
+					<a name="localestorage" class="tsd-anchor"></a>
+					<h3>Locale<wbr>Storage</h3>
+					<div class="tsd-signature tsd-kind-icon">Locale<wbr>Storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/hashalgorithm-names.ts:18</li>
+							<li>Defined in core/localestore-modes.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>代表 MD5 哈希算法。</p>
+							<p>本地存储。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="sha1" class="tsd-anchor"></a>
-					<h3>SHA1</h3>
-					<div class="tsd-signature tsd-kind-icon">SHA1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sha1&quot;</span></div>
+					<a name="sessionstorage" class="tsd-anchor"></a>
+					<h3>Session<wbr>Storage</h3>
+					<div class="tsd-signature tsd-kind-icon">Session<wbr>Storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/hashalgorithm-names.ts:22</li>
+							<li>Defined in core/localestore-modes.ts:22</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>代表 SHA1 哈希算法。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="sha256" class="tsd-anchor"></a>
-					<h3>SHA256</h3>
-					<div class="tsd-signature tsd-kind-icon">SHA256<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sha256&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/hashalgorithm-names.ts:26</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代表 SHA256 哈希算法。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="sha512" class="tsd-anchor"></a>
-					<h3>SHA512</h3>
-					<div class="tsd-signature tsd-kind-icon">SHA512<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sha512&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/hashalgorithm-names.ts:30</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代表 SHA512 哈希算法。</p>
+							<p>本地会话存储。</p>
 						</div>
 					</div>
 				</section>
@@ -173,30 +141,24 @@
 					<li class=" tsd-kind-enum">
 						<a href="environmentnames.html" class="tsd-kind-icon">Environment<wbr>Names</a>
 					</li>
+					<li class=" tsd-kind-enum">
+						<a href="hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
+						<a href="localestoremodes.html" class="tsd-kind-icon">Locale<wbr>Store<wbr>Modes</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="hashalgorithmnames.html#md5" class="tsd-kind-icon">MD5</a>
+								<a href="localestoremodes.html#localestorage" class="tsd-kind-icon">Locale<wbr>Storage</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="hashalgorithmnames.html#sha1" class="tsd-kind-icon">SHA1</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="hashalgorithmnames.html#sha256" class="tsd-kind-icon">SHA256</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="hashalgorithmnames.html#sha512" class="tsd-kind-icon">SHA512</a>
+								<a href="localestoremodes.html#sessionstorage" class="tsd-kind-icon">Session<wbr>Storage</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-enum">
-						<a href="localestoremodes.html" class="tsd-kind-icon">Locale<wbr>Store<wbr>Modes</a>
-					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/claim.html" class="tsd-kind-icon">Claim</a>
 					</li>

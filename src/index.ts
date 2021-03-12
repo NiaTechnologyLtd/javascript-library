@@ -2,6 +2,7 @@ import { Guard } from "./core/guard";
 import { ExceptionHelper } from "./core/exception-helper";
 import { EnvironmentNames } from "./core/environment-names";
 import { Environment } from "./core/environment";
+import { LocaleStoreModes } from "./core/localestore-modes";
 import { AppContext } from "./core/app-context";
 import { IKeyValuePair } from "./core/kvp-interface";
 import { KeyValuePair } from "./core/kvp";
@@ -33,6 +34,7 @@ export {
   ExceptionHelper,
   EnvironmentNames,
   Environment,
+  LocaleStoreModes,
   AppContext,
   IKeyValuePair,
   KeyValuePair,
