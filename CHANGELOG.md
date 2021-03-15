@@ -1,4 +1,34 @@
 # 代码变更说明
+## [2.0.0-alpha.7](///compare/v2.0.0-alpha.6...v2.0.0-alpha.7) (2021-03-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* 删除了 LocaleStorageModes 枚举和 ILocaleStorage 接口的定义。
+
+### 工具
+
+* 新增 store2 npm 包依赖。 d7cec63
+* 引入了新的 npm 包 js-cookie 和 @types/js-cookie。 892a5b8
+
+
+### 代码重构
+
+* 删除了不合理的枚举 localestore-modes.ts 和本地存储接口 localestore-interface.ts。 6a73d57
+
+
+### 新功能
+
+* 完善了本地存储类库 localestore.ts。 17bed93
+* 为 app-context.ts 增加了内置默认实现的服务集合字段 defaultProviders。 6a88213
+* 新增 Cookie 操作脚本。 16e8806
+* 新增本地存储方法枚举类型 localestore-modes.ts。 186e008
+* 新增本地存储接口 localestore-interface.ts。 1b2286c
+* 新增本地存储实现 src/core/localestore.ts (未完待续)。 2932b81
+* 新增身份信息点类型 claim.ts ( issue [#1](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/issues/1) )。 9dac1b1
+* 新增身份信息点枚举脚本 claim-types.ts ( issue [#1](https://gitlab.com/NiaTechnologyLtd/javascript-library/-/issues/1) )。 e09d23f
+* 修改了 localestore-modes.ts 枚举类型，添加了 CookieStorage 字段值。 1f4d22d
+
 ## [2.0.0-alpha.6](///compare/v2.0.0-alpha.5...v2.0.0-alpha.6) (2021-03-10)
 
 ## [2.0.0-alpha.5](///compare/v2.0.0-alpha.4...v2.0.0-alpha.5) (2021-03-10)

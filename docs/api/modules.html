@@ -64,6 +64,7 @@
 						<section class="tsd-index-section ">
 							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum"><a href="enums/claimtypes.html" class="tsd-kind-icon">Claim<wbr>Types</a></li>
 								<li class="tsd-kind-enum"><a href="enums/environmentnames.html" class="tsd-kind-icon">Environment<wbr>Names</a></li>
 								<li class="tsd-kind-enum"><a href="enums/hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a></li>
 							</ul>
@@ -71,12 +72,15 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/claim.html" class="tsd-kind-icon">Claim</a></li>
 								<li class="tsd-kind-class"><a href="classes/configuration.html" class="tsd-kind-icon">Configuration</a></li>
+								<li class="tsd-kind-class"><a href="classes/cookieitem.html" class="tsd-kind-icon">Cookie<wbr>Item</a></li>
 								<li class="tsd-kind-class"><a href="classes/environment.html" class="tsd-kind-icon">Environment</a></li>
 								<li class="tsd-kind-class"><a href="classes/exceptionhelper.html" class="tsd-kind-icon">Exception<wbr>Helper</a></li>
 								<li class="tsd-kind-class"><a href="classes/guard.html" class="tsd-kind-icon">Guard</a></li>
 								<li class="tsd-kind-class"><a href="classes/hashalgorithm.html" class="tsd-kind-icon">Hash<wbr>Algorithm</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/keyvaluepair.html" class="tsd-kind-icon">Key<wbr>Value<wbr>Pair</a></li>
+								<li class="tsd-kind-class"><a href="classes/localestorageprovider.html" class="tsd-kind-icon">Locale<wbr>Storage<wbr>Provider</a></li>
 								<li class="tsd-kind-class"><a href="classes/md5cryptoserviceprovider.html" class="tsd-kind-icon">MD5<wbr>Crypto<wbr>Service<wbr>Provider</a></li>
 								<li class="tsd-kind-class"><a href="classes/regex.html" class="tsd-kind-icon">Regex</a></li>
 								<li class="tsd-kind-class"><a href="classes/regexbase.html" class="tsd-kind-icon">Regex<wbr>Base</a></li>
@@ -101,10 +105,12 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable"><a href="modules.html#appcontext" class="tsd-kind-icon">App<wbr>Context</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#localestore" class="tsd-kind-icon">Locale<wbr>Store</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#md5" class="tsd-kind-icon">MD5</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#sha1" class="tsd-kind-icon">SHA1</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#sha256" class="tsd-kind-icon">SHA256</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#sha512" class="tsd-kind-icon">SHA512</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#sessionstore" class="tsd-kind-icon">Session<wbr>Store</a></li>
 							</ul>
 						</section>
 					</div>
@@ -115,10 +121,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="appcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> App<wbr>Context</h3>
-					<div class="tsd-signature tsd-kind-icon">App<wbr>Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>current<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>env<span class="tsd-signature-symbol">: </span><a href="classes/environment.html" class="tsd-signature-type" data-tsd-kind="Class">Environment</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<div class="tsd-signature tsd-kind-icon">App<wbr>Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>current<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>env<span class="tsd-signature-symbol">: </span><a href="classes/environment.html" class="tsd-signature-type" data-tsd-kind="Class">Environment</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>defaultProviders<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Configuration<span class="tsd-signature-symbol">: </span><a href="interfaces/iconfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">IConfiguration</a><span class="tsd-signature-symbol">; </span>MD5<span class="tsd-signature-symbol">: </span><a href="classes/md5cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">MD5CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>Regex<span class="tsd-signature-symbol">: </span><a href="interfaces/iregex.html" class="tsd-signature-type" data-tsd-kind="Interface">IRegex</a><span class="tsd-signature-symbol">; </span>SHA1<span class="tsd-signature-symbol">: </span><a href="classes/sha1cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA1CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>SHA256<span class="tsd-signature-symbol">: </span><a href="classes/sha256cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA256CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>SHA512<span class="tsd-signature-symbol">: </span><a href="classes/sha512cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA512CryptoServiceProvider</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in core/app-context.ts:18</li>
+							<li>Defined in core/app-context.ts:28</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -144,7 +150,52 @@
 									</li>
 								</ul>
 							</li>
+							<li class="tsd-parameter">
+								<h5>default<wbr>Providers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Configuration<span class="tsd-signature-symbol">: </span><a href="interfaces/iconfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">IConfiguration</a><span class="tsd-signature-symbol">; </span>MD5<span class="tsd-signature-symbol">: </span><a href="classes/md5cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">MD5CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>Regex<span class="tsd-signature-symbol">: </span><a href="interfaces/iregex.html" class="tsd-signature-type" data-tsd-kind="Interface">IRegex</a><span class="tsd-signature-symbol">; </span>SHA1<span class="tsd-signature-symbol">: </span><a href="classes/sha1cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA1CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>SHA256<span class="tsd-signature-symbol">: </span><a href="classes/sha256cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA256CryptoServiceProvider</a><span class="tsd-signature-symbol">; </span>SHA512<span class="tsd-signature-symbol">: </span><a href="classes/sha512cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA512CryptoServiceProvider</a><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Configuration<span class="tsd-signature-symbol">: </span><a href="interfaces/iconfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">IConfiguration</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>MD5<span class="tsd-signature-symbol">: </span><a href="classes/md5cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">MD5CryptoServiceProvider</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Regex<span class="tsd-signature-symbol">: </span><a href="interfaces/iregex.html" class="tsd-signature-type" data-tsd-kind="Interface">IRegex</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>SHA1<span class="tsd-signature-symbol">: </span><a href="classes/sha1cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA1CryptoServiceProvider</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>SHA256<span class="tsd-signature-symbol">: </span><a href="classes/sha256cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA256CryptoServiceProvider</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>SHA512<span class="tsd-signature-symbol">: </span><a href="classes/sha512cryptoserviceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">SHA512CryptoServiceProvider</a></h5>
+									</li>
+								</ul>
+							</li>
 						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="localestore" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Locale<wbr>Store</h3>
+					<div class="tsd-signature tsd-kind-icon">Locale<wbr>Store<span class="tsd-signature-symbol">:</span> <a href="classes/localestorageprovider.html" class="tsd-signature-type" data-tsd-kind="Class">LocaleStorageProvider</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in core/localestore.ts:109</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>本地存储服务。</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>constant</dt>
+							<dd></dd>
+							<dt>author</dt>
+							<dd><p>Wang Yucai</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
@@ -187,6 +238,28 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="sessionstore" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Session<wbr>Store</h3>
+					<div class="tsd-signature tsd-kind-icon">Session<wbr>Store<span class="tsd-signature-symbol">:</span> <a href="classes/localestorageprovider.html" class="tsd-signature-type" data-tsd-kind="Class">LocaleStorageProvider</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in core/localestore.ts:117</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>本地会话存储服务。</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>constant</dt>
+							<dd></dd>
+							<dt>author</dt>
+							<dd><p>Wang Yucai</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -200,13 +273,22 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
+						<a href="enums/claimtypes.html" class="tsd-kind-icon">Claim<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/environmentnames.html" class="tsd-kind-icon">Environment<wbr>Names</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/claim.html" class="tsd-kind-icon">Claim</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/configuration.html" class="tsd-kind-icon">Configuration</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/cookieitem.html" class="tsd-kind-icon">Cookie<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/environment.html" class="tsd-kind-icon">Environment</a>
@@ -222,6 +304,9 @@
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/keyvaluepair.html" class="tsd-kind-icon">Key<wbr>Value<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/localestorageprovider.html" class="tsd-kind-icon">Locale<wbr>Storage<wbr>Provider</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/md5cryptoserviceprovider.html" class="tsd-kind-icon">MD5<wbr>Crypto<wbr>Service<wbr>Provider</a>
@@ -266,6 +351,9 @@
 						<a href="modules.html#appcontext" class="tsd-kind-icon">App<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-variable">
+						<a href="modules.html#localestore" class="tsd-kind-icon">Locale<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-variable">
 						<a href="modules.html#md5" class="tsd-kind-icon">MD5</a>
 					</li>
 					<li class=" tsd-kind-variable">
@@ -276,6 +364,9 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#sha512" class="tsd-kind-icon">SHA512</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#sessionstore" class="tsd-kind-icon">Session<wbr>Store</a>
 					</li>
 				</ul>
 			</nav>
@@ -301,14 +392,15 @@
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>
