@@ -24,7 +24,7 @@
     "build:tsc": "tsc -b ./src/tsconfig.json",
     "docs": "typedoc --plugin none ./src/index.ts --out ./docs/api/ --tsconfig ./src/tsconfig.json"
   },
-  "version": "2.0.0-alpha.6",
+  "version": "2.0.0-alpha.7",
   "devDependencies": {
     "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
