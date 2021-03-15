@@ -8,6 +8,7 @@ import {
   LocaleStore,
   SessionStore,
 } from "./core/localestore";
+import { CookieItem } from "./core/cookie-item";
 import { IKeyValuePair } from "./core/kvp-interface";
 import { KeyValuePair } from "./core/kvp";
 
@@ -42,6 +43,7 @@ export {
   LocaleStorageProvider,
   LocaleStore,
   SessionStore,
+  CookieItem,
   IKeyValuePair,
   KeyValuePair,
   IConfiguration,
