@@ -2,9 +2,12 @@ import { Guard } from "./core/guard";
 import { ExceptionHelper } from "./core/exception-helper";
 import { EnvironmentNames } from "./core/environment-names";
 import { Environment } from "./core/environment";
-import { LocaleStoreModes } from "./core/localestore-modes";
 import { AppContext } from "./core/app-context";
-import { ILocaleStorage } from "./core/localestore-interface";
+import {
+  LocaleStorageProvider,
+  LocaleStore,
+  SessionStore,
+} from "./core/localestore";
 import { IKeyValuePair } from "./core/kvp-interface";
 import { KeyValuePair } from "./core/kvp";
 
@@ -35,9 +38,10 @@ export {
   ExceptionHelper,
   EnvironmentNames,
   Environment,
-  LocaleStoreModes,
   AppContext,
-  ILocaleStorage,
+  LocaleStorageProvider,
+  LocaleStore,
+  SessionStore,
   IKeyValuePair,
   KeyValuePair,
   IConfiguration,

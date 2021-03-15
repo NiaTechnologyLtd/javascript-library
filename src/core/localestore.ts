@@ -6,7 +6,6 @@
  */
 
 import { Guard } from "./guard";
-import { ILocaleStorage } from "./localestore-interface";
 import { Regex } from "./text/regular-expressions/regex";
 
 const store = require("store2");
@@ -18,8 +17,7 @@ const store = require("store2");
  * @author Wang Yucai
  * @see {store2}
  */
-export class LocaleStorageProvider implements ILocaleStorage {
-  private readonly _useSessionStorage: boolean = false;
+export class LocaleStorageProvider {
   private readonly _internalStorageProvider: any = undefined;
 
   /**
@@ -27,10 +25,14 @@ export class LocaleStorageProvider implements ILocaleStorage {
    * @param {Boolean} useSessionStorage 是否使用本地回话存储。
    */
   constructor(useSessionStorage: boolean = false) {
-    this._useSessionStorage = useSessionStorage;
     this._internalStorageProvider = useSessionStorage ? store.session : store;
   }
 
+  /**
+   * 获取指定标识名称的本地存储值。
+   * @param {String} name 本地存储项标识名称。
+   * @returns {any}
+   */
   get(name: string): any | undefined {
     if (Guard.isNullOrEmpty(name) || !this.exists(name)) {
       console.warn("警告：空的本地存储标识名称，未能找到指定的存储项数据值。");
@@ -53,6 +55,11 @@ export class LocaleStorageProvider implements ILocaleStorage {
       : `__ls__${name}`;
   }
 
+  /**
+   * 用于校验指定名称的存储项是否存在。
+   * @param {String} name 指定的本地存储项标识名称。
+   * @returns {Boolean}
+   */
   exists(name: string): boolean {
     if (Guard.isNullOrEmpty(name)) {
       console.warn("警告：空的本地存储标识名称。");
@@ -60,6 +67,12 @@ export class LocaleStorageProvider implements ILocaleStorage {
     }
     return this._internalStorageProvider.has(this.verifyAndFillName(name));
   }
+
+  /**
+   * 增加或更新指定名称的本地存储项。
+   * @param {String} name 本地存储项标识名称。
+   * @param {any} value 本地存储项的值。
+   */
   addOrUpdate(name: string, value?: any): void {
     if (Guard.isNullOrEmpty(name) || !value) {
       console.warn("警告：不满足本地存储要求，此次请求忽略。");
@@ -72,6 +85,11 @@ export class LocaleStorageProvider implements ILocaleStorage {
       true
     );
   }
+
+  /**
+   * 删除指定名称的本地存储项。
+   * @param {String} name 本地存储项标识名称。
+   */
   remove(name: string): void {
     if (Guard.isNullOrEmpty(name)) {
       console.warn("警告：空的本地存储标识名称。");
@@ -81,3 +99,19 @@ export class LocaleStorageProvider implements ILocaleStorage {
     this._internalStorageProvider.remove(this.verifyAndFillName(name));
   }
 }
+
+/**
+ * 本地存储服务。
+ * @constant
+ * @public
+ * @author Wang Yucai
+ */
+export const LocaleStore = new LocaleStorageProvider();
+
+/**
+ * 本地会话存储服务。
+ * @constant
+ * @public
+ * @author Wang Yucai
+ */
+export const SessionStore = new LocaleStorageProvider(true);

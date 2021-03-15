@@ -9,7 +9,6 @@ import { MD5 } from "../security/md5";
 import { SHA1 } from "../security/sha1";
 import { SHA256 } from "../security/sha256";
 import { Environment } from "./environment";
-import { LocaleStoreModes } from "./localestore-modes";
 import { Configuration } from "./configuration/configuration";
 import { Regex } from "./text/regular-expressions/regex";
 const _applicationEnv = new Environment();
@@ -24,9 +23,6 @@ const _regex = Regex.createInstance();
 export const AppContext = {
     current: {
         env: _applicationEnv,
-    },
-    client: {
-        defaultStorageMode: LocaleStoreModes.SessionStorage,
     },
     defaultProviders: {
         MD5,

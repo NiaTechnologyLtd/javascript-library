@@ -20,11 +20,14 @@ export class LocaleStorageProvider {
      * @param {Boolean} useSessionStorage 是否使用本地回话存储。
      */
     constructor(useSessionStorage = false) {
-        this._useSessionStorage = false;
         this._internalStorageProvider = undefined;
-        this._useSessionStorage = useSessionStorage;
         this._internalStorageProvider = useSessionStorage ? store.session : store;
     }
+    /**
+     * 获取指定标识名称的本地存储值。
+     * @param {String} name 本地存储项标识名称。
+     * @returns {any}
+     */
     get(name) {
         if (Guard.isNullOrEmpty(name) || !this.exists(name)) {
             console.warn("警告：空的本地存储标识名称，未能找到指定的存储项数据值。");
@@ -44,6 +47,11 @@ export class LocaleStorageProvider {
             ? name
             : `__ls__${name}`;
     }
+    /**
+     * 用于校验指定名称的存储项是否存在。
+     * @param {String} name 指定的本地存储项标识名称。
+     * @returns {Boolean}
+     */
     exists(name) {
         if (Guard.isNullOrEmpty(name)) {
             console.warn("警告：空的本地存储标识名称。");
@@ -51,6 +59,11 @@ export class LocaleStorageProvider {
         }
         return this._internalStorageProvider.has(this.verifyAndFillName(name));
     }
+    /**
+     * 增加或更新指定名称的本地存储项。
+     * @param {String} name 本地存储项标识名称。
+     * @param {any} value 本地存储项的值。
+     */
     addOrUpdate(name, value) {
         if (Guard.isNullOrEmpty(name) || !value) {
             console.warn("警告：不满足本地存储要求，此次请求忽略。");
@@ -58,6 +71,10 @@ export class LocaleStorageProvider {
         }
         this._internalStorageProvider.set(this.verifyAndFillName(name), value, true);
     }
+    /**
+     * 删除指定名称的本地存储项。
+     * @param {String} name 本地存储项标识名称。
+     */
     remove(name) {
         if (Guard.isNullOrEmpty(name)) {
             console.warn("警告：空的本地存储标识名称。");
@@ -66,3 +83,17 @@ export class LocaleStorageProvider {
         this._internalStorageProvider.remove(this.verifyAndFillName(name));
     }
 }
+/**
+ * 本地存储服务。
+ * @constant
+ * @public
+ * @author Wang Yucai
+ */
+export const LocaleStore = new LocaleStorageProvider();
+/**
+ * 本地会话存储服务。
+ * @constant
+ * @public
+ * @author Wang Yucai
+ */
+export const SessionStore = new LocaleStorageProvider(true);

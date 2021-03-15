@@ -5,7 +5,6 @@
  * ************************************************************************************************
  */
 import { Environment } from "./environment";
-import { LocaleStoreModes } from "./localestore-modes";
 import { IConfiguration } from "./configuration/configuration-interface";
 import { IRegex } from "./text/regular-expressions/regex-interface";
 /**
@@ -17,9 +16,6 @@ import { IRegex } from "./text/regular-expressions/regex-interface";
 export declare const AppContext: {
     current: {
         env: Environment;
-    };
-    client: {
-        defaultStorageMode: LocaleStoreModes;
     };
     defaultProviders: {
         MD5: import("../security/md5").MD5CryptoServiceProvider;
