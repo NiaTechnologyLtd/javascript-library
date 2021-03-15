@@ -13,6 +13,14 @@ import { ILocaleStorage } from "./localestore-interface";
  * @see {store2}
  */
 export declare class LocaleStorageProvider implements ILocaleStorage {
+    private readonly _useSessionStorage;
+    private readonly _internalStorageProvider;
+    /**
+     * 用于初始化一个 LocaleStorageProvider 类型的对象实例。
+     * @param {Boolean} useSessionStorage 是否使用本地回话存储。
+     */
+    constructor(useSessionStorage?: boolean);
+    get(name: string): any | undefined;
     /**
      * 校验本地存储标识名称的格式，并完善。
      * @param {String} name 需要校验的标识名称。
@@ -24,5 +32,4 @@ export declare class LocaleStorageProvider implements ILocaleStorage {
     exists(name: string): boolean;
     addOrUpdate(name: string, value?: any): void;
     remove(name: string): void;
-    get(name: string): void;
 }

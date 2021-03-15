@@ -19,6 +19,27 @@ const store = require("store2");
  * @see {store2}
  */
 export class LocaleStorageProvider implements ILocaleStorage {
+  private readonly _useSessionStorage: boolean = false;
+  private readonly _internalStorageProvider: any = undefined;
+
+  /**
+   * 用于初始化一个 LocaleStorageProvider 类型的对象实例。
+   * @param {Boolean} useSessionStorage 是否使用本地回话存储。
+   */
+  constructor(useSessionStorage: boolean = false) {
+    this._useSessionStorage = useSessionStorage;
+    this._internalStorageProvider = useSessionStorage ? store.session : store;
+  }
+
+  get(name: string): any | undefined {
+    if (Guard.isNullOrEmpty(name) || !this.exists(name)) {
+      console.warn("警告：空的本地存储标识名称，未能找到指定的存储项数据值。");
+      return undefined;
+    }
+
+    return this._internalStorageProvider.get(this.verifyAndFillName(name));
+  }
+
   /**
    * 校验本地存储标识名称的格式，并完善。
    * @param {String} name 需要校验的标识名称。
@@ -34,10 +55,10 @@ export class LocaleStorageProvider implements ILocaleStorage {
 
   exists(name: string): boolean {
     if (Guard.isNullOrEmpty(name)) {
-      console.warn("警告：空的本地存储标识名称 “name”。");
+      console.warn("警告：空的本地存储标识名称。");
       return false;
     }
-    return store.has(this.verifyAndFillName(name));
+    return this._internalStorageProvider.has(this.verifyAndFillName(name));
   }
   addOrUpdate(name: string, value?: any): void {
     if (Guard.isNullOrEmpty(name) || !value) {
@@ -45,12 +66,18 @@ export class LocaleStorageProvider implements ILocaleStorage {
 
       return;
     }
-    store.set(this.verifyAndFillName(name), value, true);
+    this._internalStorageProvider.set(
+      this.verifyAndFillName(name),
+      value,
+      true
+    );
   }
   remove(name: string): void {
-    throw new Error("Method not implemented.");
-  }
-  get(name: string) {
-    throw new Error("Method not implemented.");
+    if (Guard.isNullOrEmpty(name)) {
+      console.warn("警告：空的本地存储标识名称。");
+      return;
+    }
+
+    this._internalStorageProvider.remove(this.verifyAndFillName(name));
   }
 }

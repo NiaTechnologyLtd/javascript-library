@@ -16,6 +16,23 @@ const store = require("store2");
  */
 export class LocaleStorageProvider {
     /**
+     * 用于初始化一个 LocaleStorageProvider 类型的对象实例。
+     * @param {Boolean} useSessionStorage 是否使用本地回话存储。
+     */
+    constructor(useSessionStorage = false) {
+        this._useSessionStorage = false;
+        this._internalStorageProvider = undefined;
+        this._useSessionStorage = useSessionStorage;
+        this._internalStorageProvider = useSessionStorage ? store.session : store;
+    }
+    get(name) {
+        if (Guard.isNullOrEmpty(name) || !this.exists(name)) {
+            console.warn("警告：空的本地存储标识名称，未能找到指定的存储项数据值。");
+            return undefined;
+        }
+        return this._internalStorageProvider.get(this.verifyAndFillName(name));
+    }
+    /**
      * 校验本地存储标识名称的格式，并完善。
      * @param {String} name 需要校验的标识名称。
      * @returns {String}
@@ -29,22 +46,23 @@ export class LocaleStorageProvider {
     }
     exists(name) {
         if (Guard.isNullOrEmpty(name)) {
-            console.warn("警告：空的本地存储标识名称 “name”。");
+            console.warn("警告：空的本地存储标识名称。");
             return false;
         }
-        return store.has(this.verifyAndFillName(name));
+        return this._internalStorageProvider.has(this.verifyAndFillName(name));
     }
     addOrUpdate(name, value) {
         if (Guard.isNullOrEmpty(name) || !value) {
             console.warn("警告：不满足本地存储要求，此次请求忽略。");
             return;
         }
-        store.set(this.verifyAndFillName(name), value, true);
+        this._internalStorageProvider.set(this.verifyAndFillName(name), value, true);
     }
     remove(name) {
-        throw new Error("Method not implemented.");
-    }
-    get(name) {
-        throw new Error("Method not implemented.");
+        if (Guard.isNullOrEmpty(name)) {
+            console.warn("警告：空的本地存储标识名称。");
+            return;
+        }
+        this._internalStorageProvider.remove(this.verifyAndFillName(name));
     }
 }
