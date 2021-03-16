@@ -38,6 +38,7 @@ import { IPrincipal } from "./security/principal/principal-interface";
 import { AnonymousIdentity } from "./security/principal/anonymous-identity";
 import { PrincipalBase } from "./security/principal/principal-base";
 import { ClaimType } from "./security/claim-type";
+import { Claim } from "./security/claim";
 
 export {
   Guard,
@@ -76,4 +77,5 @@ export {
   AnonymousIdentity,
   PrincipalBase,
   ClaimType,
+  Claim,
 };

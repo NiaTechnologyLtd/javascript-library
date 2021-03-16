@@ -22,4 +22,5 @@ import { IdentityBase } from "./security/principal/identity-base";
 import { AnonymousIdentity } from "./security/principal/anonymous-identity";
 import { PrincipalBase } from "./security/principal/principal-base";
 import { ClaimType } from "./security/claim-type";
-export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, LocaleStorageProvider, LocaleStore, SessionStore, CookieItem, KeyValuePair, Configuration, StringBuilder, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, HashAlgorithm, MD5, MD5CryptoServiceProvider, SHA1, SHA1CryptoServiceProvider, SHA256, SHA256CryptoServiceProvider, SHA512, SHA512CryptoServiceProvider, IdentityBase, AnonymousIdentity, PrincipalBase, ClaimType, };
+import { Claim } from "./security/claim";
+export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, LocaleStorageProvider, LocaleStore, SessionStore, CookieItem, KeyValuePair, Configuration, StringBuilder, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, HashAlgorithm, MD5, MD5CryptoServiceProvider, SHA1, SHA1CryptoServiceProvider, SHA256, SHA256CryptoServiceProvider, SHA512, SHA512CryptoServiceProvider, IdentityBase, AnonymousIdentity, PrincipalBase, ClaimType, Claim, };
