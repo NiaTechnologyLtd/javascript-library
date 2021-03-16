@@ -19,5 +19,5 @@ export interface IPrincipal {
      * @type {IIdentity}
      * @public
      */
-    readonly Identity: IIdentity;
+    readonly identity: IIdentity;
 }
