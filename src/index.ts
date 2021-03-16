@@ -32,6 +32,8 @@ import { SHA1CryptoServiceProvider, SHA1 } from "./security/sha1";
 import { SHA256CryptoServiceProvider, SHA256 } from "./security/sha256";
 import { SHA512CryptoServiceProvider, SHA512 } from "./security/sha512";
 
+import { IIdentity } from "./security/principal/identity-interface";
+
 export {
   Guard,
   ExceptionHelper,
@@ -63,4 +65,5 @@ export {
   SHA256CryptoServiceProvider,
   SHA512,
   SHA512CryptoServiceProvider,
+  IIdentity,
 };
