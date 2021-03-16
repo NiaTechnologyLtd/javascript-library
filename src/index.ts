@@ -34,6 +34,7 @@ import { SHA512CryptoServiceProvider, SHA512 } from "./security/sha512";
 
 import { IIdentity } from "./security/principal/identity-interface";
 import { IdentityBase } from "./security/principal/identity-base";
+import { IPrincipal } from "./security/principal/principal-interface";
 
 export {
   Guard,
@@ -68,4 +69,5 @@ export {
   SHA512CryptoServiceProvider,
   IIdentity,
   IdentityBase,
+  IPrincipal,
 };
