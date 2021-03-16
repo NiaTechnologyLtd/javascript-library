@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ClaimTypes | @nia-technology/lib</title>
+	<title>ClaimType | @nia-technology/lib</title>
 	<meta name="description" content="Documentation for @nia-technology/lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@nia-technology/lib</a>
 				</li>
 				<li>
-					<a href="claimtypes.html">ClaimTypes</a>
+					<a href="claimtype.html">ClaimType</a>
 				</li>
 			</ul>
-			<h1>Enumeration ClaimTypes</h1>
+			<h1>Enumeration ClaimType</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>定义了身份信息点默认类型枚举。</p>
+						<p>定义了内置的身份信息点枚举类型。</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>author</dt>
@@ -84,20 +84,13 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#algorithmname" class="tsd-kind-icon">Algorithm<wbr>Name</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#auditor" class="tsd-kind-icon">Auditor</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#clientid" class="tsd-kind-icon">Client<wbr>Id</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#emailaddress" class="tsd-kind-icon">Email<wbr>Address</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#expires" class="tsd-kind-icon">Expires</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#issuer" class="tsd-kind-icon">Issuer</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#name" class="tsd-kind-icon">Name</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#phonenumber" class="tsd-kind-icon">Phone<wbr>Number</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#storemode" class="tsd-kind-icon">Store<wbr>Mode</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#tokentype" class="tsd-kind-icon">Token<wbr>Type</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#tokenvalue" class="tsd-kind-icon">Token<wbr>Value</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#userid" class="tsd-kind-icon">User<wbr>Id</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#username" class="tsd-kind-icon">User<wbr>Name</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtypes.html#useropenid" class="tsd-kind-icon">User<wbr>Open<wbr>Id</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtype.html#accesstoken" class="tsd-kind-icon">access<wbr>Token</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtype.html#email" class="tsd-kind-icon">email</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtype.html#expires" class="tsd-kind-icon">expires</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtype.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtype.html#userid" class="tsd-kind-icon">user<wbr>Id</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtype.html#username" class="tsd-kind-icon">user<wbr>Name</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="claimtype.html#useropenid" class="tsd-kind-icon">user<wbr>Open<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,102 +99,57 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="algorithmname" class="tsd-anchor"></a>
-					<h3>Algorithm<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">Algorithm<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;alg_name&quot;</span></div>
+					<a name="accesstoken" class="tsd-anchor"></a>
+					<h3>access<wbr>Token</h3>
+					<div class="tsd-signature tsd-kind-icon">access<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;access_token&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/principal/claim-types.ts:42</li>
+							<li>Defined in security/claim-type.ts:26</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>代表令牌加密算法名称。</p>
+							<p>代表访问令牌。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="auditor" class="tsd-anchor"></a>
-					<h3>Auditor</h3>
-					<div class="tsd-signature tsd-kind-icon">Auditor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;auditor&quot;</span></div>
+					<a name="email" class="tsd-anchor"></a>
+					<h3>email</h3>
+					<div class="tsd-signature tsd-kind-icon">email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;email_address&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/principal/claim-types.ts:22</li>
+							<li>Defined in security/claim-type.ts:42</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>代表令牌审核人。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="clientid" class="tsd-anchor"></a>
-					<h3>Client<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">Client<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;client_id&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/principal/claim-types.ts:38</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代表客户端唯一标识。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="emailaddress" class="tsd-anchor"></a>
-					<h3>Email<wbr>Address</h3>
-					<div class="tsd-signature tsd-kind-icon">Email<wbr>Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;email_addr&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/principal/claim-types.ts:62</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代表用户的电邮地址。</p>
+							<p>代表电邮地址。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="expires" class="tsd-anchor"></a>
-					<h3>Expires</h3>
-					<div class="tsd-signature tsd-kind-icon">Expires<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;expires&quot;</span></div>
+					<h3>expires</h3>
+					<div class="tsd-signature tsd-kind-icon">expires<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;access_token_expires&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/principal/claim-types.ts:26</li>
+							<li>Defined in security/claim-type.ts:30</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>代表令牌超时时间。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="issuer" class="tsd-anchor"></a>
-					<h3>Issuer</h3>
-					<div class="tsd-signature tsd-kind-icon">Issuer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;issuer&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/principal/claim-types.ts:18</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代表令牌签发人。</p>
+							<p>代表令牌失效时间。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="name" class="tsd-anchor"></a>
-					<h3>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;real_name&quot;</span></div>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;real_name&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/principal/claim-types.ts:58</li>
+							<li>Defined in security/claim-type.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -211,72 +159,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="phonenumber" class="tsd-anchor"></a>
-					<h3>Phone<wbr>Number</h3>
-					<div class="tsd-signature tsd-kind-icon">Phone<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;tel_num&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/principal/claim-types.ts:66</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代表用户的电话号码。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="storemode" class="tsd-anchor"></a>
-					<h3>Store<wbr>Mode</h3>
-					<div class="tsd-signature tsd-kind-icon">Store<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;__store_mode__&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/principal/claim-types.ts:70</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代表令牌本地存储方法。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="tokentype" class="tsd-anchor"></a>
-					<h3>Token<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">Token<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;token_type&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/principal/claim-types.ts:34</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代表令牌类型。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="tokenvalue" class="tsd-anchor"></a>
-					<h3>Token<wbr>Value</h3>
-					<div class="tsd-signature tsd-kind-icon">Token<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;access_token&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/principal/claim-types.ts:30</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代表令牌值。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="userid" class="tsd-anchor"></a>
-					<h3>User<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">User<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;user_id&quot;</span></div>
+					<h3>user<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">user<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;user_id&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/principal/claim-types.ts:46</li>
+							<li>Defined in security/claim-type.ts:34</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -287,26 +175,26 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="username" class="tsd-anchor"></a>
-					<h3>User<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">User<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;user_name&quot;</span></div>
+					<h3>user<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">user<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;user_name&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/principal/claim-types.ts:50</li>
+							<li>Defined in security/claim-type.ts:22</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>代表用户名。</p>
+							<p>代表用户登录名。</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="useropenid" class="tsd-anchor"></a>
-					<h3>User<wbr>Open<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">User<wbr>Open<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;user_openid&quot;</span></div>
+					<h3>user<wbr>Open<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">user<wbr>Open<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;user_openid&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/principal/claim-types.ts:54</li>
+							<li>Defined in security/claim-type.ts:38</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -330,49 +218,28 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="claimtypes.html" class="tsd-kind-icon">Claim<wbr>Types</a>
+						<a href="claimtype.html" class="tsd-kind-icon">Claim<wbr>Type</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#algorithmname" class="tsd-kind-icon">Algorithm<wbr>Name</a>
+								<a href="claimtype.html#accesstoken" class="tsd-kind-icon">access<wbr>Token</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#auditor" class="tsd-kind-icon">Auditor</a>
+								<a href="claimtype.html#email" class="tsd-kind-icon">email</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#clientid" class="tsd-kind-icon">Client<wbr>Id</a>
+								<a href="claimtype.html#expires" class="tsd-kind-icon">expires</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#emailaddress" class="tsd-kind-icon">Email<wbr>Address</a>
+								<a href="claimtype.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#expires" class="tsd-kind-icon">Expires</a>
+								<a href="claimtype.html#userid" class="tsd-kind-icon">user<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#issuer" class="tsd-kind-icon">Issuer</a>
+								<a href="claimtype.html#username" class="tsd-kind-icon">user<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#name" class="tsd-kind-icon">Name</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#phonenumber" class="tsd-kind-icon">Phone<wbr>Number</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#storemode" class="tsd-kind-icon">Store<wbr>Mode</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#tokentype" class="tsd-kind-icon">Token<wbr>Type</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#tokenvalue" class="tsd-kind-icon">Token<wbr>Value</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#userid" class="tsd-kind-icon">User<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#username" class="tsd-kind-icon">User<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="claimtypes.html#useropenid" class="tsd-kind-icon">User<wbr>Open<wbr>Id</a>
+								<a href="claimtype.html#useropenid" class="tsd-kind-icon">user<wbr>Open<wbr>Id</a>
 							</li>
 						</ul>
 					</li>
@@ -383,6 +250,9 @@
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/anonymousidentity.html" class="tsd-kind-icon">Anonymous<wbr>Identity</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/claim.html" class="tsd-kind-icon">Claim</a>
@@ -405,6 +275,9 @@
 					<li class=" tsd-kind-class">
 						<a href="../classes/hashalgorithm.html" class="tsd-kind-icon">Hash<wbr>Algorithm</a>
 					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/identitybase.html" class="tsd-kind-icon">Identity<wbr>Base</a>
+					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="../classes/keyvaluepair.html" class="tsd-kind-icon">Key<wbr>Value<wbr>Pair</a>
 					</li>
@@ -413,6 +286,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/md5cryptoserviceprovider.html" class="tsd-kind-icon">MD5<wbr>Crypto<wbr>Service<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/principalbase.html" class="tsd-kind-icon">Principal<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="../classes/regex.html" class="tsd-kind-icon">Regex</a>
@@ -444,8 +320,17 @@
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/ihashalgorithm.html" class="tsd-kind-icon">IHash<wbr>Algorithm</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iidentity.html" class="tsd-kind-icon">IIdentity</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/ikeyvaluepair.html" class="tsd-kind-icon">IKey<wbr>Value<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iprincipal.html" class="tsd-kind-icon">IPrincipal</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iprincipalstorage.html" class="tsd-kind-icon">IPrincipal<wbr>Storage</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iregex.html" class="tsd-kind-icon">IRegex</a>

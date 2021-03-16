@@ -4,7 +4,8 @@
  * Licensed under the MIT License See LICENSE in the project root for license information.
  * ************************************************************************************************
  */
-import { Guard } from "../../core/guard";
+import { ExceptionHelper } from "../core/exception-helper";
+import { Guard } from "../core/guard";
 /**
  * 提供了身份信息点相关的方法。
  * @class
@@ -14,22 +15,12 @@ import { Guard } from "../../core/guard";
 export class Claim {
     /**
      * 用于初始化一个 Claim 类型的对象实例。
-     * @param {String | ClaimTypes} name 身份信息点名称。
+     * @param {String | ClaimType} name 身份信息点标识名称。
      * @param {String} value 身份信息点值。
-     * @constructor
-     * @public
      */
     constructor(name, value) {
+        ExceptionHelper.argumentNotSupport(name, "name");
         this.name = name;
         this.value = Guard.safeGet(value, "");
-    }
-    /**
-     * 用于校验此信息点是否确实必要信息。
-     * @public
-     * @method
-     * @returns {Boolean}
-     */
-    isValid() {
-        return !Guard.isNullOrEmpty(this.name) && !Guard.isNullOrEmpty(this.value);
     }
 }

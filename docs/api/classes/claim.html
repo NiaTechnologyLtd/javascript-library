@@ -102,12 +102,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="claim.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="claim.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
-							</ul>
-						</section>
 					</div>
 				</section>
 			</section>
@@ -123,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in security/principal/claim.ts:32</li>
+									<li>Defined in security/claim.ts:19</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -136,7 +130,7 @@
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>身份信息点名称。</p>
+										<p>身份信息点标识名称。</p>
 									</div>
 								</li>
 								<li>
@@ -155,70 +149,45 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/principal/claim.ts:24</li>
+							<li>Defined in security/claim.ts:39</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置或获取一个字符串，用于表示信息点标识名称。</p>
+							<p>获取一个字符串，用于表示身份信息点标识名称。</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>property</dt>
+							<dd></dd>
+							<dt>readonly</dt>
 							<dd></dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="value" class="tsd-anchor"></a>
-					<h3>value</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> value</h3>
 					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in security/principal/claim.ts:32</li>
+							<li>Defined in security/claim.ts:48</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>设置或获取一个字符串，用于表示身份信息点值。</p>
+							<p>获取一个字符串，用于表示身份信息点值。</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>property</dt>
 							<dd></dd>
+							<dt>readonly</dt>
+							<dd></dd>
 						</dl>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="isvalid" class="tsd-anchor"></a>
-					<h3>is<wbr>Valid</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in security/principal/claim.ts:52</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>用于校验此信息点是否确实必要信息。</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>method</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -233,13 +202,16 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
-						<a href="../enums/claimtypes.html" class="tsd-kind-icon">Claim<wbr>Types</a>
+						<a href="../enums/claimtype.html" class="tsd-kind-icon">Claim<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="../enums/environmentnames.html" class="tsd-kind-icon">Environment<wbr>Names</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="../enums/hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="anonymousidentity.html" class="tsd-kind-icon">Anonymous<wbr>Identity</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -254,9 +226,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="claim.html#value" class="tsd-kind-icon">value</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="claim.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a>
 							</li>
 						</ul>
 					</li>
@@ -280,6 +249,9 @@
 					<li class=" tsd-kind-class">
 						<a href="hashalgorithm.html" class="tsd-kind-icon">Hash<wbr>Algorithm</a>
 					</li>
+					<li class=" tsd-kind-class">
+						<a href="identitybase.html" class="tsd-kind-icon">Identity<wbr>Base</a>
+					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="keyvaluepair.html" class="tsd-kind-icon">Key<wbr>Value<wbr>Pair</a>
 					</li>
@@ -288,6 +260,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="md5cryptoserviceprovider.html" class="tsd-kind-icon">MD5<wbr>Crypto<wbr>Service<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="principalbase.html" class="tsd-kind-icon">Principal<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="regex.html" class="tsd-kind-icon">Regex</a>
@@ -319,8 +294,17 @@
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/ihashalgorithm.html" class="tsd-kind-icon">IHash<wbr>Algorithm</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iidentity.html" class="tsd-kind-icon">IIdentity</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/ikeyvaluepair.html" class="tsd-kind-icon">IKey<wbr>Value<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iprincipal.html" class="tsd-kind-icon">IPrincipal</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iprincipalstorage.html" class="tsd-kind-icon">IPrincipal<wbr>Storage</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iregex.html" class="tsd-kind-icon">IRegex</a>
