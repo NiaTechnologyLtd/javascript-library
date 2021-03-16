@@ -31,8 +31,6 @@ import { MD5CryptoServiceProvider, MD5 } from "./security/md5";
 import { SHA1CryptoServiceProvider, SHA1 } from "./security/sha1";
 import { SHA256CryptoServiceProvider, SHA256 } from "./security/sha256";
 import { SHA512CryptoServiceProvider, SHA512 } from "./security/sha512";
-import { ClaimTypes } from "./security/principal/claim-types";
-import { Claim } from "./security/principal/claim";
 
 export {
   Guard,
@@ -65,6 +63,4 @@ export {
   SHA256CryptoServiceProvider,
   SHA512,
   SHA512CryptoServiceProvider,
-  ClaimTypes,
-  Claim,
 };
