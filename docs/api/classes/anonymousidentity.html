@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IHashAlgorithm | @nia-technology/lib</title>
+	<title>AnonymousIdentity | @nia-technology/lib</title>
 	<meta name="description" content="Documentation for @nia-technology/lib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@nia-technology/lib</a>
 				</li>
 				<li>
-					<a href="ihashalgorithm.html">IHashAlgorithm</a>
+					<a href="anonymousidentity.html">AnonymousIdentity</a>
 				</li>
 			</ul>
-			<h1>Interface IHashAlgorithm</h1>
+			<h1>Class AnonymousIdentity</h1>
 		</div>
 	</div>
 </header>
@@ -68,11 +68,9 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>定义了哈希运算算法的接口。</p>
+						<p>提供了匿名用户身份相关的信息。</p>
 					</div>
 					<dl class="tsd-comment-tags">
-						<dt>interface</dt>
-						<dd></dd>
 						<dt>author</dt>
 						<dd><p>Wang Yucai</p>
 						</dd>
@@ -83,14 +81,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IHashAlgorithm</span>
+						<a href="identitybase.html" class="tsd-signature-type" data-tsd-kind="Class">IdentityBase</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">AnonymousIdentity</span>
+							</li>
+						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/hashalgorithm.html" class="tsd-signature-type" data-tsd-kind="Class">HashAlgorithm</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -98,80 +95,80 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ihashalgorithm.html#algorithmname" class="tsd-kind-icon">algorithm<wbr>Name</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="anonymousidentity.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="ihashalgorithm.html#computehash" class="tsd-kind-icon">compute<wbr>Hash</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="anonymousidentity.html#isauthenticated" class="tsd-kind-icon">is<wbr>Authenticated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="anonymousidentity.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="algorithmname" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> algorithm<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">algorithm<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in security/hashalgorithm-interface.ts:31</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>获取一个字符串，用于表示哈希算法名称。</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>property</dt>
-							<dd></dd>
-							<dt>readonly</dt>
-							<dd></dd>
-						</dl>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="computehash" class="tsd-anchor"></a>
-					<h3>compute<wbr>Hash</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Hash<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Anonymous<wbr>Identity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="anonymousidentity.html" class="tsd-signature-type" data-tsd-kind="Class">AnonymousIdentity</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="identitybase.html">IdentityBase</a>.<a href="identitybase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in security/hashalgorithm-interface.ts:22</li>
+									<li>Defined in security/principal/anonymous-identity.ts:16</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>计算字符串的哈希值。</p>
+									<p>用于初始化一个 AnonymousIdentity 类型的对象实例。</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>method</dt>
-									<dd></dd>
-								</dl>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>s: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>需要计算哈希数据的字符串。</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="anonymousidentity.html" class="tsd-signature-type" data-tsd-kind="Class">AnonymousIdentity</a></h4>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isauthenticated" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> is<wbr>Authenticated</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Authenticated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="identitybase.html">IdentityBase</a>.<a href="identitybase.html#isauthenticated">isAuthenticated</a></p>
+						<ul>
+							<li>Defined in security/principal/identity-base.ts:27</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>获取一个值，用于表示是否经过身份认证。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="identitybase.html">IdentityBase</a>.<a href="identitybase.html#name">name</a></p>
+						<ul>
+							<li>Defined in security/principal/identity-base.ts:26</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>获取一个字符串，用于表示用户名称。</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -194,101 +191,104 @@
 					<li class=" tsd-kind-enum">
 						<a href="../enums/hashalgorithmnames.html" class="tsd-kind-icon">Hash<wbr>Algorithm<wbr>Names</a>
 					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/anonymousidentity.html" class="tsd-kind-icon">Anonymous<wbr>Identity</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/claim.html" class="tsd-kind-icon">Claim</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/configuration.html" class="tsd-kind-icon">Configuration</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/cookieitem.html" class="tsd-kind-icon">Cookie<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/environment.html" class="tsd-kind-icon">Environment</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/exceptionhelper.html" class="tsd-kind-icon">Exception<wbr>Helper</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/guard.html" class="tsd-kind-icon">Guard</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/hashalgorithm.html" class="tsd-kind-icon">Hash<wbr>Algorithm</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/identitybase.html" class="tsd-kind-icon">Identity<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="../classes/keyvaluepair.html" class="tsd-kind-icon">Key<wbr>Value<wbr>Pair</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/localestorageprovider.html" class="tsd-kind-icon">Locale<wbr>Storage<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/md5cryptoserviceprovider.html" class="tsd-kind-icon">MD5<wbr>Crypto<wbr>Service<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/principalbase.html" class="tsd-kind-icon">Principal<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/regex.html" class="tsd-kind-icon">Regex</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/regexbase.html" class="tsd-kind-icon">Regex<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/sha1cryptoserviceprovider.html" class="tsd-kind-icon">SHA1<wbr>Crypto<wbr>Service<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/sha256cryptoserviceprovider.html" class="tsd-kind-icon">SHA256<wbr>Crypto<wbr>Service<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/sha512cryptoserviceprovider.html" class="tsd-kind-icon">SHA512<wbr>Crypto<wbr>Service<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/stringbuilder.html" class="tsd-kind-icon">String<wbr>Builder</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/uriqueryinfo.html" class="tsd-kind-icon">Uri<wbr>Query<wbr>Info</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/webutilities.html" class="tsd-kind-icon">Web<wbr>Utilities</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="iconfiguration.html" class="tsd-kind-icon">IConfiguration</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="ihashalgorithm.html" class="tsd-kind-icon">IHash<wbr>Algorithm</a>
+					<li class="current tsd-kind-class">
+						<a href="anonymousidentity.html" class="tsd-kind-icon">Anonymous<wbr>Identity</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ihashalgorithm.html#algorithmname" class="tsd-kind-icon">algorithm<wbr>Name</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+								<a href="anonymousidentity.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="ihashalgorithm.html#computehash" class="tsd-kind-icon">compute<wbr>Hash</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="anonymousidentity.html#isauthenticated" class="tsd-kind-icon">is<wbr>Authenticated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="anonymousidentity.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="claim.html" class="tsd-kind-icon">Claim</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="configuration.html" class="tsd-kind-icon">Configuration</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="cookieitem.html" class="tsd-kind-icon">Cookie<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="environment.html" class="tsd-kind-icon">Environment</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="exceptionhelper.html" class="tsd-kind-icon">Exception<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="guard.html" class="tsd-kind-icon">Guard</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="hashalgorithm.html" class="tsd-kind-icon">Hash<wbr>Algorithm</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="identitybase.html" class="tsd-kind-icon">Identity<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="keyvaluepair.html" class="tsd-kind-icon">Key<wbr>Value<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="localestorageprovider.html" class="tsd-kind-icon">Locale<wbr>Storage<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="md5cryptoserviceprovider.html" class="tsd-kind-icon">MD5<wbr>Crypto<wbr>Service<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="principalbase.html" class="tsd-kind-icon">Principal<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="regex.html" class="tsd-kind-icon">Regex</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="regexbase.html" class="tsd-kind-icon">Regex<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sha1cryptoserviceprovider.html" class="tsd-kind-icon">SHA1<wbr>Crypto<wbr>Service<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sha256cryptoserviceprovider.html" class="tsd-kind-icon">SHA256<wbr>Crypto<wbr>Service<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sha512cryptoserviceprovider.html" class="tsd-kind-icon">SHA512<wbr>Crypto<wbr>Service<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="stringbuilder.html" class="tsd-kind-icon">String<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="uriqueryinfo.html" class="tsd-kind-icon">Uri<wbr>Query<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="webutilities.html" class="tsd-kind-icon">Web<wbr>Utilities</a>
+					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iidentity.html" class="tsd-kind-icon">IIdentity</a>
+						<a href="../interfaces/iconfiguration.html" class="tsd-kind-icon">IConfiguration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ihashalgorithm.html" class="tsd-kind-icon">IHash<wbr>Algorithm</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iidentity.html" class="tsd-kind-icon">IIdentity</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="ikeyvaluepair.html" class="tsd-kind-icon">IKey<wbr>Value<wbr>Pair</a>
+						<a href="../interfaces/ikeyvaluepair.html" class="tsd-kind-icon">IKey<wbr>Value<wbr>Pair</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iprincipal.html" class="tsd-kind-icon">IPrincipal</a>
+						<a href="../interfaces/iprincipal.html" class="tsd-kind-icon">IPrincipal</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iprincipalstorage.html" class="tsd-kind-icon">IPrincipal<wbr>Storage</a>
+						<a href="../interfaces/iprincipalstorage.html" class="tsd-kind-icon">IPrincipal<wbr>Storage</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="iregex.html" class="tsd-kind-icon">IRegex</a>
+						<a href="../interfaces/iregex.html" class="tsd-kind-icon">IRegex</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../modules.html#appcontext" class="tsd-kind-icon">App<wbr>Context</a>
