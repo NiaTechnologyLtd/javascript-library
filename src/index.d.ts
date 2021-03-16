@@ -23,4 +23,5 @@ import { SHA1CryptoServiceProvider, SHA1 } from "./security/sha1";
 import { SHA256CryptoServiceProvider, SHA256 } from "./security/sha256";
 import { SHA512CryptoServiceProvider, SHA512 } from "./security/sha512";
 import { IIdentity } from "./security/principal/identity-interface";
-export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, LocaleStorageProvider, LocaleStore, SessionStore, CookieItem, IKeyValuePair, KeyValuePair, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, IHashAlgorithm, HashAlgorithm, MD5, MD5CryptoServiceProvider, SHA1, SHA1CryptoServiceProvider, SHA256, SHA256CryptoServiceProvider, SHA512, SHA512CryptoServiceProvider, IIdentity, };
+import { IdentityBase } from "./security/principal/identity-base";
+export { Guard, ExceptionHelper, EnvironmentNames, Environment, AppContext, LocaleStorageProvider, LocaleStore, SessionStore, CookieItem, IKeyValuePair, KeyValuePair, IConfiguration, Configuration, StringBuilder, IRegex, RegexBase, Regex, WebUtilities, UriQueryInfo, HashAlgorithmNames, IHashAlgorithm, HashAlgorithm, MD5, MD5CryptoServiceProvider, SHA1, SHA1CryptoServiceProvider, SHA256, SHA256CryptoServiceProvider, SHA512, SHA512CryptoServiceProvider, IIdentity, IdentityBase, };
