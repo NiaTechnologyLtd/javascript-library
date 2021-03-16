@@ -1,4 +1,27 @@
 # 代码变更说明
+## [2.0.0-alpha.8](///compare/v2.0.0-alpha.7...v2.0.0-alpha.8) (2021-03-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* 修改了 principal-interface.ts 接口中 Identity 属性的命名为 identity。
+
+### 代码重构
+
+* 删除不合理的代码。 ecc9ab9
+
+
+### 新功能
+
+* 新增匿名身份信息 anonymous-identity.ts。 12dda57
+* 新增身份概要信息基类 principal-base.ts。 ffd4cca
+* 新增身份信息本地存储接口 principal/principalstorage-interface.ts。 a58db13
+* 新增身份信息点类型 claim.ts。 7878179
+* 新增身份信息点枚举类型 claim-type.ts。 6c6e78f
+* 新增身份信息基类 identity-base.ts。 6493238
+* 新增身份信息接口 identity-interface.ts。 d0919b3
+* 新增身份摘要信息接口 principal-interface.ts。 afed21f
+
 ## [2.0.0-alpha.7](///compare/v2.0.0-alpha.6...v2.0.0-alpha.7) (2021-03-15)
 
 
